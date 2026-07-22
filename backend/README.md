@@ -15,28 +15,56 @@ Production-quality FastAPI backend for an AI-powered Government Services and Wel
 - Typed Pydantic v2 request and response models
 - Swagger/OpenAPI documentation
 
-## Folder Structure
+## Project Structure
 
 ```text
-backend/
-  app/
-    main.py
-    config.py
-    dependencies.py
-    prompts.py
-    routers/
-    services/
-    utils/
-    models/
-    data/
-      schemes.json
-      services.json
-      offices.json
-      portals.json
-    vector_db/
-  requirements.txt
-  .env.example
-  README.md
+yojana-autopilot/
+├── backend/
+│   ├── app/
+│   │   ├── data/
+│   │   │   ├── offices.json
+│   │   │   ├── portals.json
+│   │   │   ├── schemes.json
+│   │   │   └── services.json
+│   │   ├── models/
+│   │   │   ├── schemas.py
+│   │   │   └── __init__.py
+│   │   ├── routers/
+│   │   │   ├── chat.py
+│   │   │   ├── eligibility.py
+│   │   │   ├── health.py
+│   │   │   ├── offices.py
+│   │   │   ├── portals.py
+│   │   │   ├── services.py
+│   │   │   └── __init__.py
+│   │   ├── services/
+│   │   │   ├── chat_service.py
+│   │   │   ├── eligibility_engine.py
+│   │   │   ├── embedding_service.py
+│   │   │   ├── office_service.py
+│   │   │   ├── portal_service.py
+│   │   │   ├── rag_engine.py
+│   │   │   └── services.py
+│   │   ├── utils/
+│   │   │   ├── json_loader.py
+│   │   │   ├── logger.py
+│   │   │   └── text_cleaner.py
+│   │   ├── config.py
+│   │   ├── dependencies.py
+│   │   ├── main.py
+│   │   ├── prompts.py
+│   │   └── __init__.py
+│   ├── .env.example
+│   ├── requirements.txt
+│   └── README.md
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+├── .gitignore
+├── README.md
+└── structure.txt
 ```
 
 ## Installation
