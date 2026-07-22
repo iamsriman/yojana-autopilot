@@ -1,0 +1,474 @@
+{
+  "_meta": {
+    "description": "Portal registry for GhostGov AI. Keyed by portal_id, not by service_id, because many Andhra Pradesh services share the same portal (all revenue certificates go through MeeSeva, all transport services through Parivahan). services.json references these keys via the `portal` and `alternate_portals` fields.",
+    "state": "Andhra Pradesh",
+    "last_verified": "2026-07-22",
+    "note": "Government URLs change without notice, especially state portals that get rebranded after elections. Treat `verify_flag: true` entries as needing a live check before showing to a user."
+  },
+
+  "meeseva_ap": {
+    "name": "AP MeeSeva",
+    "name_te": "మీసేవ",
+    "owner": "ITE&C Department, Government of Andhra Pradesh",
+    "portal": "https://ap.meeseva.gov.in",
+    "citizen_portal": "https://onlineap.meeseva.gov.in",
+    "status_check": "https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx",
+    "helpline": "1100",
+    "notes": "AP and Telangana run separate MeeSeva portals since the 2014 bifurcation. Applying on ts.meeseva.telangana.gov.in from AP will be rejected with an invalid-location error. Around 400+ services and 7,000+ centres statewide; only a subset is available for self-service online, the rest require a MeeSeva centre visit.",
+    "verify_flag": false
+  },
+
+  "ap_seva_vsws": {
+    "name": "AP Seva / Village and Ward Secretariat (VSWS / GSWS)",
+    "name_te": "ఏపీ సేవ / గ్రామ వార్డు సచివాలయం",
+    "owner": "Grama Ward Sachivalayam Department, Government of Andhra Pradesh",
+    "portal": "https://vswsonline.ap.gov.in",
+    "alt_portal": "https://gramawardsachivalayam.ap.gov.in",
+    "state_portal": "https://apseva.ap.gov.in",
+    "status_check": "https://vswsonline.ap.gov.in",
+    "helpline": "1902",
+    "notes": "Doorstep delivery layer for 500+ services through Grama/Ward Secretariats and the Volunteer network. Status can be checked by Service Request Number or Aadhaar. Overlaps heavily with MeeSeva for revenue certificates.",
+    "verify_flag": false
+  },
+
+  "protean_pan": {
+    "name": "Protean eGov (formerly NSDL) — PAN Services",
+    "owner": "Protean eGov Technologies Ltd, for the Income Tax Department",
+    "portal": "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
+    "alt_portal": "https://onlineservices.protean-tinpan.com",
+    "status_check": "https://onlineservices.proteantech.in",
+    "helpline": "020-2721 8080",
+    "notes": "NSDL e-Governance rebranded as Protean eGov Technologies in Dec 2021. PAN 2.0 (a single unified ITD portal) was announced in Nov 2024 and awarded to LTIMindtree, but the unified portal is not yet live — Protean and UTIITSL remain the issuing portals.",
+    "verify_flag": false
+  },
+
+  "utiitsl_pan": {
+    "name": "UTIITSL PAN Services",
+    "owner": "UTI Infrastructure Technology and Services Ltd",
+    "portal": "https://www.pan.utiitsl.com/PAN/",
+    "status_check": "https://www.pan.utiitsl.com/PAN/",
+    "helpline": "033-4080 2999",
+    "notes": "Check the back of an existing PAN card to see whether it was issued by Protean or UTIITSL — reprints and corrections must go through the same agency.",
+    "verify_flag": false
+  },
+
+  "income_tax_efiling": {
+    "name": "Income Tax e-Filing Portal (Instant e-PAN)",
+    "owner": "Income Tax Department, Government of India",
+    "portal": "https://www.incometax.gov.in",
+    "status_check": "https://www.incometax.gov.in",
+    "helpline": "1800 103 0025",
+    "notes": "Free Instant e-PAN in about 10 minutes for adults with a valid Aadhaar, an active linked mobile number, and no PAN previously allotted. Digital only — a physical card requires Protean or UTIITSL.",
+    "verify_flag": false
+  },
+
+  "uidai": {
+    "name": "UIDAI / myAadhaar",
+    "name_te": "ఆధార్",
+    "owner": "Unique Identification Authority of India",
+    "portal": "https://uidai.gov.in",
+    "self_service": "https://myaadhaar.uidai.gov.in",
+    "status_check": "https://myaadhaar.uidai.gov.in/CheckAadhaarStatus",
+    "helpline": "1947",
+    "notes": "Enrolment and biometric updates require an in-person visit. Address and document updates can be done online if the registered mobile number is active. Fee schedule is revised periodically — verify before quoting.",
+    "verify_flag": false
+  },
+
+  "voter_services": {
+    "name": "Voter Services Portal (ECI)",
+    "owner": "Election Commission of India",
+    "portal": "https://voters.eci.gov.in",
+    "status_check": "https://voters.eci.gov.in/track-application-status",
+    "helpline": "1950",
+    "notes": "Replaced the older NVSP flow. Form 6 for new registration, Form 7 for deletion, Form 8 for correction and shifting. e-EPIC is downloadable after approval. The Voter Helpline mobile app mirrors the portal.",
+    "verify_flag": false
+  },
+
+  "passport_seva": {
+    "name": "Passport Seva",
+    "owner": "Ministry of External Affairs, Government of India",
+    "portal": "https://www.passportindia.gov.in",
+    "status_check": "https://www.passportindia.gov.in/AppOnlineProject/statusTracker/trackStatusInpNew",
+    "appointment": "https://www.passportindia.gov.in",
+    "helpline": "1800 258 1800",
+    "notes": "Payment must be completed before an appointment slot can be booked. AP is served by Regional Passport Offices at Visakhapatnam and Vijayawada, with PSKs and Post Office PSKs across the districts. Also handles Police Clearance Certificates.",
+    "verify_flag": false
+  },
+
+  "parivahan_sarathi": {
+    "name": "Parivahan Sarathi — Driving Licence Services",
+    "owner": "Ministry of Road Transport and Highways / AP Transport Department",
+    "portal": "https://sarathi.parivahan.gov.in",
+    "status_check": "https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do",
+    "helpline": "0863-2340 806",
+    "notes": "Select Andhra Pradesh before applying. Aadhaar-authenticated applicants can take the Learner's Licence test from home; others must book an RTA slot. Server downtime at AP RTA offices is a common source of rescheduled tests.",
+    "verify_flag": false
+  },
+
+  "parivahan_vahan": {
+    "name": "Parivahan Vahan — Vehicle Services",
+    "owner": "Ministry of Road Transport and Highways / AP Transport Department",
+    "portal": "https://vahan.parivahan.gov.in",
+    "status_check": "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml",
+    "helpline": "0863-2340 806",
+    "notes": "Registration, ownership transfer, hypothecation, NOC and fitness. Pending challans anywhere in India block transfers and NOCs.",
+    "verify_flag": false
+  },
+
+  "meebhoomi": {
+    "name": "Meebhoomi — AP Land Records",
+    "name_te": "మీభూమి",
+    "owner": "Revenue Department (CCLA), Government of Andhra Pradesh",
+    "portal": "https://meebhoomi.ap.gov.in",
+    "status_check": "https://meebhoomi.ap.gov.in",
+    "helpline": "1100",
+    "notes": "Public front-end for the Webland backend. Adangal, 1-B (ROR), village maps, FMB and e-Passbook. Records shown in red are digitally unsigned and will be rejected by banks and sub-registrars. There is no official government mobile app — use the mobile browser; third-party apps are not government-affiliated.",
+    "verify_flag": false
+  },
+
+  "ap_webland": {
+    "name": "Webland AP (Revenue backend)",
+    "owner": "Revenue Department, Government of Andhra Pradesh",
+    "portal": "https://webland.ap.gov.in",
+    "status_check": "https://webland.ap.gov.in",
+    "helpline": "1100",
+    "notes": "Officer-facing backend where Tahsildars digitally sign land records and process mutations. Citizens see the result on Meebhoomi. Public access is limited to certain reports.",
+    "verify_flag": true
+  },
+
+  "ap_igrs": {
+    "name": "AP Registration and Stamps (IGRS)",
+    "owner": "Registration and Stamps Department, Government of Andhra Pradesh",
+    "portal": "https://registration.ap.gov.in",
+    "status_check": "https://registration.ap.gov.in",
+    "helpline": "1100",
+    "notes": "Encumbrance Certificate search, market value / stamp duty calculator, certified copies, marriage registration, and prohibited property (Section 22A) lists. EC only reflects registered documents.",
+    "verify_flag": false
+  },
+
+  "ap_cdma": {
+    "name": "AP CDMA / Puraseva — Municipal Services",
+    "owner": "Commissioner and Director of Municipal Administration, Government of Andhra Pradesh",
+    "portal": "https://cdma.ap.gov.in",
+    "status_check": "https://cdma.ap.gov.in",
+    "helpline": "1800 425 4440",
+    "notes": "Property tax (PTIN), water tap connections, trade licences, building permissions (DPMS), birth and death records for urban bodies. Each corporation — GVMC, VMC, GMC, TMC, KMC — has its own fee schedule beneath this umbrella.",
+    "verify_flag": false
+  },
+
+  "ap_ubd": {
+    "name": "AP Urban Bodies Data (UBD) — Birth and Death Records",
+    "owner": "Municipal Administration Department, Government of Andhra Pradesh",
+    "portal": "http://www.ubd.ap.gov.in:8080/UBDMIS/",
+    "status_check": "http://www.ubd.ap.gov.in:8080/UBDMIS/",
+    "helpline": "1100",
+    "notes": "Legacy urban birth and death registration system referenced by district service pages. Served over plain HTTP on a non-standard port — verify availability before surfacing to a user.",
+    "verify_flag": true
+  },
+
+  "crs_birth_death": {
+    "name": "Civil Registration System (CRS) — Birth and Death",
+    "owner": "Office of the Registrar General of India",
+    "portal": "https://crsorgi.gov.in",
+    "status_check": "https://crsorgi.gov.in",
+    "helpline": "1100",
+    "notes": "Used for registrations within one year of the event. Late registration in AP is routed through MeeSeva to the Revenue Department (LRBD process), after which the certificate is collected from the Municipality or Gram Panchayat.",
+    "verify_flag": true
+  },
+
+  "ap_epds": {
+    "name": "AP Civil Supplies / EPDS — Rice Card",
+    "owner": "Civil Supplies Department, Government of Andhra Pradesh",
+    "portal": "https://epdsap.ap.gov.in",
+    "status_check": "https://epdsap.ap.gov.in",
+    "helpline": "1967",
+    "notes": "Rice card issue, member addition and deletion, splitting, and fair price shop stock. Most citizen-facing rice card actions are now filed through the Sachivalayam / AP Seva flow.",
+    "verify_flag": true
+  },
+
+  "sadarem": {
+    "name": "SADAREM — AP Disability Assessment",
+    "name_te": "సదరెం",
+    "owner": "Department of Women, Children, Differently Abled and Senior Citizens, Government of Andhra Pradesh",
+    "portal": "https://sadarem.ap.gov.in",
+    "status_check": "https://sadarem.ap.gov.in",
+    "helpline": "1100",
+    "notes": "Assessment camps are held periodically at designated government hospitals. Waiting-list acknowledgements are published on the MeeSeva portal. The SADAREM certificate feeds the national UDID card application.",
+    "verify_flag": true
+  },
+
+  "udid": {
+    "name": "UDID — Unique Disability ID",
+    "owner": "Department of Empowerment of Persons with Disabilities, Government of India",
+    "portal": "https://www.swavlambancard.gov.in",
+    "status_check": "https://www.swavlambancard.gov.in/pwd/application/status",
+    "helpline": "1800 111 1111",
+    "notes": "National disability card. In AP the state SADAREM assessment usually precedes or feeds the UDID application.",
+    "verify_flag": false
+  },
+
+  "ap_health_scheme": {
+    "name": "AP State Health Scheme (Aarogyasri / NTR Vaidya Seva)",
+    "name_te": "ఆరోగ్యశ్రీ / ఎన్‌టీఆర్ వైద్య సేవ",
+    "owner": "Dr. YSR Aarogyasri Health Care Trust, Government of Andhra Pradesh",
+    "portal": "https://www.ysraarogyasri.ap.gov.in",
+    "status_check": "https://www.ysraarogyasri.ap.gov.in",
+    "helpline": "104",
+    "notes": "HIGH-CHURN ENTRY. The scheme has been rebranded across governments — Rajiv Aarogyasri, then YSR Aarogyasri, most recently NTR Vaidya Seva — and the domain has moved with it. Resolve the live URL at query time rather than trusting this value. Empanelled-hospital lists and covered-procedure lists also change frequently.",
+    "verify_flag": true
+  },
+
+  "pmjay": {
+    "name": "Ayushman Bharat PM-JAY",
+    "owner": "National Health Authority, Government of India",
+    "portal": "https://beneficiary.nha.gov.in",
+    "status_check": "https://beneficiary.nha.gov.in",
+    "hospital_finder": "https://hospitals.pmjay.gov.in",
+    "helpline": "14555",
+    "notes": "Beneficiary search by Aadhaar, ration card, family ID or mobile. e-KYC via Aadhaar OTP or face authentication. In AP, PM-JAY is converged with the state health scheme, so entitlements may be delivered through the state pathway.",
+    "verify_flag": false
+  },
+
+  "pmjdy": {
+    "name": "Pradhan Mantri Jan Dhan Yojana",
+    "owner": "Department of Financial Services, Ministry of Finance",
+    "portal": "https://pmjdy.gov.in",
+    "status_check": "https://pmjdy.gov.in",
+    "helpline": "1800 11 0001",
+    "notes": "Account opening itself happens at any bank branch, Business Correspondent or India Post Payments Bank counter. Aadhaar alone is sufficient for full KYC.",
+    "verify_flag": false
+  },
+
+  "agristack_farmer_registry": {
+    "name": "AgriStack Farmer Registry",
+    "owner": "Ministry of Agriculture and Farmers Welfare / AP Agriculture Department",
+    "portal": "https://fr.agristack.gov.in",
+    "status_check": "https://fr.agristack.gov.in",
+    "helpline": "155261",
+    "notes": "State-specific registration URLs exist under the AgriStack umbrella. The Farmer ID is becoming the gateway identifier for PM-KISAN, crop insurance and input subsidies. Land parcels will not populate if the Adangal record is digitally unsigned in Webland.",
+    "verify_flag": true
+  },
+
+  "pm_kisan": {
+    "name": "PM-KISAN",
+    "owner": "Ministry of Agriculture and Farmers Welfare",
+    "portal": "https://pmkisan.gov.in",
+    "status_check": "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx",
+    "helpline": "155261",
+    "notes": "Beneficiary status, e-KYC, land seeding status and instalment history. Also hosts the KCC application link.",
+    "verify_flag": false
+  },
+
+  "pmfby": {
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "owner": "Ministry of Agriculture and Farmers Welfare",
+    "portal": "https://pmfby.gov.in",
+    "status_check": "https://pmfby.gov.in/farmerApplicationStatus",
+    "helpline": "14447",
+    "notes": "In AP, claim settlement is driven by the e-Crop booking record made at the Rythu Bharosa Kendra. A wrong crop entry is the leading cause of rejection.",
+    "verify_flag": false
+  },
+
+  "ap_ecrop": {
+    "name": "AP e-Crop Booking",
+    "owner": "Agriculture Department, Government of Andhra Pradesh",
+    "portal": "https://apagrisnet.gov.in",
+    "status_check": "https://apagrisnet.gov.in",
+    "helpline": "155251",
+    "notes": "Season-wise crop registration done at the Rythu Bharosa Kendra by the Village Agriculture Assistant. Feeds crop insurance, input subsidy and procurement eligibility. Verify the live URL — e-Crop has been hosted under several AP agriculture domains.",
+    "verify_flag": true
+  },
+
+  "gst_portal": {
+    "name": "GST Portal",
+    "owner": "Goods and Services Tax Network",
+    "portal": "https://www.gst.gov.in",
+    "status_check": "https://services.gst.gov.in/services/arnstatus",
+    "helpline": "1800 103 4786",
+    "notes": "Registration is free and fully online. Aadhaar authentication of the authorised signatory avoids mandatory physical premises verification in most cases.",
+    "verify_flag": false
+  },
+
+  "udyam": {
+    "name": "Udyam Registration (MSME)",
+    "owner": "Ministry of Micro, Small and Medium Enterprises",
+    "portal": "https://udyamregistration.gov.in",
+    "status_check": "https://udyamregistration.gov.in/Udyam_Verify.aspx",
+    "helpline": "1800 111 4252",
+    "notes": "Completely free and instant. Numerous paid look-alike sites exist — only the .gov.in domain is official.",
+    "verify_flag": false
+  },
+
+  "foscos": {
+    "name": "FoSCoS — FSSAI Licensing",
+    "owner": "Food Safety and Standards Authority of India",
+    "portal": "https://foscos.fssai.gov.in",
+    "status_check": "https://foscos.fssai.gov.in/track-application",
+    "helpline": "1800 112 100",
+    "notes": "Category depends on annual turnover: Basic Registration up to ₹12 lakh, State Licence ₹12 lakh–₹20 crore, Central Licence above ₹20 crore.",
+    "verify_flag": false
+  },
+
+  "ap_labour": {
+    "name": "AP Labour Department",
+    "owner": "Labour, Factories, Boilers and Insurance Medical Services Department, Government of Andhra Pradesh",
+    "portal": "https://labour.ap.gov.in",
+    "status_check": "https://labour.ap.gov.in",
+    "helpline": "155214",
+    "notes": "Shops and Establishments registration, BOCW welfare board registration and benefit claims, contract labour licences. Some services are also routed through the national Shram Suvidha portal.",
+    "verify_flag": true
+  },
+
+  "eshram": {
+    "name": "e-Shram",
+    "owner": "Ministry of Labour and Employment",
+    "portal": "https://eshram.gov.in",
+    "status_check": "https://eshram.gov.in",
+    "helpline": "14434",
+    "notes": "Free self-registration for unorganised workers aged 16–59 who are not EPFO or ESIC members. Registration is instant and generates a 12-digit UAN.",
+    "verify_flag": false
+  },
+
+  "epfo": {
+    "name": "EPFO Member e-Sewa",
+    "owner": "Employees' Provident Fund Organisation",
+    "portal": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+    "status_check": "https://passbook.epfindia.gov.in/MemberPassBook/login",
+    "helpline": "14470",
+    "notes": "UAN activation, KYC seeding, account transfer and online claims. Claims fail when name, date of birth or father's name differ between EPFO and Aadhaar records.",
+    "verify_flag": false
+  },
+
+  "apepdcl": {
+    "name": "APEPDCL — Eastern Power Distribution Company",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://www.apeasternpower.com",
+    "status_check": "https://www.apeasternpower.com",
+    "helpline": "1912",
+    "notes": "Serves the northern AP districts including Visakhapatnam, Vizianagaram, Parvathipuram Manyam, Srikakulam, Alluri Sitharama Raju, Anakapalli, Kakinada, East Godavari and the Godavari belt.",
+    "verify_flag": false
+  },
+
+  "apspdcl": {
+    "name": "APSPDCL — Southern Power Distribution Company",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://www.apspdcl.in",
+    "status_check": "https://www.apspdcl.in",
+    "helpline": "1912",
+    "notes": "Serves the southern AP districts including NTR, Krishna, Guntur, Bapatla, Palnadu, Prakasam, Nellore, Tirupati, Chittoor, Annamayya, Kadapa, Kurnool, Nandyal, Anantapur and Sri Sathya Sai.",
+    "verify_flag": false
+  },
+
+  "mylpg": {
+    "name": "MyLPG — Common LPG Portal",
+    "owner": "Ministry of Petroleum and Natural Gas",
+    "portal": "https://www.mylpg.in",
+    "status_check": "https://www.mylpg.in",
+    "helpline": "1906",
+    "notes": "Gateway to Indane, HP Gas and Bharat Gas. Also used for subsidy status, Aadhaar seeding and distributor transfer.",
+    "verify_flag": false
+  },
+
+  "pmuy": {
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "owner": "Ministry of Petroleum and Natural Gas",
+    "portal": "https://www.pmuy.gov.in",
+    "status_check": "https://www.pmuy.gov.in",
+    "helpline": "1800 266 6696",
+    "notes": "Free deposit-waived LPG connection for adult women from eligible poor households. Applied through the chosen oil marketing company's flow.",
+    "verify_flag": false
+  },
+
+  "jnanabhumi": {
+    "name": "Jnanabhumi — AP Scholarships and Fee Reimbursement",
+    "name_te": "జ్ఞానభూమి",
+    "owner": "Social Welfare Department, Government of Andhra Pradesh",
+    "portal": "https://jnanabhumi.ap.gov.in",
+    "status_check": "https://jnanabhumi.ap.gov.in",
+    "helpline": "1100",
+    "notes": "Covers post-matric scholarships and tuition fee reimbursement across SC, ST, BC, EBC, Kapu, minority and disability categories. Scheme branding (Vidya Deevena, Vasathi Deevena) changes with governments even when the portal stays the same. Biometric attendance affects disbursement.",
+    "verify_flag": true
+  },
+
+  "rti_online": {
+    "name": "RTI Online",
+    "owner": "Department of Personnel and Training, Government of India",
+    "portal": "https://rtionline.gov.in",
+    "status_check": "https://rtionline.gov.in/request/status.php",
+    "helpline": "1100",
+    "notes": "Covers central government public authorities only. Andhra Pradesh state departments generally require a physical application to the Public Information Officer.",
+    "verify_flag": false
+  },
+
+  "ap_information_commission": {
+    "name": "AP State Information Commission",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://apic.gov.in",
+    "status_check": "https://apic.gov.in",
+    "helpline": "1100",
+    "notes": "Handles second appeals under the RTI Act for state public authorities. Verify the live domain before surfacing.",
+    "verify_flag": true
+  },
+
+  "ap_police": {
+    "name": "AP Police Citizen Services",
+    "owner": "Andhra Pradesh Police",
+    "portal": "https://www.appolice.gov.in",
+    "citizen_services": "https://citizen.appolice.gov.in",
+    "status_check": "https://citizen.appolice.gov.in",
+    "helpline": "100 / 112",
+    "notes": "e-FIR for specified offences, lost article reports, complaint petitions, police verification and tenant/servant verification. The AP Police Seva mobile app mirrors most services.",
+    "verify_flag": true
+  },
+
+  "cybercrime_portal": {
+    "name": "National Cyber Crime Reporting Portal",
+    "owner": "Ministry of Home Affairs, Government of India",
+    "portal": "https://cybercrime.gov.in",
+    "status_check": "https://cybercrime.gov.in",
+    "helpline": "1930",
+    "notes": "For financial cyber fraud, reporting within the first hour materially improves the chance of freezing the transferred funds.",
+    "verify_flag": false
+  },
+
+  "ap_grievance": {
+    "name": "AP Public Grievance Redressal (PGRS / Spandana)",
+    "name_te": "స్పందన",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://spandana.ap.gov.in",
+    "status_check": "https://spandana.ap.gov.in",
+    "helpline": "1100",
+    "notes": "HIGH-CHURN ENTRY. The AP grievance programme has been rebranded and re-hosted across governments. Weekly grievance days at Collectorates and Sachivalayams remain the reliable offline channel regardless of the portal name.",
+    "verify_flag": true
+  },
+
+  "cpgrams": {
+    "name": "CPGRAMS — Centralised Public Grievance Redress and Monitoring System",
+    "owner": "Department of Administrative Reforms and Public Grievances, Government of India",
+    "portal": "https://pgportal.gov.in",
+    "status_check": "https://pgportal.gov.in/Status",
+    "helpline": "1100",
+    "notes": "For grievances against central government ministries and departments, not state departments.",
+    "verify_flag": false
+  },
+
+  "ap_fire_services": {
+    "name": "AP State Disaster Response and Fire Services",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://apfires.ap.gov.in",
+    "status_check": "https://apfires.ap.gov.in",
+    "helpline": "101",
+    "notes": "Provisional and final fire NOC for notified occupancies. Often integrated into the building permission (DPMS) workflow. Verify the live domain.",
+    "verify_flag": true
+  },
+
+  "appcb": {
+    "name": "Andhra Pradesh Pollution Control Board",
+    "owner": "Government of Andhra Pradesh",
+    "portal": "https://appcb.ap.gov.in",
+    "status_check": "https://appcb.ap.gov.in",
+    "helpline": "0866-2541 953",
+    "notes": "Consent for Establishment (CFE) and Consent for Operation (CFO) under the Water and Air Acts, with Red/Orange/Green/White categorisation. Fee slabs follow capital investment and category.",
+    "verify_flag": true
+  }
+}

@@ -1,0 +1,798 @@
+{
+    "thalliki_vandanam": {
+        "id": "thalliki_vandanam",
+        "name": "Thalliki Vandanam",
+        "name_telugu": "తల్లికి వందనం",
+        "level": "state",
+        "state": "Andhra Pradesh",
+        "category": "Education",
+        "subcategory": "School Education Assistance",
+        "benefit": "₹15,000 per year per child studying in school",
+        "benefit_breakdown": {
+            "to_mother": "₹13,000 via DBT",
+            "to_school": "₹2,000 for infrastructure"
+        },
+        "eligibility_rules": {
+            "residence": "Andhra Pradesh",
+            "required_flags": [
+                "is_ap_resident",
+                "has_rice_card",
+                "has_child_in_school",
+                "child_attendance_above_75",
+                "aadhaar_linked_to_bank"
+            ],
+            "exclusions": [
+                "owns_four_wheeler",
+                "electricity_above_300_units",
+                "wetland_above_3_acres",
+                "govt_employee_in_family",
+                "psu_employee_in_family",
+                "child_in_iti_polytechnic_rgukt"
+            ],
+            "income_check": {
+                "rural_max_monthly": 10000,
+                "urban_max_monthly": 12000
+            },
+            "child_class_range": "1 to 12 (including Intermediate)"
+        },
+        "documents": [
+            "Aadhaar card (mother)",
+            "Aadhaar card (child)",
+            "Rice / Ration card",
+            "Bank passbook (NPCI-mapped)",
+            "Student enrollment / School ID",
+            "Attendance record (previous year, 75%+)"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://bm-sgsw.ap.gov.in",
+                "Click 'Apply Online' and login with Aadhaar OTP",
+                "Select 'Thalliki Vandanam' scheme",
+                "Fill child details: name, class, school name, Aadhaar",
+                "Fill mother details: name, Aadhaar, bank account",
+                "Upload required documents (PDF/JPG, under 2MB each)",
+                "Submit application and note the acknowledgment number"
+            ],
+            "offline": [
+                "Visit nearest MeeSeva center or Sachivalayam ward office",
+                "Request Thalliki Vandanam application form",
+                "Fill the form with child and mother details",
+                "Attach photocopies of all required documents",
+                "Submit at the counter",
+                "Collect acknowledgment receipt"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free (MeeSeva service charge may apply)"
+        },
+        "processing_time": "30-60 days from application",
+        "disbursement": "Direct Benefit Transfer (DBT) to mother's bank account",
+        "deadline": "Academic year cycle; apply before mid-year disbursement",
+        "status": "Active",
+        "launched_date": "12 June 2025",
+        "portal": "https://bm-sgsw.ap.gov.in",
+        "helpline": "1902 (GSWS Helpline)",
+        "description": "Thalliki Vandanam is Andhra Pradesh's flagship school education assistance scheme under the TDP government's Super Six promises. It provides ₹15,000 per year per child to the mother to prevent school dropouts. The amount is split as ₹13,000 to the mother via DBT and ₹2,000 to the school for infrastructure. Eligibility requires the family to be below the income limit, hold a rice card, and the child must have 75% attendance in the previous academic year.",
+        "notes": [
+            "Application must be submitted every academic year",
+            "Bank account must be in mother's name and NPCI-linked",
+            "Attendance certificate must be signed by school headmaster",
+            "Amount is credited in installments, usually mid-year"
+        ]
+    },
+    "annadata_sukhibhava": {
+        "id": "annadata_sukhibhava",
+        "name": "Annadata Sukhibhava",
+        "name_telugu": "అన్నదాత సుఖీభవ",
+        "level": "state",
+        "state": "Andhra Pradesh",
+        "category": "Agriculture",
+        "subcategory": "Farmer Income Support",
+        "benefit": "₹20,000 per year per farmer family",
+        "benefit_breakdown": {
+            "state_amount": "₹14,000 from Andhra Pradesh government",
+            "central_amount": "₹6,000 from PM-KISAN",
+            "total": "₹20,000 per year"
+        },
+        "eligibility_rules": {
+            "residence": "Andhra Pradesh",
+            "required_flags": [
+                "is_ap_resident",
+                "is_farmer",
+                "has_digitized_land_records",
+                "aadhaar_linked",
+                "ekyc_done",
+                "has_active_bank_account"
+            ],
+            "exclusions": [
+                "income_tax_payer_previous_year",
+                "govt_employee",
+                "institutional_landholder"
+            ]
+        },
+        "documents": [
+            "Aadhaar card",
+            "Land records (Webland / Adangal / 1B)",
+            "Bank passbook (NPCI-mapped, active)",
+            "Ration card",
+            "eKYC completion proof"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://annadathasukhibhava.ap.gov.in",
+                "Login with Aadhaar OTP",
+                "Verify land records (auto-fetched from Webland)",
+                "Confirm bank account details",
+                "Complete eKYC if not done",
+                "Submit application"
+            ],
+            "offline": [
+                "Visit nearest Rythu Bharosa Kendra or MeeSeva center",
+                "Submit land records and Aadhaar",
+                "Verify bank account linkage",
+                "Complete biometric eKYC",
+                "Collect acknowledgment"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free"
+        },
+        "processing_time": "Disbursed in 3 installments per financial year",
+        "disbursement": "DBT to farmer's bank account (₹14,000 state + ₹6,000 PM-KISAN)",
+        "installments": {
+            "first": "May-June (₹6,000-8,000)",
+            "second": "September-October (₹6,000-8,000)",
+            "third": "December-January (₹6,000-8,000)"
+        },
+        "deadline": "Ongoing; enroll anytime during the financial year",
+        "status": "Active",
+        "portal": "https://annadathasukhibhava.ap.gov.in",
+        "helpline": "1902 (GSWS Helpline)",
+        "description": "Annadata Sukhibhava is Andhra Pradesh's farmer income support scheme, replacing the previous YSR Rythu Bharosa. Combined with the central PM-KISAN scheme, eligible farmer families receive ₹20,000 per year via Direct Benefit Transfer. The scheme requires valid digitized land records, Aadhaar linkage, completed eKYC, and an active NPCI-mapped bank account. Income tax payers are excluded.",
+        "notes": [
+            "Must have cultivable land with valid digitized records",
+            "eKYC is mandatory and must be renewed periodically",
+            "Bank account must be active and NPCI-mapped",
+            "PM-KISAN enrollment is automatically linked if already registered"
+        ]
+    },
+    "ntr_bharosa_pension": {
+        "id": "ntr_bharosa_pension",
+        "name": "NTR Bharosa Pension",
+        "name_telugu": "ఎన్టీఆర్ భరోసా పెన్షన్",
+        "level": "state",
+        "state": "Andhra Pradesh",
+        "category": "Social Security",
+        "subcategory": "Pension",
+        "benefit": "₹4,000 to ₹15,000 per month depending on category",
+        "benefit_breakdown": {
+            "general_senior": "₹4,000/month (age 65+)",
+            "widow": "₹4,000/month",
+            "disabled": "₹6,000/month",
+            "fully_disabled_ckdu_dialysis": "₹10,000/month",
+            "bedridden": "₹15,000/month"
+        },
+        "eligibility_rules": {
+            "residence": "Andhra Pradesh",
+            "categories": [
+                "senior_65_plus",
+                "widow",
+                "disabled",
+                "weaver",
+                "toddy_tapper",
+                "fisherman",
+                "transgender",
+                "traditional_cobbler"
+            ],
+            "required_flags": [
+                "is_ap_resident",
+                "has_ration_card",
+                "belongs_to_eligible_category"
+            ],
+            "income_check": {
+                "rural_max_monthly": 10000,
+                "urban_max_monthly": 12000
+            }
+        },
+        "documents": [
+            "Aadhaar card",
+            "Ration card",
+            "Age proof (for senior citizens: Aadhaar / Birth certificate / SSC marksheet)",
+            "Disability certificate (for disabled applicants)",
+            "Death certificate of husband (for widows)",
+            "Caste/Community certificate (for traditional occupation categories)",
+            "Bank passbook"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://gsws.ap.gov.in",
+                "Login with Aadhaar OTP",
+                "Select 'NTR Bharosa Pension'",
+                "Choose pension category",
+                "Upload required documents based on category",
+                "Fill bank account details",
+                "Submit and note acknowledgment number"
+            ],
+            "offline": [
+                "Visit nearest Sachivalayam ward office or MeeSeva center",
+                "Collect pension application form",
+                "Fill personal and category details",
+                "Attach documents based on category:",
+                "  - Senior: Age proof + Aadhaar + Ration card",
+                "  - Widow: Death certificate + Aadhaar + Ration card",
+                "  - Disabled: Disability certificate + Aadhaar + Ration card",
+                "Submit at ward secretariat",
+                "Verification by ward volunteer within 15 days",
+                "Approval by Mandal level committee"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free"
+        },
+        "processing_time": "30-45 days from application to first pension credit",
+        "disbursement": "Monthly DBT to beneficiary's bank account (1st of every month)",
+        "deadline": "Monthly enrollment; apply anytime",
+        "status": "Active",
+        "renamed_from": "YSR Pension Kanuka (June 2024)",
+        "portal": "https://gsws.ap.gov.in",
+        "helpline": "1902 (GSWS Helpline)",
+        "description": "NTR Bharosa Pension (previously YSR Pension Kanuka) is Andhra Pradesh's monthly social security pension scheme. It provides financial assistance to senior citizens aged 65+, widows, persons with disabilities, and workers in traditional occupations like weavers, toddy tappers, fishermen, transgender persons, and traditional cobblers. The pension amount ranges from ₹4,000 to ₹15,000 per month based on the category and severity of disability.",
+        "notes": [
+            "Pension is credited on the 1st of every month",
+            "Beneficiary must be present for biometric verification periodically",
+            "If pension stops, visit ward secretariat immediately",
+            "Bedridden beneficiaries get higher amount with home verification",
+            "CKDU (Chronic Kidney Disease of Unknown etiology) patients get ₹10,000/month"
+        ]
+    },
+    "deepam_2": {
+        "id": "deepam_2",
+        "name": "Deepam 2.0",
+        "name_telugu": "దీపం 2.0",
+        "level": "state",
+        "state": "Andhra Pradesh",
+        "category": "Women Welfare",
+        "subcategory": "Clean Cooking Fuel",
+        "benefit": "Free LPG gas cylinders (cylinder cost refunded within 48 hours)",
+        "benefit_breakdown": {
+            "cylinder_cost": "Full refund within 48 hours of purchase",
+            "frequency": "Multiple refills per year as per eligibility"
+        },
+        "eligibility_rules": {
+            "residence": "Andhra Pradesh",
+            "required_flags": [
+                "is_ap_resident",
+                "is_woman_head_of_household",
+                "has_rice_card",
+                "is_bpl_household",
+                "has_lpg_connection"
+            ]
+        },
+        "documents": [
+            "Aadhaar card (woman head of household)",
+            "Rice / Ration card",
+            "LPG connection number (17-digit)",
+            "Bank passbook (for refund)",
+            "BPL certificate (if not on ration card)"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://gsws.ap.gov.in",
+                "Login with Aadhaar OTP",
+                "Select 'Deepam 2.0' scheme",
+                "Enter LPG connection number (17 digits)",
+                "Verify bank account for refund",
+                "Submit application",
+                "Purchase cylinder from authorized dealer",
+                "Refund credited within 48 hours to bank account"
+            ],
+            "offline": [
+                "Visit nearest Sachivalayam ward office",
+                "Submit Deepam 2.0 enrollment form",
+                "Provide LPG connection details",
+                "Link bank account for refund",
+                "Verification by ward volunteer",
+                "Start purchasing cylinders — refund auto-credited"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free",
+            "cylinder_purchase": "Pay at dealer, get refunded in 48 hours"
+        },
+        "processing_time": "Enrollment: 7-15 days; Refund: within 48 hours of each purchase",
+        "disbursement": "Refund credited to linked bank account within 48 hours",
+        "deadline": "Ongoing; enrollment open year-round",
+        "status": "Active",
+        "portal": "https://gsws.ap.gov.in",
+        "helpline": "1902 (GSWS Helpline)",
+        "description": "Deepam 2.0 is one of the TDP government's Super Six schemes providing free LPG cylinders to eligible BPL families in Andhra Pradesh. The woman head of the household purchases the cylinder from an authorized dealer and the full cost is refunded to her bank account within 48 hours. The scheme promotes clean cooking fuel and reduces health hazards from traditional chulhas.",
+        "notes": [
+            "LPG connection must be in the woman's name or jointly",
+            "Refund only for cylinders purchased from authorized dealers",
+            "Keep all purchase receipts until refund is credited",
+            "If refund delays beyond 48 hours, contact ward secretariat",
+            "Scheme is part of the government's clean energy initiative"
+        ]
+    },
+    "pm_kisan": {
+        "id": "pm_kisan",
+        "name": "PM-KISAN",
+        "name_telugu": "ప్రధాన మంత్రి కిసాన్ సమ్మాన్ నిధి",
+        "level": "central",
+        "state": "All India",
+        "category": "Agriculture",
+        "subcategory": "Farmer Income Support",
+        "benefit": "₹6,000 per year in three installments of ₹2,000 each",
+        "benefit_breakdown": {
+            "per_installment": "₹2,000",
+            "per_year": "₹6,000",
+            "frequency": "Three installments per financial year"
+        },
+        "eligibility_rules": {
+            "residence": "All India",
+            "required_flags": [
+                "is_farmer",
+                "has_cultivable_land",
+                "has_valid_land_records",
+                "ekyc_done"
+            ],
+            "exclusions": [
+                "income_tax_payer",
+                "govt_employee",
+                "professional_doctor_ca_lawyer",
+                "institutional_landholder",
+                "pensioner_above_10000_monthly"
+            ]
+        },
+        "documents": [
+            "Aadhaar card",
+            "Land ownership records (7/12, Adangal, or state equivalent)",
+            "Bank account details (NPCI-mapped)",
+            "eKYC completion (biometric or OTP-based)"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://pmkisan.gov.in",
+                "Click 'New Farmer Registration'",
+                "Enter Aadhaar number and verify with OTP",
+                "Fill personal details: name, address, land details",
+                "Enter bank account details (must be NPCI-mapped)",
+                "Complete eKYC (biometric at CSC or OTP-based)",
+                "Submit and note registration number"
+            ],
+            "offline": [
+                "Visit nearest Common Service Center (CSC) or agriculture office",
+                "Fill PM-KISAN registration form",
+                "Submit Aadhaar and land records",
+                "Complete biometric eKYC at CSC",
+                "Collect registration acknowledgment"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free (CSC may charge nominal service fee)"
+        },
+        "processing_time": "Registration: 15-30 days; Installments: Every 4 months",
+        "disbursement": "DBT of ₹2,000 every 4 months to registered bank account",
+        "installment_schedule": {
+            "first": "April-July (₹2,000)",
+            "second": "August-November (₹2,000)",
+            "third": "December-March (₹2,000)"
+        },
+        "deadline": "Ongoing; register anytime",
+        "status": "Active",
+        "portal": "https://pmkisan.gov.in",
+        "helpline": "155261 (Toll-free) / 011-24300606",
+        "description": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi) is a central government scheme providing income support of ₹6,000 per year to farmer families across India. The amount is transferred in three equal installments of ₹2,000 each directly to the beneficiary's bank account through DBT. Eligible farmers must have cultivable land, valid land records, completed eKYC, and an NPCI-mapped bank account. Income tax payers, government employees, and professionals are excluded.",
+        "notes": [
+            "eKYC is mandatory — complete at nearest CSC or online",
+            "Land records must be updated and digitized",
+            "Check beneficiary status at pmkisan.gov.in using Aadhaar",
+            "If installment is missed, contact agriculture department or CSC",
+            "Name in Aadhaar and bank account must match exactly"
+        ]
+    },
+    "ayushman_bharat_pmjay": {
+        "id": "ayushman_bharat_pmjay",
+        "name": "Ayushman Bharat PM-JAY",
+        "name_telugu": "ఆయుష్మాన్ భారత్ ప్రధాన మంత్రి జన్ ఆరోగ్య యోజన",
+        "level": "central",
+        "state": "All India",
+        "category": "Health",
+        "subcategory": "Health Insurance",
+        "benefit": "₹5 lakh per family per year for secondary and tertiary healthcare",
+        "benefit_breakdown": {
+            "coverage_per_family": "₹5,00,000 per year",
+            "care_type": "Secondary and tertiary hospital care",
+            "cashless": "Yes, at empanelled hospitals"
+        },
+        "eligibility_rules": {
+            "residence": "All India",
+            "basis": "SECC 2011 deprivation criteria (rural) / occupational categories (urban)",
+            "universal_override": "age_70_plus",
+            "rural_categories": [
+                "kutcha_house",
+                "no_adult_earner",
+                "sc_st_household",
+                "landless_manual_labour",
+                "disabled_no_earner"
+            ],
+            "urban_categories": [
+                "domestic_worker",
+                "street_vendor",
+                "ragpicker",
+                "construction_worker",
+                "cobbler",
+                "sweeper",
+                "driver",
+                "artisan"
+            ],
+            "required_flags": [
+                "belongs_to_secc_category_or_age_70_plus"
+            ]
+        },
+        "documents": [
+            "Aadhaar card",
+            "Ration card / Family ID",
+            "Mobile number (for OTP e-KYC)",
+            "PM-JAY e-card (generated after verification)"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://beneficiary.nha.gov.in",
+                "Click 'Am I Eligible?' and enter mobile number",
+                "Verify with OTP",
+                "Check eligibility using SECC 2011 database",
+                "If eligible, complete e-KYC using Aadhaar OTP",
+                "Download PM-JAY e-card",
+                "Print or save digitally for hospital visits"
+            ],
+            "offline": [
+                "Visit nearest Ayushman Mitra center or Common Service Center",
+                "Provide Aadhaar and mobile number",
+                "Verify eligibility in SECC database",
+                "Complete biometric KYC",
+                "Collect printed PM-JAY e-card",
+                "Or visit empanelled hospital — they can verify on the spot"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free",
+            "hospital_treatment": "Cashless at empanelled hospitals"
+        },
+        "processing_time": "Instant e-card generation after e-KYC",
+        "disbursement": "Cashless treatment at empanelled hospitals (no upfront payment)",
+        "deadline": "No deadline; enroll anytime",
+        "status": "Active",
+        "portal": "https://beneficiary.nha.gov.in",
+        "helpline": "14555 (Toll-free) / 1800-111-565",
+        "description": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY) is the world's largest government-funded health insurance scheme. It provides ₹5 lakh per family per year for secondary and tertiary care hospitalization. Eligibility is based on SECC 2011 deprivation criteria for rural households and occupational categories for urban households. Since 2024, all individuals aged 70 and above are universally covered regardless of income. Treatment is cashless at over 25,000 empanelled hospitals across India.",
+        "notes": [
+            "Everyone aged 70+ is automatically eligible since 2024",
+            "Check eligibility first at beneficiary.nha.gov.in before applying",
+            "Carry PM-JAY e-card and Aadhaar to hospital",
+            "Treatment is completely cashless at empanelled hospitals",
+            "No need to pay and claim later — hospital bills settled directly by government",
+            "Over 1,500 medical procedures covered including surgery, cancer treatment, cardiac care"
+        ]
+    },
+    "pmay_urban": {
+        "id": "pmay_urban",
+        "name": "Pradhan Mantri Awas Yojana (Urban 2.0)",
+        "name_telugu": "ప్రధాన మంత్రి ఆవాస్ యోజన (నగరం 2.0)",
+        "level": "central",
+        "state": "All India",
+        "category": "Housing",
+        "subcategory": "Affordable Housing",
+        "benefit": "Home loan interest subsidy / housing assistance by income band",
+        "benefit_breakdown": {
+            "EWS": "Interest subsidy up to ₹2.67 lakh (income up to ₹3 lakh/year)",
+            "LIG": "Interest subsidy up to ₹2.67 lakh (income ₹3-6 lakh/year)",
+            "MIG_I": "Interest subsidy up to ₹2.35 lakh (income ₹6-12 lakh/year)",
+            "MIG_II": "Interest subsidy up to ₹2.30 lakh (income ₹12-18 lakh/year)"
+        },
+        "eligibility_rules": {
+            "residence": "All India (Urban areas)",
+            "required_flags": [
+                "no_pucca_house_owned_by_family",
+                "no_prior_central_housing_assistance"
+            ],
+            "income_bands_annual": {
+                "EWS": 300000,
+                "LIG": 600000,
+                "MIG_I": 1200000,
+                "MIG_II": 1800000
+            }
+        },
+        "documents": [
+            "Aadhaar card (all family members)",
+            "Income proof (salary slip / ITR / employer certificate / self-declaration)",
+            "Bank account details",
+            "Property documents (if land already owned)",
+            "No pucca house self-declaration",
+            "Passport size photographs"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://pmaymis.gov.in",
+                "Click 'Citizen Assessment' → 'Benefit under Other 3 Components'",
+                "Enter Aadhaar and verify with OTP",
+                "Fill personal and family details",
+                "Select income category (EWS/LIG/MIG-I/MIG-II)",
+                "Upload income proof and property documents",
+                "Submit and note application ID",
+                "Approach bank/NBFC for home loan with PMAY subsidy"
+            ],
+            "offline": [
+                "Visit nearest bank branch (SBI, HDFC, ICICI, etc.) or housing finance company",
+                "Request PMAY-U home loan application",
+                "Submit all documents",
+                "Bank verifies eligibility and forwards to NHB/HUDCO",
+                "Subsidy credited to loan account after approval"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free (bank processing fees may apply for loan)"
+        },
+        "processing_time": "Application: 30-60 days; Subsidy credit: 3-6 months after loan disbursement",
+        "disbursement": "Interest subsidy credited directly to home loan account",
+        "deadline": "Ongoing under PMAY-U 2.0",
+        "status": "Active",
+        "portal": "https://pmaymis.gov.in",
+        "helpline": "1800-11-6163 (Toll-free)",
+        "description": "Pradhan Mantri Awas Yojana - Urban 2.0 is a central government housing scheme providing interest subsidy on home loans for first-time homeowners in urban areas. The scheme covers four income categories: EWS (up to ₹3 lakh/year), LIG (up to ₹6 lakh), MIG-I (up to ₹12 lakh), and MIG-II (up to ₹18 lakh). The key condition is that no family member should own a pucca house anywhere in India. The interest subsidy reduces EMI burden significantly over the loan tenure.",
+        "notes": [
+            "Must be first-time homeowner — no pucca house owned by any family member",
+            "Subsidy is credited to the loan account, not as cash",
+            "Woman ownership/co-ownership is mandatory for EWS/LIG categories",
+            "Carpet area limit: 30 sq.m (EWS), 60 sq.m (LIG), 160 sq.m (MIG-I), 200 sq.m (MIG-II)",
+            "Approach any scheduled bank or housing finance company for PMAY-linked loan"
+        ]
+    },
+    "jagananna_vidya_deevena": {
+        "id": "jagananna_vidya_deevena",
+        "name": "Jagananna Vidya Deevena",
+        "name_telugu": "జగనన్న విద్య దీవెన",
+        "level": "state",
+        "state": "Andhra Pradesh",
+        "category": "Education",
+        "subcategory": "College Fee Reimbursement",
+        "benefit": "Full fee reimbursement + ₹20,000/year maintenance allowance",
+        "benefit_breakdown": {
+            "fee_reimbursement": "100% of tuition fee (as per government fee structure)",
+            "maintenance": "₹20,000 per year for food and hostel expenses",
+            "total_value": "Varies by course (₹50,000 to ₹2,00,000+ per year)"
+        },
+        "eligibility_rules": {
+            "residence": "Andhra Pradesh",
+            "required_flags": [
+                "is_ap_resident",
+                "studying_in_college",
+                "belongs_to_ebc_bc_sc_st_minority",
+                "annual_income_below_8_lakh",
+                "has_ration_card",
+                "attendance_above_75_percent"
+            ],
+            "course_eligible": [
+                "Degree (BA, BSc, BCom, etc.)",
+                "Engineering (B.Tech)",
+                "Medical (MBBS, BDS, Nursing)",
+                "Polytechnic",
+                "ITI",
+                "PG courses (MA, MSc, MCom, MBA, MCA)",
+                "Professional courses (LLB, CA foundation)"
+            ]
+        },
+        "documents": [
+            "Aadhaar card",
+            "Ration card",
+            "Income certificate (annual income below ₹8 lakh)",
+            "Caste certificate (BC/SC/ST/Minority/EBC)",
+            "College admission letter / Bonafide certificate",
+            "Previous year marksheet",
+            "Bank passbook (student's account)",
+            "Attendance certificate (75%+)",
+            "Parent's Aadhaar and bank details"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://jnanabhumi.ap.gov.in",
+                "Login with student Aadhaar OTP",
+                "Select 'Jagananna Vidya Deevena'",
+                "Fill college and course details",
+                "Upload all required documents",
+                "College principal verifies and forwards application",
+                "District-level committee approves",
+                "Fee credited directly to college account",
+                "Maintenance allowance credited to student's bank account"
+            ],
+            "offline": [
+                "Collect application form from college administration office",
+                "Fill student and course details",
+                "Attach all documents",
+                "Submit to college principal for verification",
+                "College forwards to district social welfare office",
+                "Track status on Jnanabhumi portal"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free"
+        },
+        "processing_time": "College verification: 15 days; District approval: 30-45 days; Disbursement: Every semester",
+        "disbursement": "Fee directly to college; Maintenance to student's bank account",
+        "deadline": "Apply within 30 days of college admission each academic year",
+        "status": "Active",
+        "portal": "https://jnanabhumi.ap.gov.in",
+        "helpline": "1902 (GSWS Helpline)",
+        "description": "Jagananna Vidya Deevena is Andhra Pradesh's flagship college education assistance scheme providing full fee reimbursement and ₹20,000 annual maintenance allowance to students from economically backward classes (EBC), backward classes (BC), scheduled castes (SC), scheduled tribes (ST), and minority communities. The scheme covers degree, engineering, medical, polytechnic, ITI, and PG courses. Students must have 75% attendance and family income below ₹8 lakh per year.",
+        "notes": [
+            "Apply within 30 days of admission — late applications may be rejected",
+            "Attendance below 75% leads to discontinuation of benefits",
+            "Fee is paid directly to college, not to student",
+            "Maintenance allowance is credited semester-wise (₹10,000 per semester)",
+            "Students in private colleges are also eligible if college is recognized",
+            "Renewal required every academic year with updated marksheet"
+        ]
+    },
+    "post_matric_scholarship": {
+        "id": "post_matric_scholarship",
+        "name": "Post-Matric Scholarship (SC/ST/OBC/Minority)",
+        "name_telugu": "పోస్ట్ మాట్రిక్ స్కాలర్షిప్",
+        "level": "central",
+        "state": "All India",
+        "category": "Education",
+        "subcategory": "Scholarship",
+        "benefit": "Maintenance allowance + fee reimbursement for SC/ST/OBC/Minority students",
+        "benefit_breakdown": {
+            "maintenance_allowance": "Varies by course level (₹230 to ₹1,200 per month)",
+            "course_fee": "Up to ₹1.5 lakh per year for professional courses",
+            "study_tour": "₹1,600 per year",
+            "thesis_typing": "₹1,600 (one-time for PG research)",
+            "book_allowance": "₹1,200 per year"
+        },
+        "eligibility_rules": {
+            "residence": "All India",
+            "required_flags": [
+                "belongs_to_sc_st_obc_minority",
+                "studying_post_matric",
+                "family_income_below_limit"
+            ],
+            "income_limits": {
+                "SC_ST": "No income limit (unlimited)",
+                "OBC": "Annual family income below ₹1.5 lakh (non-creamy layer)",
+                "Minority": "Annual family income below ₹2 lakh"
+            }
+        },
+        "documents": [
+            "Aadhaar card",
+            "Caste certificate (SC/ST/OBC) or Minority certificate",
+            "Income certificate",
+            "Previous year marksheet",
+            "Current year admission receipt / Fee receipt",
+            "Bank passbook",
+            "Passport size photo",
+            "Domicile certificate",
+            "Self-attestation of all documents"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://scholarships.gov.in (National Scholarship Portal)",
+                "Register with Aadhaar-linked mobile number",
+                "Select 'Post Matric Scholarship' for your category",
+                "Fill academic and personal details",
+                "Upload all documents",
+                "Submit to institute for verification",
+                "Institute forwards to district welfare officer",
+                "State-level sanction committee approves",
+                "Amount credited to bank account"
+            ],
+            "offline": [
+                "Collect form from college scholarship cell or social welfare office",
+                "Fill and attach documents",
+                "Submit to college principal",
+                "College verifies and forwards to district",
+                "Track on NSP portal"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "Free"
+        },
+        "processing_time": "Institute verification: 15 days; District: 30 days; State sanction: 45-60 days",
+        "disbursement": "Direct to student's bank account via PFMS",
+        "deadline": "Apply between July and November each academic year",
+        "status": "Active",
+        "portal": "https://scholarships.gov.in",
+        "helpline": "0120-6619540 (NSP Helpdesk)",
+        "description": "The Post-Matric Scholarship scheme is a central government initiative providing financial assistance to SC, ST, OBC, and minority students pursuing education after Class 10. It covers maintenance allowance, course fees, book allowance, and study tour expenses. SC/ST students have no income limit. OBC students must be non-creamy layer with income below ₹1.5 lakh. Minority students must have income below ₹2 lakh. Applications are processed through the National Scholarship Portal (NSP).",
+        "notes": [
+            "Apply only through National Scholarship Portal — no other channel",
+            "Institute must be registered on NSP for verification",
+            "Renewal required every year with updated marksheet",
+            "Aadhaar-bank linkage mandatory for PFMS disbursement",
+            "Check application status regularly on NSP portal",
+            "If rejected, check reason and reapply with corrections"
+        ]
+    },
+    "pragati_scholarship": {
+        "id": "pragati_scholarship",
+        "name": "Pragati Scholarship (Girl Students)",
+        "name_telugu": "ప్రగతి స్కాలర్షిప్",
+        "level": "central",
+        "state": "All India",
+        "category": "Education",
+        "subcategory": "Scholarship for Girls",
+        "benefit": "₹50,000 per year + full tuition fee reimbursement",
+        "benefit_breakdown": {
+            "tuition_fee": "Up to ₹30,000 per year (actual or ceiling, whichever is lower)",
+            "maintenance": "₹2,000 per month (₹20,000 per 10-month academic year)",
+            "total": "Up to ₹50,000 per year"
+        },
+        "eligibility_rules": {
+            "residence": "All India",
+            "required_flags": [
+                "is_girl_student",
+                "studying_technical_degree",
+                "family_income_below_8_lakh",
+                "admitted_through_central_counseling"
+            ],
+            "eligible_courses": [
+                "B.Tech / BE (all branches)",
+                "B.Pharmacy",
+                "B.Arch",
+                "Diploma in Engineering",
+                "Diploma in Pharmacy"
+            ]
+        },
+        "documents": [
+            "Aadhaar card",
+            "Income certificate (below ₹8 lakh/year)",
+            "Class 12 marksheet",
+            "Admission letter from AICTE-approved institution",
+            "Bank passbook (girl student's account)",
+            "Caste certificate (if applicable)",
+            "Disability certificate (if applicable)",
+            "Passport size photo"
+        ],
+        "application_process": {
+            "online": [
+                "Visit https://www.aicte-pragati-saksham-gov.in",
+                "Register with Aadhaar-linked mobile and email",
+                "Select 'Pragati Scholarship'",
+                "Fill personal, academic, and admission details",
+                "Upload all documents",
+                "Institute nodal officer verifies",
+                "AICTE sanctions scholarship",
+                "Amount credited to student's bank account"
+            ],
+            "offline": [
+                "Not available — online only through AICTE portal"
+            ]
+        },
+        "fees": {
+            "online": "Free",
+            "offline": "N/A"
+        },
+        "processing_time": "Institute verification: 15 days; AICTE sanction: 30-45 days",
+        "disbursement": "Direct to girl student's bank account in two installments per year",
+        "deadline": "Apply within 2 months of admission each academic year",
+        "status": "Active",
+        "portal": "https://www.aicte-pragati-saksham-gov.in",
+        "helpline": "011-29581019 (AICTE)",
+        "description": "Pragati Scholarship is an AICTE scheme for girl students pursuing technical education (B.Tech, B.Pharm, Diploma in Engineering, etc.) in AICTE-approved institutions. It provides up to ₹50,000 per year covering tuition fee and maintenance allowance. The scheme aims to empower girls in STEM fields. Family income must be below ₹8 lakh per year. Admission must be through central counseling (JEE, state CET, etc.).",
+        "notes": [
+            "Only for technical courses in AICTE-approved institutions",
+            "Admission through centralized counseling is mandatory",
+            "Maximum 2 girl children per family can avail",
+            "Renewal requires passing previous year with minimum marks",
+            "Apply early — seats are limited and first-come-first-served"
+        ]
+    }
+}

@@ -1,0 +1,576 @@
+{
+  "_meta": {
+    "description": "District-wise government office directory for GhostGov AI. Keyed by district, then by office_type. The office_type keys match the `office` array in services.json, so a service can be resolved to nearby offices with offices[district][office_type].",
+    "state": "Andhra Pradesh",
+    "districts_covered": ["Visakhapatnam", "NTR", "Guntur", "Tirupati", "Kakinada"],
+    "coverage_note": "Andhra Pradesh has 26 districts as of the 2022 reorganisation. This file covers 5 for the hackathon demo. Add districts by copying any block and replacing entries.",
+    "office_type_keys": {
+      "meeseva": "MeeSeva / e-Seva citizen service centre",
+      "sachivalayam": "Grama or Ward Sachivalayam (village/ward secretariat)",
+      "collectorate": "District Collectorate",
+      "mro_tahsildar": "Mandal Revenue Office / Tahsildar",
+      "rto": "Regional Transport Office / RTA",
+      "psk": "Passport Seva Kendra",
+      "sro": "Sub-Registrar Office / District Registrar",
+      "municipal": "Municipal Corporation or Municipality",
+      "discom": "Electricity distribution company office"
+    },
+    "data_source": "Coordinates, addresses, phone numbers and opening hours retrieved from Google Places on 2026-07-22. Government office timings shift with local holidays and orders — treat hours as indicative and call ahead.",
+    "locators": {
+      "sachivalayam": "https://gramawardsachivalayam.ap.gov.in — 'Know Your Sachivalayam' lookup by village or ward",
+      "meeseva_all_centres": "https://ap.meeseva.gov.in — centre locator; 7,000+ centres statewide, far more than listed here",
+      "psk_all": "https://www.passportindia.gov.in — locate PSK/POPSK by pin code",
+      "rto_all": "https://aptransport.org"
+    },
+    "statewide_helplines": {
+      "meeseva_citizen_services": "1100",
+      "sachivalayam_volunteer": "1902",
+      "electricity": "1912",
+      "civil_supplies_ration": "1967",
+      "police_emergency": "112",
+      "cyber_financial_fraud": "1930",
+      "women_helpline": "181",
+      "health": "104",
+      "ambulance": "108",
+      "aadhaar": "1947",
+      "fire": "101"
+    },
+    "last_verified": "2026-07-22"
+  },
+
+  "districts": {
+
+    "Visakhapatnam": {
+      "discom_zone": "APEPDCL",
+      "meeseva": [
+        {
+          "name": "MeeSeva Center, Maddilapalem",
+          "address": "1st Floor, 9-1-9, Kala Bharathi Road, above Suryakala Bakery, Pithapuram Colony, Maddilapalem, Visakhapatnam 530003",
+          "latitude": 17.7367505,
+          "longitude": 83.3221263,
+          "phone": "+91 81066 59955",
+          "hours": "Mon–Sat 9:00 AM – 8:00 PM; Sun 9:00 AM – 2:00 PM",
+          "place_id": "ChIJn7Z84E5DOToRWYPgn798KFc",
+          "rating": 4.1
+        },
+        {
+          "name": "Mee Seva Center, Daba Gardens",
+          "address": "D.No 33-23-10/1, Chalavathota, near SRMT, Allipuram, Daba Gardens, Visakhapatnam 530004",
+          "latitude": 17.7160762,
+          "longitude": 83.295046,
+          "phone": null,
+          "hours": "Mon–Sat 9:00 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJvd6FQR5DOToR07pTqXu8lwU",
+          "rating": 3.5
+        }
+      ],
+      "collectorate": [
+        {
+          "name": "Office of the District Collector, Visakhapatnam",
+          "address": "Main Road, Krishna Nagar, Maharani Peta, Visakhapatnam 530002",
+          "latitude": 17.7093886,
+          "longitude": 83.3084605,
+          "phone": null,
+          "hours": "Mon–Sat 10:00 AM – 8:00 PM; Sun closed",
+          "place_id": "ChIJW7BL5xFDOToR0osJWUeDkG0",
+          "rating": 4.2,
+          "notes": "Heritage British-era campus near RK Beach. Weekly public grievance day is held here. Plenty of parking."
+        }
+      ],
+      "rto": [
+        {
+          "name": "RTO Office Visakhapatnam (Urban)",
+          "address": "Madhavadhara VUDA Colony, VUDA Layout, Marripalem, Visakhapatnam 530018",
+          "latitude": 17.7489088,
+          "longitude": 83.2479443,
+          "phone": "+91 91542 94203",
+          "hours": "Mon–Sat 10:30 AM – 5:30 PM; Sun closed",
+          "place_id": "ChIJszgC2PhnOToRGht3uC4C1Rw",
+          "rating": 3.8,
+          "notes": "Handles LLR tests for Visakhapatnam Urban. Server downtime frequently delays scheduled test slots — arrive early and expect waits."
+        },
+        {
+          "name": "Regional Transport Office, Gajuwaka",
+          "address": "D-Block, Duvvada, Auto Nagar, Gajuwaka, Visakhapatnam 530012",
+          "latitude": 17.6881688,
+          "longitude": 83.144251,
+          "phone": null,
+          "hours": "Mon–Sat 9:00 AM – 5:00 PM; Sun closed",
+          "place_id": "ChIJFZ1cwSFpOToRH6B1IRTrAIQ",
+          "rating": 4.2
+        }
+      ],
+      "psk": [
+        {
+          "name": "Passport Seva Kendra, Visakhapatnam",
+          "address": "Door No 39-6-71, Botcha Square, Muralinagar, Madhavadhara, Visakhapatnam 530007",
+          "latitude": 17.7433792,
+          "longitude": 83.260975,
+          "phone": "+91 89125 08555",
+          "hours": "Mon–Fri 9:00 AM – 5:30 PM; Sat–Sun closed",
+          "place_id": "ChIJ-xxXr1JdOToRN1LPLgWAGCc",
+          "rating": 3.9,
+          "verify_flag": true,
+          "notes": "Listing name in the mapping data does not read as an official PSK label — confirm before showing to a user. Appointment is mandatory. Bring proper photocopies; mobile-camera printouts are rejected. Office is on the first floor; no seating downstairs for accompanying persons."
+        }
+      ],
+      "sro": [
+        {
+          "name": "Sub-Registrar Office, Akkayyapalem",
+          "address": "2, Akkayyapalem Main Road, opposite SBI Bank, Akkayyapalem, Visakhapatnam 530016",
+          "latitude": 17.7379617,
+          "longitude": 83.2998016,
+          "phone": "+91 89127 48601",
+          "hours": "Mon–Sat 10:30 AM – 5:00 PM",
+          "place_id": "ChIJYY-eoy5DOToR75ucSP5BOFQ",
+          "rating": 3.9,
+          "notes": "Second floor, stairs only — difficult for elderly or mobility-impaired visitors. Roadside parking only."
+        },
+        {
+          "name": "District Registrar Office, Visakhapatnam",
+          "address": "27-4-9, Town Kotha Road, Super Bazar, Purna Market, Jagadamba Junction, Visakhapatnam 530002",
+          "latitude": 17.7085813,
+          "longitude": 83.2999612,
+          "phone": null,
+          "hours": "Mon–Sat 10:30 AM – 3:30 PM; Sun closed",
+          "place_id": "ChIJS5-TswRDOToRyiFUMxiFmWs",
+          "rating": 3.7,
+          "notes": "Token system, first come first served. Very crowded on Mondays and Saturdays."
+        }
+      ],
+      "municipal": [
+        {
+          "name": "Greater Visakhapatnam Municipal Corporation (GVMC) Main Office",
+          "address": "29-2-20, Nehru Nagar, Ram Nagar, Visakhapatnam 530020",
+          "latitude": 17.7181167,
+          "longitude": 83.3045243,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJ96HdCBpDOToRMhtGDiuCXL0"
+        },
+        {
+          "name": "GVMC Zone 6 Office, Pendurthi (water supply, wards 69–72)",
+          "address": "Near Bus Stop, Sujatha Nagar, Pendurthi, Visakhapatnam 530051",
+          "latitude": 17.790084,
+          "longitude": 83.213578,
+          "phone": "+91 89127 46301",
+          "hours": "Mon–Sat 10:00 AM – 10:00 PM; Sun closed",
+          "place_id": "ChIJsQauNgdnOToRKmIrxpKGiyY",
+          "notes": "Assistant Engineer, water supply — the point of contact for water tap connection issues in Zone 6."
+        }
+      ],
+      "discom": [
+        {
+          "name": "APEPDCL Corporate Office, Seethammadhara",
+          "address": "50-27-5/1, TPT Colony, Balayya Sastri Layout, Seethammadhara, Visakhapatnam 530013",
+          "latitude": 17.7386352,
+          "longitude": 83.3087029,
+          "phone": "+91 89125 82392",
+          "hours": "Daily 10:00 AM – 6:00 PM",
+          "place_id": "ChIJtcYD4jNDOToRbvrrGZOWRJU",
+          "rating": 3.9
+        },
+        {
+          "name": "APEPDCL Circle Office, Jagadamba Junction",
+          "address": "Waltair Main Road, opposite Hotel Green Park, Jagadamba Junction, Visakhapatnam 530002",
+          "latitude": 17.7151986,
+          "longitude": 83.3071482,
+          "phone": "+91 89125 65688",
+          "hours": "Mon–Sat 10:30 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJCa7x0xZDOToR0zsDiJvg3M4",
+          "notes": "District headquarters for APEPDCL Visakhapatnam; also houses two Divisional Engineer offices."
+        }
+      ],
+      "sachivalayam": [],
+      "mro_tahsildar": []
+    },
+
+    "NTR": {
+      "headquarters": "Vijayawada",
+      "discom_zone": "APSPDCL",
+      "meeseva": [
+        {
+          "name": "MeeSeva / e-Seva Centre, Auto Nagar",
+          "address": "Shop No 2, Ground Floor, Kasiwisweswar Bhavan, Auto Nagar 100 Feet Road, beside DTDC Couriers, Auto Nagar, Vijayawada 520007",
+          "latitude": 16.4956967,
+          "longitude": 80.6710987,
+          "phone": "+91 98485 33445",
+          "hours": "Mon–Sat 9:00 AM – 9:00 PM; Sun closed",
+          "place_id": "ChIJl0XkItz6NToRvevw5TJcntg",
+          "rating": 4.1,
+          "notes": "Also handles RTA/RTO online work, Jeevan Praman life certificates, PAN, voter ID and lost-article police complaints."
+        },
+        {
+          "name": "Mee Seva Centre, KG Market (Tarapet)",
+          "address": "e-Seva Centre, 1st Floor, KG Market Complex, Kaleswara Rao Market Road, Tarapet, Vijayawada 520001",
+          "latitude": 16.5125144,
+          "longitude": 80.6140454,
+          "phone": null,
+          "hours": "Mon–Sat 10:00 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJZ-2t0OHvNToRT993DIi7tTQ",
+          "rating": 3.5,
+          "verify_flag": true,
+          "notes": "Recent visitor reports suggest this centre may have relocated or closed, and that Aadhaar services are redirected to a nearby post office. Call before travelling."
+        }
+      ],
+      "collectorate": [
+        {
+          "name": "Collectorate, NTR District, Vijayawada",
+          "address": "Buckinghampeta, Vijayawada 520002",
+          "latitude": 16.5072808,
+          "longitude": 80.6282651,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJFaMHJUPxNToR8PlnFTy3_ig",
+          "rating": 4.2
+        }
+      ],
+      "rto": [
+        {
+          "name": "RTA Vijayawada",
+          "address": "Vijayawada Road, Punammathota, Labbipet, Vijayawada 520010",
+          "latitude": 16.5024749,
+          "longitude": 80.6351038,
+          "phone": null,
+          "hours": "Mon–Sat 10:30 AM – 5:00 PM; Sun closed",
+          "place_id": "ChIJd2grXqj6NToRMbP3XSR3peM",
+          "rating": 4.0,
+          "notes": "Main LLR test centre for Vijayawada and surrounding mandals. Road-safety awareness modules are completed before the test, then scrutiny, then the exam hall."
+        }
+      ],
+      "psk": [
+        {
+          "name": "Passport Seva Kendra, Vijayawada",
+          "address": "Hotel Midcity Building, D.No 38-8-45, MG Road, Punammathota, Labbipet, Vijayawada 520010",
+          "latitude": 16.5049888,
+          "longitude": 80.6334657,
+          "phone": "+91 866 248 1965",
+          "hours": "Mon–Fri 9:00 AM – 1:30 PM and 2:00 – 5:30 PM; Sat–Sun closed",
+          "place_id": "ChIJ18I3xqn6NToRiCO0zLSNTyQ",
+          "rating": 3.1,
+          "notes": "Three levels of document verification. Allow two hours or more. Carry originals plus one full set of proper photocopies."
+        }
+      ],
+      "sro": [
+        {
+          "name": "Sub-Registrar Office, Patamata",
+          "address": "D.No 40-9-50, Kala Nagar, Patamata, Benz Circle, Vijayawada 520010",
+          "latitude": 16.4991024,
+          "longitude": 80.6530689,
+          "phone": "+91 87555 82574",
+          "hours": "Mon–Sat 10:00 AM – 5:00 PM; Sun closed",
+          "place_id": "ChIJe3rRXrj6NToRCFsg7suBvfI",
+          "rating": 3.6,
+          "notes": "Busiest SRO in Vijayawada. Four-wheeler parking is very difficult. Walkable from Benz Circle."
+        },
+        {
+          "name": "Sub-Registrar Office, Gandhinagar",
+          "address": "Near Thaluka, Hanumanpet, Vijayawada 520003",
+          "latitude": 16.5164465,
+          "longitude": 80.6242444,
+          "phone": null,
+          "hours": "Mon–Fri 8:30 AM – 5:00 PM; Sat–Sun closed",
+          "place_id": "ChIJ9y2l9fzvNToRTxTiSNsD1pI",
+          "rating": 3.8
+        }
+      ],
+      "municipal": [
+        {
+          "name": "Vijayawada Municipal Corporation (VMC)",
+          "address": "VMC Office, Krishnalanka, Vijayawada 520001",
+          "latitude": 16.5109447,
+          "longitude": 80.6113531,
+          "phone": "+91 866 242 2400",
+          "hours": "Mon–Sat 9:00 AM – 5:00 PM; Sun closed",
+          "place_id": "ChIJW4jNHeDvNToRAQN1sJUOBAU",
+          "rating": 3.6
+        }
+      ],
+      "discom": [],
+      "sachivalayam": [],
+      "mro_tahsildar": []
+    },
+
+    "Guntur": {
+      "discom_zone": "APSPDCL",
+      "meeseva": [
+        {
+          "name": "V.R. MeeSeva Centre, Arundelpet",
+          "address": "4th Lane, Arundelpet, Guntur 522002",
+          "latitude": 16.3023506,
+          "longitude": 80.4396699,
+          "phone": "+91 90004 52658",
+          "hours": "Daily 10:00 AM – 9:00 PM",
+          "place_id": "ChIJR_OtckV1SjoR6sLrja2VsKo",
+          "rating": 4.2,
+          "notes": "Handles Aadhaar, EC, driving licence applications and labour licences."
+        },
+        {
+          "name": "APOnline MeeSeva & CSC Centre, Collector Office Compound",
+          "address": "Shop No 8, Registrar Office Compound, Collector Office Road, Nagarampalem, Guntur 522004",
+          "latitude": 16.2995736,
+          "longitude": 80.4307071,
+          "phone": "+91 98667 70699",
+          "hours": "Mon–Sat 10:00 AM – 7:00 PM; Sun closed",
+          "place_id": "ChIJ18Qbiml1SjoRpZQT9mS11PY",
+          "rating": 4.3,
+          "notes": "Also does Aadhaar enrolment, e-stamp non-judicial stamps, caste and income certificates, ration card changes and voter ID. Aadhaar operator availability is irregular — call ahead."
+        }
+      ],
+      "collectorate": [
+        {
+          "name": "District Collectorate, Guntur",
+          "address": "Collector Office Road, Ankamma Nagar, Nagarampalem, Guntur 522004",
+          "latitude": 16.298002,
+          "longitude": 80.432221,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJlaYlpRp1SjoRv2cMLt9FcHU",
+          "rating": 4.3
+        },
+        {
+          "name": "Special Deputy Collector Office, Unit III",
+          "address": "Kanna Vari Thota, Guntur 522004",
+          "latitude": 16.2978255,
+          "longitude": 80.4367319,
+          "phone": null,
+          "hours": "Mon–Sat 10:00 AM – 5:00 PM; Sun closed",
+          "place_id": "ChIJQfW4F0F1SjoRBuCtlEHvfbw"
+        }
+      ],
+      "rto": [
+        {
+          "name": "RTO / RTA Guntur",
+          "address": "JKC College Road, Swarnabharathi Nagar, Peda Palakaluru, Guntur 522006",
+          "latitude": 16.3372684,
+          "longitude": 80.4207734,
+          "phone": "+91 863 235 5194",
+          "hours": "Mon–Sat 10:30 AM – 5:30 PM; Sun closed",
+          "place_id": "ChIJ25QNdY2KNToRAPTUg_p1sMc",
+          "rating": 4.1,
+          "notes": "For the driving test bring your helmet, appointment letter and Aadhaar. Slots often start about an hour late."
+        }
+      ],
+      "psk": [],
+      "sro": [
+        {
+          "name": "Sub-Registrar Office, Koritepadu",
+          "address": "Koritepadu Road, Naidupet, Guntur 522007",
+          "latitude": 16.310604,
+          "longitude": 80.434869,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJbVW3z111SjoRSw4d2OFL4vg",
+          "rating": 3.7,
+          "notes": "Narrow street with no parking. Book a registration slot in advance; heavy crowds on some days."
+        }
+      ],
+      "municipal": [
+        {
+          "name": "Guntur Municipal Corporation (GMC)",
+          "address": "Grand Trunk Road, opposite Gandhi Park, Lalapet, Guntur 522003",
+          "latitude": 16.2920786,
+          "longitude": 80.4462904,
+          "phone": "+91 863 222 4202",
+          "hours": "Mon–Sat 10:30 AM – 5:30 PM; lunch 1:00 – 2:30 PM; Sun closed",
+          "place_id": "ChIJXYJn5ssKSjoRHGX1P5ePaMo",
+          "rating": 3.4,
+          "notes": "Birth certificate and name-inclusion applications are processed here."
+        }
+      ],
+      "discom": [],
+      "sachivalayam": [],
+      "mro_tahsildar": []
+    },
+
+    "Tirupati": {
+      "discom_zone": "APSPDCL",
+      "meeseva": [
+        {
+          "name": "Tirupati Mee Seva",
+          "address": "P.K. Street, beside Head Post Office, Mallaiah Gunta Katta, Tata Nagar, Tirupati 517501",
+          "latitude": 13.6325121,
+          "longitude": 79.4227761,
+          "phone": "+91 90304 07097",
+          "hours": "Mon–Sat 10:00 AM – 2:00 PM and 3:30 – 8:00 PM; Sun closed",
+          "place_id": "ChIJZ0N_rAdLTToRCwYpYoe2jEc",
+          "rating": 3.4
+        },
+        {
+          "name": "Mee Seva Centre, NCBN Colony",
+          "address": "Jeevakona Road, NCBN Colony, Tirupati 517507",
+          "latitude": 13.6431619,
+          "longitude": 79.4305826,
+          "phone": "+91 97014 99979",
+          "hours": "Mon–Sat 9:00 AM – 7:00 PM; Sun closed",
+          "place_id": "ChIJi1FEn1RKTToRryomgs8Xc2M",
+          "rating": 3.3,
+          "notes": "Multiple reports of overcharging for Aadhaar updates. UIDAI-published rates are far lower than what is often demanded — know the official rate before paying."
+        }
+      ],
+      "collectorate": [
+        {
+          "name": "District Collectorate, Tirupati",
+          "address": "Daminedu, Tiruchanur, Tirupati 517503",
+          "latitude": 13.6124369,
+          "longitude": 79.4576157,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJkU-YDgBLTToReTkp9MuvWhk",
+          "rating": 4.3,
+          "notes": "Large campus housing most district-level offices with lift access. Ask at the entrance for department directions — first-time visitors routinely get lost."
+        }
+      ],
+      "rto": [
+        {
+          "name": "Regional Transport Office, Tirupati District",
+          "address": "Karakambadi Road, opposite RTO Office, Mangalam, Tirupati 517509",
+          "latitude": 13.6536311,
+          "longitude": 79.463373,
+          "phone": "+91 91542 94224",
+          "hours": "Mon–Fri 10:00 AM – 5:00 PM; Sat closed",
+          "place_id": "ChIJaWgdxdpLTToRaEdP3KHT91o",
+          "rating": 4.2,
+          "notes": "A MeeSeva counter and photocopy facility operate beside the office. A test vehicle for the trial run is available nearby."
+        }
+      ],
+      "psk": [
+        {
+          "name": "Passport Seva Kendra, Tirupati",
+          "address": "Ground and First Floor, KVC Arcade, 13-1 RC Road, Vani Nagar, Avilala, Tirupati 517501",
+          "latitude": 13.6137462,
+          "longitude": 79.4163375,
+          "phone": "+91 1800 258 1800",
+          "hours": "Mon–Sat 9:00 AM – 5:30 PM; Sun closed",
+          "place_id": "ChIJjSLfu6BLTToRY69rJDUpf3g",
+          "rating": 3.8,
+          "notes": "Photocopy facility is available inside. Carry coins or small cash — the internal photocopy counter often has no UPI."
+        }
+      ],
+      "sro": [
+        {
+          "name": "District Registrar and Sub-Registrar Office, Tirupati",
+          "address": "340, opposite TUDA (Urban Development Authority), Tata Nagar, Tirupati 517501",
+          "latitude": 13.6351331,
+          "longitude": 79.4233662,
+          "phone": "+91 877 225 2607",
+          "hours": "Mon–Sat 10:00 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJvxP9MQdLTToRZOO16XBYrOI",
+          "rating": 3.2,
+          "notes": "No ramp access and steps only. Reviewers report heavy reliance on document writers and middlemen — insist on dealing at the counter directly and escalate to the District Registrar if obstructed."
+        }
+      ],
+      "municipal": [
+        {
+          "name": "Tirupati Municipal Corporation (TMC)",
+          "address": "Alipiri Road, Srinivasa Nagar, near Sri Padmavati Mahila Visvavidyalayam, Tirupati 517507",
+          "latitude": 13.6404018,
+          "longitude": 79.4099636,
+          "phone": null,
+          "hours": "Mon–Sat 10:00 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJwYjb2gBLTToRghtKunuUWCw",
+          "rating": 3.5,
+          "notes": "Birth and death certificates are issued here; CRS server outages are a recurring cause of delay."
+        }
+      ],
+      "discom": [],
+      "sachivalayam": [],
+      "mro_tahsildar": []
+    },
+
+    "Kakinada": {
+      "discom_zone": "APEPDCL",
+      "meeseva": [
+        {
+          "name": "MeeSeva Centre, Santhacheruvu",
+          "address": "20-13-26, GPR Traders, Santhacheruvu Centre, opposite Seerath Committee, Suryanarayana Puram, Kakinada 533001",
+          "latitude": 16.9505615,
+          "longitude": 82.2357676,
+          "phone": "+91 99494 83486",
+          "hours": "Mon–Sat 8:00 AM – 8:00 PM; Sun closed",
+          "place_id": "ChIJxY9jYOAnODoRmIKh37yX0d8",
+          "rating": 4.9,
+          "notes": "Highest-rated centre in Kakinada for online applications. Two-wheeler access only — no car access."
+        },
+        {
+          "name": "MeeSeva Centre, Bhanugudi Junction",
+          "address": "Bhanugudi Junction, Police Quarters, Kakinada 533003",
+          "latitude": 16.9712487,
+          "longitude": 82.2347272,
+          "phone": "+91 884 234 6629",
+          "hours": "Mon–Sat 10:00 AM – 6:00 PM; Sun closed",
+          "place_id": "ChIJlX9U0hQoODoRGeYEuoWo7PM",
+          "rating": 4.0,
+          "notes": "Aadhaar, voter ID, PAN, e-Shram, driving licence slot booking, pension and Aadhaar-linked banking. Aadhaar update turnaround here is reported as slow."
+        }
+      ],
+      "collectorate": [
+        {
+          "name": "District Collectorate, Kakinada",
+          "address": "Collector Office, Rama Rao Peta, Kakinada 533004",
+          "latitude": 16.9602328,
+          "longitude": 82.2263733,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJS8amXogpODoRI_9PRNAW7DU",
+          "rating": 4.5,
+          "notes": "Neoclassical building dating from 1906. The District Collector's chamber is within the same compound."
+        }
+      ],
+      "rto": [
+        {
+          "name": "RTA East Godavari — Kakinada",
+          "address": "RTO Office Road, Krishna Nagar, Ranga Rao Nagar, Ramanayyapeta, Kakinada 533003",
+          "latitude": 16.9824108,
+          "longitude": 82.2495445,
+          "phone": "+91 94927 90741",
+          "hours": "Standard government hours; confirm before travelling",
+          "place_id": "ChIJu1VRjlwoODoR3GrC3Ee063Q",
+          "rating": 3.9,
+          "notes": "LLR test slots are often delayed past the stated time due to server issues. Heavy crowds."
+        }
+      ],
+      "psk": [
+        {
+          "name": "Passport Seva Kendra, Kakinada (POPSK)",
+          "address": "Main Road, Rama Rao Peta, Kakinada 533001",
+          "latitude": 16.9549399,
+          "longitude": 82.2349179,
+          "phone": "+91 89127 45747",
+          "hours": "Mon–Fri 9:30 AM – 5:30 PM; Sat–Sun closed",
+          "place_id": "ChIJ225Z6wooODoR6RrnFwwW3KY",
+          "rating": 3.9,
+          "notes": "Post Office Passport Seva Kendra — small facility with limited staff and no separate waiting hall. Budget extra time compared to the Visakhapatnam PSK."
+        }
+      ],
+      "sro": [
+        {
+          "name": "Sub-Registrar Office, Sarpavaram / Ramanayyapeta",
+          "address": "RTC Colony, Ramanayyapeta, Kakinada 533005",
+          "latitude": 16.9937231,
+          "longitude": 82.250634,
+          "phone": null,
+          "hours": "Standard government hours",
+          "place_id": "ChIJ1_svnlEoODoRhGHJKUq4WyA",
+          "rating": 3.6,
+          "notes": "No lift; stairs are congested. Parking is difficult."
+        }
+      ],
+      "municipal": [
+        {
+          "name": "Kakinada Municipal Corporation (Annex)",
+          "address": "65-13-7, Mehar Nagar, Dwaraka Nagar, Suryaraopeta, Kakinada 533003",
+          "latitude": 16.9733371,
+          "longitude": 82.2295057,
+          "phone": null,
+          "hours": "Mon–Fri 8:00 AM – 8:00 PM; Sat 6:00 AM – 12:00 PM; Sun closed",
+          "place_id": "ChIJnQAvFBopODoRypfIU0jCGwM",
+          "rating": 4.3
+        }
+      ],
+      "discom": [],
+      "sachivalayam": [],
+      "mro_tahsildar": []
+    }
+  }
+}

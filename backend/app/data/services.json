@@ -1,0 +1,3030 @@
+[
+  {
+    "id": "pan_card",
+    "name": "PAN Card (Permanent Account Number)",
+    "name_te": "పాన్ కార్డు",
+    "category": "identity",
+    "level": "central",
+    "description": "A 10-character alphanumeric tax identity number issued by the Income Tax Department. Mandatory for filing income tax returns, opening a bank/demat account, and for most financial transactions above prescribed limits. PAN 2.0 (unified ITD portal with dynamic QR) was announced in Nov 2024 but the unified portal is not fully live yet; Protean (formerly NSDL) and UTIITSL remain the issuing portals.",
+    "eligibility": "Any Indian citizen, NRI, HUF, firm or company. No age limit; minors apply through a representative assessee.",
+    "documents": [
+      "Aadhaar card (mandatory for new individual PAN, must be linked to an active mobile number)",
+      "Proof of identity (Aadhaar / Voter ID / Passport / Driving Licence)",
+      "Proof of address (Aadhaar / utility bill not older than 3 months / bank statement)",
+      "Proof of date of birth (Aadhaar / Birth certificate / SSC memo)",
+      "Recent passport-size photograph (for physical mode)",
+      "Signature on white paper (for physical/scanned mode)"
+    ],
+    "online_steps": [
+      "For a free Instant e-PAN: go to the Income Tax e-Filing portal and select 'Instant e-PAN' under Quick Links (only for adults with a valid Aadhaar, active linked mobile, and no PAN allotted earlier).",
+      "Otherwise open the Protean TIN portal and choose Form 49A (Indian citizen) under 'New PAN'.",
+      "Fill personal details, AO code (auto-suggested by pin code) and select paperless (Aadhaar e-KYC / e-Sign) or physical document submission.",
+      "Upload photo, signature and proof documents if using scanned mode.",
+      "Pay the fee online (net banking / card / UPI) and note the 15-digit acknowledgement number.",
+      "Complete Aadhaar OTP authentication or e-Sign to finish paperless submission.",
+      "Track using the acknowledgement number on the Protean status page; e-PAN is emailed and the physical card is dispatched to the registered address."
+    ],
+    "offline_steps": [
+      "Collect Form 49A from any PAN facilitation centre, MeeSeva centre or download it from the Protean/UTIITSL site.",
+      "Fill the form in block letters, affix two passport photos and sign across the photo.",
+      "Attach self-attested copies of identity, address and DOB proof.",
+      "Submit at a nearby MeeSeva / TIN-FC / UTIITSL PAN centre and pay the fee in cash.",
+      "Collect the acknowledgement slip and track the status with the acknowledgement number."
+    ],
+    "fees": {
+      "amount_inr": 107,
+      "breakdown": [
+        "Physical document submission (Indian address): ₹107 incl. GST",
+        "Paperless / e-KYC mode (Indian address): ₹101 incl. GST",
+        "e-PAN only, physical submission: ₹72",
+        "e-PAN only, paperless: ₹66",
+        "Foreign communication address: ₹1,017 (physical) / ₹1,011 (paperless)",
+        "Reprint without changes: ₹50",
+        "Instant e-PAN via Income Tax e-Filing portal: free"
+      ],
+      "notes": "MeeSeva / private centres levy an extra service charge of roughly ₹20–₹100.",
+      "confidence": "high"
+    },
+    "processing_time": "Instant e-PAN in about 10 minutes; regular e-PAN in 24–48 hours; physical card in 10–15 working days",
+    "portal": "protean_pan",
+    "alternate_portals": [
+      "utiitsl_pan",
+      "income_tax_efiling"
+    ],
+    "office": [
+      "meeseva",
+      "post_office"
+    ],
+    "helpline": "020-2721 8080 (Protean) / 1800 103 0025 (Income Tax)",
+    "keywords": [
+      "pan",
+      "pan card",
+      "form 49a",
+      "tax id",
+      "nsdl",
+      "protean",
+      "utiitsl",
+      "e-pan",
+      "పాన్"
+    ],
+    "common_issues": [
+      "Name mismatch between PAN and Aadhaar causes rejection — the name must match Aadhaar exactly.",
+      "Mobile number not linked to Aadhaar blocks the e-KYC OTP step.",
+      "PAN becomes inoperative if not linked to Aadhaar."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "aadhaar_enrolment",
+    "name": "Aadhaar Enrolment (New)",
+    "name_te": "ఆధార్ నమోదు",
+    "category": "identity",
+    "level": "central",
+    "description": "A 12-digit unique identity number issued by UIDAI based on biometric and demographic data. Required for almost every welfare scheme, subsidy, ration card and bank KYC in Andhra Pradesh.",
+    "eligibility": "Any resident of India, including infants (children under 5 get a Baal Aadhaar with no biometrics; mandatory biometric update at ages 5 and 15).",
+    "documents": [
+      "Proof of identity (Passport / PAN / Voter ID / school ID)",
+      "Proof of address (ration card / electricity bill / rental agreement / bank passbook)",
+      "Proof of date of birth (birth certificate / SSC memo / passport)",
+      "For a child: parent's Aadhaar plus the child's birth certificate",
+      "Head-of-family Aadhaar if enrolling under HOF-based relationship proof"
+    ],
+    "online_steps": [
+      "New Aadhaar enrolment cannot be completed fully online — biometrics must be captured in person.",
+      "Use the 'Book an Appointment' service on the UIDAI portal or the mAadhaar app to reserve a slot at an Aadhaar Seva Kendra.",
+      "Fill the pre-enrolment form online and note the appointment ID.",
+      "Visit the centre with originals, complete photo, iris and fingerprint capture.",
+      "Collect the acknowledgement slip with the 14-digit Enrolment ID (EID) and track status on the UIDAI 'Check Aadhaar Status' page.",
+      "Download the e-Aadhaar PDF once generated (password is the first 4 letters of your name in capitals plus year of birth)."
+    ],
+    "offline_steps": [
+      "Walk in to the nearest Aadhaar Seva Kendra, MeeSeva centre, Grama/Ward Sachivalayam or designated post office / bank branch.",
+      "Fill the enrolment form and hand over the supporting documents.",
+      "Complete biometric capture (10 fingerprints, both irises, photograph).",
+      "Verify the details on the printed acknowledgement before leaving — corrections later cost money."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "First-time enrolment: free",
+        "Mandatory biometric update at age 5 and 15: free",
+        "Demographic update (name/address/DOB/gender): approx. ₹50",
+        "Biometric update (other than mandatory): approx. ₹100",
+        "Colour A4 printout / reprint at a centre: approx. ₹30"
+      ],
+      "notes": "UIDAI revises these charges periodically and some online document-update windows are made free for limited periods — confirm the current circular on uidai.gov.in before quoting a price to a citizen.",
+      "confidence": "medium"
+    },
+    "processing_time": "Aadhaar generated in 7–30 days from enrolment; PVC card delivered in about 15 days",
+    "portal": "uidai",
+    "office": [
+      "aadhaar_seva_kendra",
+      "meeseva",
+      "sachivalayam",
+      "post_office"
+    ],
+    "helpline": "1947",
+    "keywords": [
+      "aadhaar",
+      "aadhar",
+      "uidai",
+      "uid",
+      "biometric",
+      "baal aadhaar",
+      "ఆధార్"
+    ],
+    "common_issues": [
+      "Enrolment rejected when the address proof is not in the applicant's own name and no HOF linkage is given.",
+      "Children who miss the mandatory biometric update at 5 or 15 may find the Aadhaar deactivated."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "aadhaar_update",
+    "name": "Aadhaar Update / Correction",
+    "name_te": "ఆధార్ సవరణ",
+    "category": "identity",
+    "level": "central",
+    "description": "Update name, date of birth, gender, address, mobile number, email or biometrics on an existing Aadhaar. Address and document updates can be done online; mobile number and biometric changes require a visit.",
+    "eligibility": "Any Aadhaar holder. Name can be changed twice in a lifetime, gender once, and DOB once.",
+    "documents": [
+      "Original Aadhaar number",
+      "Valid document from the UIDAI accepted-documents list matching the field being changed",
+      "For online updates the mobile number must already be registered with Aadhaar"
+    ],
+    "online_steps": [
+      "Log in to myAadhaar on the UIDAI portal using your Aadhaar number and OTP.",
+      "Choose 'Update Aadhaar Online' and select the field (address / document update).",
+      "Enter the new value in English and Telugu and upload the supporting document as a colour scan.",
+      "Pay the update fee online where applicable and note the 14-digit Update Request Number (URN).",
+      "Track the URN under 'Check Request Status'; download the revised e-Aadhaar once approved."
+    ],
+    "offline_steps": [
+      "Visit an Aadhaar Seva Kendra, MeeSeva centre or Sachivalayam with the original document.",
+      "Fill the Aadhaar Update/Correction form and submit for operator verification.",
+      "Provide biometric authentication; mobile number and biometric updates are only possible here.",
+      "Pay the fee and keep the acknowledgement slip with the URN."
+    ],
+    "fees": {
+      "amount_inr": 50,
+      "breakdown": [
+        "Demographic update: approx. ₹50",
+        "Biometric update: approx. ₹100",
+        "Online document update: often free during UIDAI's periodic free windows"
+      ],
+      "notes": "Verify current UIDAI charges — they were revised recently and centres frequently overcharge.",
+      "confidence": "medium"
+    },
+    "processing_time": "Usually 7–15 days; up to 90 days for contested name or DOB changes",
+    "portal": "uidai",
+    "office": [
+      "aadhaar_seva_kendra",
+      "meeseva",
+      "sachivalayam",
+      "post_office"
+    ],
+    "helpline": "1947",
+    "keywords": [
+      "aadhaar update",
+      "aadhaar correction",
+      "address change",
+      "mobile link",
+      "urn",
+      "ఆధార్ సవరణ"
+    ],
+    "common_issues": [
+      "Operators overcharge for mobile-number linking — the published UIDAI rate is far lower than what many centres demand.",
+      "Update rejected if the uploaded document does not exactly match the requested new value."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "voter_id",
+    "name": "Voter ID Card (EPIC) — New Registration",
+    "name_te": "ఓటరు గుర్తింపు కార్డు",
+    "category": "identity",
+    "level": "central",
+    "description": "Enrolment in the electoral roll and issue of an Elector's Photo Identity Card by the Election Commission of India. Applications use Form 6; corrections use Form 8. Handled through the Voter Services Portal, which replaced the old NVSP flow.",
+    "eligibility": "Indian citizen, aged 18 or above on the qualifying date, ordinarily resident in the constituency.",
+    "documents": [
+      "Aadhaar card",
+      "Proof of age (birth certificate / SSC memo / passport / PAN)",
+      "Proof of ordinary residence (electricity or water bill / ration card / rental agreement / bank passbook)",
+      "Recent passport-size colour photograph",
+      "Existing EPIC number if shifting from another constituency"
+    ],
+    "online_steps": [
+      "Register on the Voter Services Portal (voters.eci.gov.in) or the Voter Helpline app with your mobile number.",
+      "Select 'Fill Form 6' for a new voter, or Form 8 for correction/shifting.",
+      "Enter personal details, choose your Andhra Pradesh district, assembly constituency and polling area.",
+      "Upload the photograph, age proof and address proof.",
+      "Submit and note the reference ID.",
+      "A Booth Level Officer (BLO) visits for field verification; track the reference ID on the same portal and download the e-EPIC once approved."
+    ],
+    "offline_steps": [
+      "Collect Form 6 from the BLO, the Electoral Registration Officer (Tahsildar) office or a MeeSeva centre.",
+      "Attach self-attested copies of the age and address proof plus a photograph.",
+      "Submit to the BLO of your polling booth or at the ERO office in the Mandal/Tahsildar office.",
+      "Field verification is done by the BLO; the printed EPIC is delivered by post or collected from the BLO."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Registration and EPIC: free",
+        "MeeSeva service charge for form submission: approx. ₹35"
+      ],
+      "notes": "There is no government fee for voter registration.",
+      "confidence": "high"
+    },
+    "processing_time": "Typically 15–30 days after BLO verification; e-EPIC downloadable immediately after approval",
+    "portal": "voter_services",
+    "office": [
+      "ero_tahsildar",
+      "meeseva",
+      "sachivalayam"
+    ],
+    "helpline": "1950",
+    "keywords": [
+      "voter id",
+      "epic",
+      "form 6",
+      "form 8",
+      "electoral roll",
+      "eci",
+      "ఓటరు కార్డు"
+    ],
+    "common_issues": [
+      "Duplicate entries when a voter registers in a new district without filing Form 7 to delete the old entry.",
+      "Application lapses if the BLO cannot find the applicant at the stated address during verification."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "passport",
+    "name": "Indian Passport (Fresh / Re-issue)",
+    "name_te": "పాస్‌పోర్ట్",
+    "category": "identity",
+    "level": "central",
+    "description": "Travel document issued by the Ministry of External Affairs through Passport Seva Kendras and Post Office Passport Seva Kendras. Andhra Pradesh applications are processed under the Regional Passport Office, Visakhapatnam or Vijayawada depending on district.",
+    "eligibility": "Indian citizens of any age. Minors under 18 get a 5-year or till-18 validity passport.",
+    "documents": [
+      "Aadhaar card (accepted as combined proof of identity, address and DOB)",
+      "Proof of present address (Aadhaar / electricity bill / bank statement / rental agreement)",
+      "Proof of date of birth (birth certificate / SSC memo / PAN / Aadhaar)",
+      "Annexure as applicable (Annexure E self-declaration for most adults; Annexure D for minors)",
+      "Old passport with self-attested first two and last two pages, for re-issue",
+      "Non-ECR proof such as class 10 certificate if claiming ECNR"
+    ],
+    "online_steps": [
+      "Register on the Passport Seva portal (passportindia.gov.in) and log in.",
+      "Select 'Apply for Fresh Passport / Re-issue of Passport' and fill the form online or upload the downloaded e-form XML.",
+      "Choose Normal or Tatkaal scheme and the number of pages (36 or 60).",
+      "Click 'Pay and Schedule Appointment' — payment is mandatory before booking a slot at your PSK or POPSK.",
+      "Print the Application Receipt / ARN and carry it to the appointment.",
+      "Attend the PSK with all originals: Counter A does document scanning and biometrics, Counter B is verification, Counter C is granting.",
+      "Police verification follows (pre- or post-issue); track status on the portal or the mPassport Seva app."
+    ],
+    "offline_steps": [
+      "There is no fully offline route — online registration and appointment booking are mandatory.",
+      "Citizens without internet access can use a MeeSeva or Common Service Centre to complete the online form and payment on their behalf.",
+      "Walk-in is allowed only in specific emergency categories at the discretion of the Regional Passport Officer."
+    ],
+    "fees": {
+      "amount_inr": 1500,
+      "breakdown": [
+        "Fresh/re-issue, 36 pages, 10 years validity: ₹1,500",
+        "Fresh/re-issue, 60 pages, 10 years validity: ₹2,000",
+        "Minor below 15 (5 years / till 18): ₹1,000",
+        "Tatkaal 36 pages: ₹3,500",
+        "Tatkaal 60 pages: ₹4,000",
+        "Replacement of lost/damaged passport, 36 pages: ₹3,000"
+      ],
+      "notes": "Fees are set by MEA and are the same across India.",
+      "confidence": "high"
+    },
+    "processing_time": "Normal: 30–45 days including police verification. Tatkaal: 3–7 working days.",
+    "portal": "passport_seva",
+    "office": [
+      "psk",
+      "police_station"
+    ],
+    "helpline": "1800 258 1800",
+    "keywords": [
+      "passport",
+      "psk",
+      "popsk",
+      "tatkaal",
+      "ecnr",
+      "police verification",
+      "పాస్‌పోర్ట్"
+    ],
+    "common_issues": [
+      "Appointment slots at Vijayawada and Visakhapatnam PSKs open at a fixed time and fill within minutes.",
+      "Photocopies taken on a mobile camera are rejected — bring proper photocopies.",
+      "Address mismatch between Aadhaar and the application triggers adverse police verification."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "learner_licence",
+    "name": "Learner's Licence (LLR)",
+    "name_te": "లెర్నర్స్ లైసెన్స్",
+    "category": "transport",
+    "level": "state",
+    "description": "The first stage of getting a driving licence in Andhra Pradesh. Issued by the Transport Department through Sarathi/Parivahan after an online or computer-based test at the RTA office.",
+    "eligibility": "16+ for a gearless two-wheeler under 50cc (with guardian consent), 18+ for other non-transport vehicles, 20+ for transport vehicles.",
+    "documents": [
+      "Aadhaar card (enables the fully online 'Aadhaar authenticated' route)",
+      "Proof of age and address",
+      "Form 1 self-declaration of physical fitness (Form 1A medical certificate for transport vehicles or applicants over 40)",
+      "Passport-size photographs",
+      "Blood group proof"
+    ],
+    "online_steps": [
+      "Open the Parivahan Sarathi portal, select Andhra Pradesh and choose 'Apply for Learner Licence'.",
+      "Complete Aadhaar e-KYC — if authentication succeeds you can take the LL test from home.",
+      "Fill Form 2, select the vehicle class(es) and upload documents and photo/signature.",
+      "Pay the fee online and book a test slot at the RTA office if e-KYC was not possible.",
+      "Take the 20-question multiple-choice test on road signs and rules; the pass mark is 12 correct answers.",
+      "Download the Learner's Licence PDF immediately after passing."
+    ],
+    "offline_steps": [
+      "Visit the district RTA/RTO office with filled Form 2 and documents.",
+      "Get the documents verified at the scrutiny counter and pay the fee at the cash counter.",
+      "Take the computer-based test in the test hall.",
+      "Collect the printed LL the same day if you pass."
+    ],
+    "fees": {
+      "amount_inr": 260,
+      "breakdown": [
+        "Learner's licence fee (Form 3): ₹150 per class of vehicle",
+        "Learner's licence test fee: ₹50",
+        "Typical all-inclusive amount paid at AP RTA counters: around ₹260"
+      ],
+      "notes": "Amounts vary slightly with the number of vehicle classes applied for.",
+      "confidence": "medium"
+    },
+    "processing_time": "Same day if the test is passed; LL is valid for 6 months",
+    "portal": "parivahan_sarathi",
+    "office": [
+      "rto"
+    ],
+    "helpline": "0863-2340 806 (AP Transport)",
+    "keywords": [
+      "llr",
+      "learner licence",
+      "learners",
+      "sarathi",
+      "parivahan",
+      "rta",
+      "లెర్నర్"
+    ],
+    "common_issues": [
+      "Server downtime at AP RTA offices frequently postpones scheduled test slots.",
+      "Aadhaar-linked mobile is mandatory for the from-home test route."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "driving_licence",
+    "name": "Permanent Driving Licence",
+    "name_te": "డ్రైవింగ్ లైసెన్స్",
+    "category": "transport",
+    "level": "state",
+    "description": "Permanent driving licence issued after holding a Learner's Licence for at least 30 days and passing a practical driving test at the RTA office track.",
+    "eligibility": "Holder of a valid Learner's Licence, minimum 30 days and maximum 180 days old.",
+    "documents": [
+      "Valid Learner's Licence",
+      "Aadhaar card",
+      "Form 4 application",
+      "Form 1A medical certificate for transport vehicles or applicants above 40",
+      "Vehicle in roadworthy condition for the driving test (with valid insurance and PUC)",
+      "Passport-size photographs"
+    ],
+    "online_steps": [
+      "Go to Parivahan Sarathi, select Andhra Pradesh and choose 'Apply for Driving Licence'.",
+      "Enter the LL number and date of birth to auto-fill the application.",
+      "Upload documents, photo and signature.",
+      "Pay the fee online and book a driving test slot at your RTA office.",
+      "Attend the test with your own vehicle, helmet and the appointment slip.",
+      "On passing, the smart-card DL is printed and dispatched by post; download the e-DL from the portal or DigiLocker."
+    ],
+    "offline_steps": [
+      "Submit Form 4 with the LL and documents at the RTA office.",
+      "Pay the fee at the counter and get a test slot.",
+      "Take the practical driving test on the automated track.",
+      "Give biometrics and photograph for the smart card after passing."
+    ],
+    "fees": {
+      "amount_inr": 960,
+      "breakdown": [
+        "Driving test fee: ₹300",
+        "Smart card driving licence: ₹200",
+        "Additional class endorsement: ₹500 per class",
+        "Typical all-inclusive amount paid at AP RTA counters: around ₹960"
+      ],
+      "notes": "Renewal costs approximately ₹200 plus late fee; international driving permit ₹1,000.",
+      "confidence": "medium"
+    },
+    "processing_time": "Test result same day; smart card delivered in 15–30 days",
+    "portal": "parivahan_sarathi",
+    "office": [
+      "rto"
+    ],
+    "helpline": "0863-2340 806 (AP Transport)",
+    "keywords": [
+      "driving licence",
+      "dl",
+      "smart card",
+      "driving test",
+      "sarathi",
+      "rta",
+      "డ్రైవింగ్"
+    ],
+    "common_issues": [
+      "Card printing delays due to stationery shortage are common at AP RTA offices.",
+      "Test slots are cancelled when the automated track sensors malfunction."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "vehicle_registration",
+    "name": "Vehicle Registration (RC) and Ownership Transfer",
+    "name_te": "వాహన రిజిస్ట్రేషన్",
+    "category": "transport",
+    "level": "state",
+    "description": "Registration Certificate for a new vehicle (Form 20) and transfer of ownership on sale (Forms 29 and 30), handled through Vahan by the AP Transport Department.",
+    "eligibility": "Owner or purchaser of a motor vehicle in Andhra Pradesh.",
+    "documents": [
+      "Form 20 (new registration) or Forms 29 and 30 (transfer)",
+      "Sale certificate Form 21 and roadworthiness certificate Form 22 from the dealer",
+      "Valid insurance certificate",
+      "Invoice showing ex-showroom price",
+      "PAN card or Form 60/61",
+      "Aadhaar and address proof",
+      "Existing RC and NOC from the previous RTA if the vehicle is coming from another district or state"
+    ],
+    "online_steps": [
+      "Most new-vehicle registrations are filed by the dealer through the Vahan portal.",
+      "For transfers, log in to Vahan, select 'Transfer of Ownership', enter the registration and chassis number.",
+      "Upload Forms 29/30, insurance and address proof.",
+      "Pay the transfer fee and road tax difference online.",
+      "Book an inspection slot if physical verification is required.",
+      "Track the application and download the updated RC from Vahan or DigiLocker."
+    ],
+    "offline_steps": [
+      "Submit the physical forms with the dealer invoice at the district RTA office.",
+      "Present the vehicle for chassis-number imprint and inspection by the Motor Vehicle Inspector.",
+      "Pay road tax and registration fee at the counter.",
+      "Collect the temporary receipt; the smart-card RC is posted later."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Registration fee: ₹300 for two-wheelers, ₹600 for cars (approx.)",
+        "AP life tax: roughly 9%–14% of vehicle cost for two-wheelers and 12%–18% for cars, depending on price slab and whether it is a first or second vehicle",
+        "Ownership transfer fee: approximately ₹300–₹1,000 depending on vehicle class",
+        "Smart card charges: approximately ₹200"
+      ],
+      "notes": "Life tax slabs change with state budgets — always confirm the live quote generated by Vahan.",
+      "confidence": "low"
+    },
+    "processing_time": "New RC in 7–30 days; ownership transfer in 15–30 days",
+    "portal": "parivahan_vahan",
+    "office": [
+      "rto"
+    ],
+    "helpline": "0863-2340 806 (AP Transport)",
+    "keywords": [
+      "rc",
+      "vehicle registration",
+      "vahan",
+      "ownership transfer",
+      "noc",
+      "life tax",
+      "వాహనం"
+    ],
+    "common_issues": [
+      "Transfer stalls if the seller has pending challans or a hypothecation entry that was never cancelled.",
+      "Inter-district movement requires an NOC from the original RTA before re-registration."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "income_certificate",
+    "name": "Income Certificate",
+    "name_te": "ఆదాయ ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Certificate issued by the Tahsildar stating the annual family income. Required for scholarships, fee reimbursement, EWS reservation, welfare schemes and many college admissions in Andhra Pradesh.",
+    "eligibility": "Any resident of Andhra Pradesh. Income is assessed for the whole family unit.",
+    "documents": [
+      "Aadhaar card of the applicant and family members",
+      "Ration card / rice card",
+      "Residence proof",
+      "Salary certificate or employer letter if salaried",
+      "Land holding details (Adangal / 1-B) if agricultural income",
+      "Self-declaration of income",
+      "Passport-size photograph"
+    ],
+    "online_steps": [
+      "Open the AP MeeSeva citizen portal (onlineap.meeseva.gov.in) or the AP Seva / VSWS portal and log in.",
+      "Search for 'Income Certificate' under Revenue Department services.",
+      "Fill the application with Aadhaar, family details and declared annual income.",
+      "Upload the supporting documents.",
+      "Pay the fee online and note the transaction / application number.",
+      "The Village or Ward Revenue Officer conducts a field enquiry and the Tahsildar approves.",
+      "Download the digitally signed certificate from the portal or collect it from the Sachivalayam."
+    ],
+    "offline_steps": [
+      "Visit the nearest MeeSeva centre or Grama/Ward Sachivalayam.",
+      "Give your Aadhaar and family details to the operator and hand over the documents.",
+      "Pay the fee and collect the acknowledgement slip with the application number.",
+      "Attend the VRO/WRO field enquiry if asked.",
+      "Collect the signed certificate from the same centre or the Sachivalayam."
+    ],
+    "fees": {
+      "amount_inr": 45,
+      "breakdown": [
+        "MeeSeva service charge: approximately ₹35",
+        "Printing and user charges: approximately ₹10"
+      ],
+      "notes": "Commonly quoted as ₹35 at Sachivalayams and up to ₹45 at private MeeSeva franchises.",
+      "confidence": "medium"
+    },
+    "processing_time": "7 working days under the MeeSeva SLA; often 5 days in practice",
+    "portal": "meeseva_ap",
+    "alternate_portals": [
+      "ap_seva_vsws"
+    ],
+    "office": [
+      "meeseva",
+      "sachivalayam",
+      "mro_tahsildar"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "income certificate",
+      "aadaya",
+      "annual income",
+      "scholarship",
+      "ews",
+      "ఆదాయ ధ్రువీకరణ"
+    ],
+    "common_issues": [
+      "Applying on the Telangana MeeSeva portal by mistake — AP uses ap.meeseva.gov.in, not the Telangana domain.",
+      "Applications stuck in 'Under Process' beyond 15 days should be escalated to the Mandal Revenue Officer or helpline 1100.",
+      "Validity is usually treated as one year by most institutions."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "caste_certificate",
+    "name": "Caste / Community Certificate (SC, ST, BC, OBC)",
+    "name_te": "కుల ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Integrated community certificate issued by the Tahsildar confirming the applicant's caste category. Essential for reservation in education and employment, welfare schemes and scholarships.",
+    "eligibility": "Residents of Andhra Pradesh belonging to a notified SC, ST, BC or OBC community.",
+    "documents": [
+      "Aadhaar card",
+      "Ration card / rice card",
+      "Residence proof",
+      "Parent's or blood relative's existing caste certificate (strongest proof)",
+      "School transfer certificate or SSC memo showing caste",
+      "Self-declaration on the prescribed format",
+      "Passport-size photograph"
+    ],
+    "online_steps": [
+      "Log in to the AP MeeSeva citizen portal or AP Seva / VSWS portal.",
+      "Select 'Integrated Certificate' or 'Community Certificate' under Revenue services.",
+      "Enter Aadhaar, caste, sub-caste and family details.",
+      "Upload the parent's caste certificate or school records as proof of community.",
+      "Pay the fee and note the application number.",
+      "VRO field verification is followed by Tahsildar approval.",
+      "Download the digitally signed certificate."
+    ],
+    "offline_steps": [
+      "Apply at a MeeSeva centre or Grama/Ward Sachivalayam with the documents.",
+      "Provide biometric authentication and pay the fee.",
+      "Cooperate with the VRO/WRO enquiry, which may include neighbour statements.",
+      "Collect the certificate from the centre once approved."
+    ],
+    "fees": {
+      "amount_inr": 45,
+      "breakdown": [
+        "MeeSeva service charge: approximately ₹35",
+        "User and printing charges: approximately ₹10"
+      ],
+      "notes": "Same fee structure as the income certificate.",
+      "confidence": "medium"
+    },
+    "processing_time": "7–15 working days; ST certificates often take longer due to additional scrutiny",
+    "portal": "meeseva_ap",
+    "alternate_portals": [
+      "ap_seva_vsws"
+    ],
+    "office": [
+      "meeseva",
+      "sachivalayam",
+      "mro_tahsildar"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "caste certificate",
+      "community certificate",
+      "sc",
+      "st",
+      "bc",
+      "obc",
+      "integrated certificate",
+      "కుల ధ్రువీకరణ"
+    ],
+    "common_issues": [
+      "Rejections are frequent when no blood relative already holds a caste certificate.",
+      "ST claims may be referred to a scrutiny committee, adding months to the timeline.",
+      "The certificate is permanent — a fresh one is not needed each year, though some institutions wrongly insist."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "residence_certificate",
+    "name": "Residence / Nativity Certificate",
+    "name_te": "నివాస ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Certificate confirming that the applicant is a resident or native of Andhra Pradesh. Required for local-quota admissions, state government job applications and some scholarship schemes.",
+    "eligibility": "Persons residing continuously in Andhra Pradesh, typically for at least the qualifying period specified by the scheme.",
+    "documents": [
+      "Aadhaar card",
+      "Ration card / rice card",
+      "Study certificates for classes 4 to 10 (the standard proof of nativity for admissions)",
+      "Electricity bill or property tax receipt as address proof",
+      "Self-declaration",
+      "Passport-size photograph"
+    ],
+    "online_steps": [
+      "Log in to the AP MeeSeva citizen portal or AP Seva / VSWS portal.",
+      "Choose 'Residence Certificate' or 'Nativity Certificate' under Revenue services.",
+      "Enter your Aadhaar and address details and specify the period of residence.",
+      "Upload study certificates and address proof.",
+      "Pay the fee and note the application number.",
+      "Download the signed certificate after Tahsildar approval."
+    ],
+    "offline_steps": [
+      "Apply at a MeeSeva centre or Grama/Ward Sachivalayam.",
+      "Submit copies of study certificates and address proof.",
+      "Pay the fee and keep the acknowledgement.",
+      "Collect the certificate once the VRO enquiry is complete."
+    ],
+    "fees": {
+      "amount_inr": 45,
+      "breakdown": [
+        "MeeSeva service charge: approximately ₹35",
+        "User charges: approximately ₹10"
+      ],
+      "notes": "Same slab as other revenue certificates.",
+      "confidence": "medium"
+    },
+    "processing_time": "7 working days under SLA",
+    "portal": "meeseva_ap",
+    "alternate_portals": [
+      "ap_seva_vsws"
+    ],
+    "office": [
+      "meeseva",
+      "sachivalayam",
+      "mro_tahsildar"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "residence certificate",
+      "nativity",
+      "domicile",
+      "local status",
+      "నివాస ధ్రువీకరణ"
+    ],
+    "common_issues": [
+      "Applicants who studied outside AP need extra documentary proof of parental residence.",
+      "Nativity for EAMCET/local-area admission uses a different set of rules from a plain residence certificate."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "birth_certificate",
+    "name": "Birth Certificate",
+    "name_te": "జనన ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Legal record of birth issued by the local registrar — the Municipality or Gram Panchayat for births registered within one year, and via a Revenue Department LRBD process for late registrations.",
+    "eligibility": "Any person born in Andhra Pradesh, or the parent/guardian applying on their behalf.",
+    "documents": [
+      "Hospital discharge summary or doctor's certificate of birth",
+      "Parents' Aadhaar cards",
+      "Parents' marriage certificate (where applicable)",
+      "Ration card",
+      "For late registration: non-availability certificate from the Panchayat/Municipality, SSC memo, self-affidavit"
+    ],
+    "online_steps": [
+      "For births under one year, apply on the Civil Registration System portal or the relevant urban body portal (UBD / Puraseva) with the hospital record.",
+      "For older births, apply through the AP MeeSeva portal for 'Late Registration of Birth', which is routed to the Revenue Department.",
+      "Fill child and parent details exactly as recorded at the hospital.",
+      "Upload the discharge summary and identity documents and pay the fee.",
+      "Track the application number; download or collect the certificate."
+    ],
+    "offline_steps": [
+      "For a current birth, apply directly at the Municipality or Gram Panchayat office with the doctor's certificate.",
+      "For a late registration, apply at a MeeSeva centre — you do not need to visit government offices directly.",
+      "After the LRBD certificate is issued by the Revenue Department, collect the birth certificate from the Municipality or Gram Panchayat."
+    ],
+    "fees": {
+      "amount_inr": 30,
+      "breakdown": [
+        "Current registration (within one year) via CRS: approximately ₹30 service charge",
+        "Late registration via MeeSeva: additional charges apply",
+        "Registration within 21 days of birth: free"
+      ],
+      "notes": "Late registration attracts a penalty fee and, beyond one year, requires a magistrate or RDO order in some cases.",
+      "confidence": "medium"
+    },
+    "processing_time": "Current registrations: about 21 days SLA. Late registration: 30–90 days.",
+    "portal": "crs_birth_death",
+    "alternate_portals": [
+      "meeseva_ap",
+      "ap_ubd"
+    ],
+    "office": [
+      "municipal",
+      "gram_panchayat",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "birth certificate",
+      "janana",
+      "crs",
+      "late registration",
+      "lrbd",
+      "జనన ధ్రువీకరణ"
+    ],
+    "common_issues": [
+      "Name not recorded at the time of birth requires a separate name-inclusion application.",
+      "Spelling mismatches between the hospital record and Aadhaar cause rejection."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "death_certificate",
+    "name": "Death Certificate",
+    "name_te": "మరణ ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Legal record of death issued by the Municipality or Gram Panchayat. Required to settle insurance claims, pensions, bank accounts, property succession and to obtain a legal heir certificate.",
+    "eligibility": "Next of kin or any person with a legitimate interest in the record.",
+    "documents": [
+      "Hospital death summary or medical certificate of cause of death",
+      "Cremation or burial receipt",
+      "Aadhaar of the deceased",
+      "Aadhaar of the applicant and proof of relationship",
+      "Ration card"
+    ],
+    "online_steps": [
+      "Register the death on the Civil Registration System portal or the urban local body portal within 21 days.",
+      "Enter the deceased's details, date, place and cause of death.",
+      "Upload the medical certificate and identity documents.",
+      "Pay the fee and note the application number.",
+      "Download the digitally signed certificate once the registrar approves."
+    ],
+    "offline_steps": [
+      "Report the death at the Municipality, Gram Panchayat or Sachivalayam within 21 days.",
+      "Submit the medical certificate and cremation/burial receipt.",
+      "Pay the fee and collect the acknowledgement.",
+      "Collect the certificate from the same office, or apply through MeeSeva for a late registration."
+    ],
+    "fees": {
+      "amount_inr": 30,
+      "breakdown": [
+        "Registration within 21 days: free",
+        "Certificate copy: approximately ₹30",
+        "Late registration: additional penalty"
+      ],
+      "notes": "Multiple copies are cheap and worth taking at once — banks and insurers each keep one.",
+      "confidence": "medium"
+    },
+    "processing_time": "7–21 days for a timely registration",
+    "portal": "crs_birth_death",
+    "alternate_portals": [
+      "meeseva_ap",
+      "ap_ubd"
+    ],
+    "office": [
+      "municipal",
+      "gram_panchayat",
+      "meeseva",
+      "sachivalayam"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "death certificate",
+      "marana",
+      "crs",
+      "succession",
+      "మరణ ధ్రువీకరణ"
+    ],
+    "common_issues": [
+      "CRS server outages at municipal offices are a frequent cause of delay.",
+      "Deaths at home without medical attendance need a police or panchayat attestation."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "marriage_certificate",
+    "name": "Marriage Registration Certificate",
+    "name_te": "వివాహ ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Registration of marriage under the Hindu Marriage Act, Special Marriage Act or other applicable personal law, done at the Sub-Registrar Office under the AP Registration and Stamps Department (IGRS).",
+    "eligibility": "Couples where the groom is 21+ and bride is 18+, with at least one party resident in the jurisdiction.",
+    "documents": [
+      "Aadhaar cards of both spouses",
+      "Age proof for both (SSC memo / birth certificate / passport)",
+      "Address proof for both",
+      "Wedding invitation card and marriage photographs",
+      "Priest's or temple certificate where the marriage was solemnised religiously",
+      "Three witnesses with their Aadhaar cards",
+      "Passport-size photographs of both parties",
+      "Divorce decree or death certificate of previous spouse, if applicable"
+    ],
+    "online_steps": [
+      "Visit the AP Registration and Stamps (IGRS) portal and select marriage registration.",
+      "Fill the application with both spouses' details and marriage date.",
+      "Upload documents and photographs.",
+      "Book an appointment slot at the concerned Sub-Registrar Office.",
+      "Attend with both spouses and three witnesses for signature and biometric capture.",
+      "Collect or download the certificate after registration."
+    ],
+    "offline_steps": [
+      "Approach the Sub-Registrar Office in whose jurisdiction the marriage took place or either party resides.",
+      "Submit the memorandum of marriage with the documents and photographs.",
+      "Appear before the Sub-Registrar with three witnesses.",
+      "For a Special Marriage Act registration, a 30-day public notice period applies before registration.",
+      "Collect the certificate after the Registrar signs it."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Hindu Marriage Act registration: roughly ₹100–₹500",
+        "Special Marriage Act registration: roughly ₹150–₹1,000",
+        "Late registration beyond the prescribed period attracts additional fees"
+      ],
+      "notes": "Fees vary by Act and by delay period — confirm the live quote at the Sub-Registrar Office.",
+      "confidence": "low"
+    },
+    "processing_time": "Same day to 15 days under the Hindu Marriage Act; 30–45 days under the Special Marriage Act due to the notice period",
+    "portal": "ap_igrs",
+    "alternate_portals": [
+      "meeseva_ap"
+    ],
+    "office": [
+      "sro",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "marriage certificate",
+      "marriage registration",
+      "igrs",
+      "special marriage act",
+      "sub registrar",
+      "వివాహ"
+    ],
+    "common_issues": [
+      "Special Marriage Act registrations require a 30-day notice that is publicly displayed.",
+      "Sub-Registrar Offices near major junctions are heavily crowded on auspicious days."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "legal_heir_certificate",
+    "name": "Legal Heir Certificate",
+    "name_te": "వారసత్వ ధ్రువీకరణ పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "Certificate issued by the Tahsildar identifying the surviving legal heirs of a deceased person. Used for transferring bank balances, pensions, insurance claims and movable assets.",
+    "eligibility": "Surviving spouse, children, parents or siblings of the deceased.",
+    "documents": [
+      "Death certificate of the deceased",
+      "Aadhaar cards of all claimed legal heirs",
+      "Ration card showing family composition",
+      "Proof of relationship (birth certificates, marriage certificate)",
+      "Self-declaration affidavit listing all heirs",
+      "Address proof of the deceased"
+    ],
+    "online_steps": [
+      "Log in to the AP MeeSeva citizen portal or AP Seva / VSWS portal.",
+      "Select 'Family Member Certificate' or 'Legal Heir Certificate' under Revenue services.",
+      "Enter the deceased's details and list every surviving heir.",
+      "Upload the death certificate and relationship proofs.",
+      "Pay the fee and note the application number.",
+      "The VRO conducts a field enquiry and the Tahsildar issues the certificate."
+    ],
+    "offline_steps": [
+      "Apply at a MeeSeva centre or Grama/Ward Sachivalayam with the death certificate.",
+      "Submit the affidavit listing all heirs.",
+      "Cooperate with the VRO enquiry, which may include a public notice.",
+      "Collect the certificate from the centre or the Tahsildar office."
+    ],
+    "fees": {
+      "amount_inr": 45,
+      "breakdown": [
+        "MeeSeva service charge: approximately ₹35",
+        "Affidavit stamp paper and notary: ₹50–₹200 extra"
+      ],
+      "notes": "For disputed estates or immovable property, a succession certificate from a civil court is required instead — that is a separate and costlier process.",
+      "confidence": "medium"
+    },
+    "processing_time": "15–30 days, longer if a public notice period is applied",
+    "portal": "meeseva_ap",
+    "alternate_portals": [
+      "ap_seva_vsws"
+    ],
+    "office": [
+      "meeseva",
+      "sachivalayam",
+      "mro_tahsildar"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "legal heir",
+      "family member certificate",
+      "succession",
+      "varasatvam",
+      "వారసత్వ"
+    ],
+    "common_issues": [
+      "A legal heir certificate is not a substitute for a court succession certificate when immovable property or contested claims are involved.",
+      "Omitting an heir invalidates the certificate and creates later disputes."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "land_records_adangal_1b",
+    "name": "Land Records — Adangal, 1-B (ROR) and e-Passbook",
+    "name_te": "అడంగల్ / 1-బి భూ రికార్డులు",
+    "category": "land_property",
+    "level": "state",
+    "description": "Andhra Pradesh agricultural land records available on the Meebhoomi portal. The Adangal (Pahani) shows crop, soil, irrigation and cultivator details; the 1-B (Record of Rights) is the ownership record maintained by the Tahsildar. Meebhoomi is the public front-end for the Webland backend.",
+    "eligibility": "Any citizen can view records; certified or digitally signed copies are issued to the pattadar.",
+    "documents": [
+      "Aadhaar number, or",
+      "Khata (account) number, or",
+      "Survey number with district, mandal and village"
+    ],
+    "online_steps": [
+      "Open meebhoomi.ap.gov.in — there is no official Meebhoomi mobile app, so use the mobile browser.",
+      "Choose 'Your Adangal' / 'Village Adangal' or 'Me 1-B' / 'Village 1-B'.",
+      "Select district, mandal and village.",
+      "Search by Aadhaar number, khata number or survey number and enter the captcha.",
+      "View or download the report; the e-Passbook carries a digital signature and QR code and is accepted by banks and sub-registrars.",
+      "Check whether the record appears in red — red means digitally unsigned in the Webland backend and it will be rejected by banks and sub-registrars."
+    ],
+    "offline_steps": [
+      "Visit the Grama/Ward Sachivalayam or the Mandal Revenue Office (Tahsildar).",
+      "If the record is unsigned, submit a written application to the MRO/Tahsildar with registered sale deeds, tax receipts and Aadhaar.",
+      "The Tahsildar logs into Webland, does biometric verification and digitally signs the record.",
+      "Collect a certified copy from the Sachivalayam or a MeeSeva centre."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Viewing and downloading from Meebhoomi: free",
+        "Certified/attested copy at MeeSeva: approximately ₹35–₹50"
+      ],
+      "notes": "Beware of third-party apps and sites that charge for what is free on the official portal.",
+      "confidence": "high"
+    },
+    "processing_time": "Instant online; 7–30 days if the record needs to be digitally signed by the Tahsildar",
+    "portal": "meebhoomi",
+    "alternate_portals": [
+      "ap_webland",
+      "meeseva_ap"
+    ],
+    "office": [
+      "mro_tahsildar",
+      "sachivalayam",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "adangal",
+      "1b",
+      "ror",
+      "meebhoomi",
+      "webland",
+      "pahani",
+      "e-passbook",
+      "fmb",
+      "land records",
+      "అడంగల్"
+    ],
+    "common_issues": [
+      "Records shown in red are digitally unsigned and cannot be used for loans, court filings or registrations.",
+      "Some private patta lands were misclassified as assigned or poramboke land during the 2015 digitisation and land up on the Section 22A prohibited-registration list.",
+      "No official government Meebhoomi mobile app exists; third-party apps raise data-privacy concerns."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "land_mutation",
+    "name": "Land Mutation (Transfer of Title in Revenue Records)",
+    "name_te": "భూమి మ్యుటేషన్",
+    "category": "land_property",
+    "level": "state",
+    "description": "Updating the ownership entry in the Record of Rights after a sale, gift, partition or inheritance so that the new owner's name appears on the Adangal and 1-B. For urban property, mutation of the property tax assessment is done by the Municipality.",
+    "eligibility": "The purchaser, donee or legal heir of the land.",
+    "documents": [
+      "Registered sale deed, gift deed, partition deed or will",
+      "Existing Adangal and 1-B of the seller",
+      "Encumbrance certificate",
+      "Death certificate and legal heir certificate for inheritance mutation",
+      "Aadhaar of the applicant",
+      "Latest land revenue or property tax receipt"
+    ],
+    "online_steps": [
+      "Automatic mutation is triggered for many registered sale deeds through the linkage between the Registration Department and Webland.",
+      "Where automatic mutation does not happen, apply through the AP MeeSeva portal or the Sachivalayam for 'Mutation'.",
+      "Upload the registered deed and existing land records.",
+      "Pay the mutation fee and note the application number.",
+      "The Tahsildar issues notices to interested parties, then approves.",
+      "Verify the change on Meebhoomi and confirm the record is digitally signed."
+    ],
+    "offline_steps": [
+      "Submit a written application to the MRO/Tahsildar with the registered deed and existing records.",
+      "For municipal property, apply to the Revenue Section of the Municipal Corporation.",
+      "Respond to notices served on the previous owner and neighbours.",
+      "Collect the updated 1-B or property tax demand notice after approval."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Agricultural mutation fee: nominal, typically under ₹500",
+        "Municipal property mutation: often calculated as a small percentage of the property value or a fixed slab"
+      ],
+      "notes": "Municipal mutation fees vary by corporation — confirm with GVMC, VMC, GMC, TMC or the relevant body.",
+      "confidence": "low"
+    },
+    "processing_time": "30–90 days; municipal mutation often 30–45 days",
+    "portal": "meebhoomi",
+    "alternate_portals": [
+      "meeseva_ap",
+      "ap_cdma",
+      "ap_webland"
+    ],
+    "office": [
+      "mro_tahsildar",
+      "sachivalayam",
+      "municipal",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "mutation",
+      "title transfer",
+      "ror update",
+      "webland",
+      "property tax transfer",
+      "మ్యుటేషన్"
+    ],
+    "common_issues": [
+      "Mutation is one of the most commonly reported bribe-prone processes — escalate delays in writing to the RDO or Collector.",
+      "Mutation cannot proceed while the land is on the Section 22A prohibited list."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "encumbrance_certificate",
+    "name": "Encumbrance Certificate (EC)",
+    "name_te": "ఎన్‌కంబరెన్స్ సర్టిఫికెట్",
+    "category": "land_property",
+    "level": "state",
+    "description": "A statement from the Sub-Registrar showing all registered transactions on a property for a requested period — sales, mortgages, gifts and leases. Banks require it for property loans and buyers require it to confirm clear title.",
+    "eligibility": "Any person may apply for the EC of a property.",
+    "documents": [
+      "Property survey number or door number with village/ward details",
+      "Copy of the sale deed or document number of a prior transaction",
+      "Aadhaar of the applicant",
+      "Period for which the search is required"
+    ],
+    "online_steps": [
+      "Open the AP Registration and Stamps (IGRS) portal and select 'Encumbrance Search (EC)'.",
+      "Enter the district, Sub-Registrar Office, village and survey or document number.",
+      "Select the period of search.",
+      "Pay the search fee online.",
+      "View and download the EC statement; a certified signed copy can be requested through MeeSeva."
+    ],
+    "offline_steps": [
+      "Apply in Form 22 at the Sub-Registrar Office having jurisdiction over the property.",
+      "Pay the search and certificate fee at the counter.",
+      "Collect the certified EC after the record search is completed."
+    ],
+    "fees": {
+      "amount_inr": 200,
+      "breakdown": [
+        "Application fee: approximately ₹25",
+        "Search fee: charged per year of search, roughly ₹10–₹15 per year",
+        "Certified copy via MeeSeva: approximately ₹200 total for a typical 13–30 year search"
+      ],
+      "notes": "Total depends heavily on the number of years searched.",
+      "confidence": "medium"
+    },
+    "processing_time": "Online view is instant; certified copy in 3–7 working days",
+    "portal": "ap_igrs",
+    "alternate_portals": [
+      "meeseva_ap"
+    ],
+    "office": [
+      "sro",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "ec",
+      "encumbrance",
+      "igrs",
+      "property search",
+      "title check",
+      "ఎన్‌కంబరెన్స్"
+    ],
+    "common_issues": [
+      "An EC only covers registered documents — unregistered agreements and oral partitions will not appear.",
+      "Records before computerisation may require a manual search at the SRO."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "property_tax",
+    "name": "Property Tax Assessment and Payment",
+    "name_te": "ఆస్తి పన్ను",
+    "category": "land_property",
+    "level": "state",
+    "description": "New assessment, revision and payment of property tax for buildings in urban local bodies of Andhra Pradesh, administered by the Commissioner and Director of Municipal Administration (CDMA) through the Puraseva system.",
+    "eligibility": "Owners of any building within a municipality or corporation limit.",
+    "documents": [
+      "Registered sale deed or title document",
+      "Approved building plan and occupancy certificate",
+      "Aadhaar of the owner",
+      "Previous property tax receipt for revisions",
+      "Site plan and measurement details"
+    ],
+    "online_steps": [
+      "Open the AP CDMA / Puraseva portal and select your municipality or corporation.",
+      "For a new assessment, choose 'Self Assessment of Property Tax' and enter plot, plinth area and usage details.",
+      "Upload the sale deed and building plan.",
+      "Submit and note the application number; a Bill Collector inspects the property.",
+      "Once assessed, pay online with the PTIN and download the receipt.",
+      "For routine payment, search by PTIN or door number and pay the half-yearly demand."
+    ],
+    "offline_steps": [
+      "Apply at the Revenue Section of the Municipal Corporation or Municipality.",
+      "Submit the title document and building plan for inspection.",
+      "The Bill Collector and Revenue Officer inspect and assign a PTIN.",
+      "Pay at the citizen service centre or a MeeSeva counter and collect the receipt."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Tax is computed from the annual rental value, plinth area, zone and usage type",
+        "New assessment application: nominal, typically under ₹200",
+        "Rebates are usually offered for early payment in the first half-year"
+      ],
+      "notes": "Rates differ across GVMC, VMC, GMC, TMC and KMC — always use the municipality's own calculator.",
+      "confidence": "low"
+    },
+    "processing_time": "New assessment in 15–30 days; payment is instant",
+    "portal": "ap_cdma",
+    "office": [
+      "municipal",
+      "meeseva"
+    ],
+    "helpline": "1800 425 4440",
+    "keywords": [
+      "property tax",
+      "ptin",
+      "cdma",
+      "puraseva",
+      "house tax",
+      "assessment",
+      "ఆస్తి పన్ను"
+    ],
+    "common_issues": [
+      "Property tax mutation after purchase is separate from revenue-record mutation — both need to be done.",
+      "Unauthorised constructions get penal assessment rates."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "building_permission",
+    "name": "Building Permission / Plan Approval",
+    "name_te": "భవన నిర్మాణ అనుమతి",
+    "category": "land_property",
+    "level": "state",
+    "description": "Approval to construct or alter a building, issued by the urban local body or the relevant development authority through the online Development Permission Management System.",
+    "eligibility": "Owner of the plot, applying through a licensed technical person (architect or engineer).",
+    "documents": [
+      "Registered sale deed and link documents",
+      "Latest EC and property tax receipt",
+      "Approved layout copy or LP number",
+      "Site plan, building plan and structural drawings prepared by a licensed technical person",
+      "Land use certificate / CLU where applicable",
+      "NOC from Fire Services for buildings above the prescribed height",
+      "Aadhaar of the owner"
+    ],
+    "online_steps": [
+      "Register on the AP CDMA / DPMS online building permission system through your ULB.",
+      "Engage a licensed technical person who uploads the CAD drawings for automated scrutiny.",
+      "The system auto-checks setbacks, height, FAR and road width against the building rules.",
+      "Pay the assessed fees online.",
+      "Site inspection is done by the Town Planning Officer.",
+      "Download the sanctioned plan and proceedings once approved."
+    ],
+    "offline_steps": [
+      "Submit the application with drawings at the Town Planning Section of the ULB.",
+      "Pay the scrutiny and development charges at the counter.",
+      "Cooperate with the site inspection.",
+      "Collect the sanctioned plan and building permit."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Site and scrutiny fees based on plot area",
+        "Building permit fee based on built-up area",
+        "Development charges, betterment charges and labour cess",
+        "Open space contribution for larger plots"
+      ],
+      "notes": "This is the most variable fee in the list — it depends on plot size, built-up area, zone and ULB. Use the DPMS auto-calculator.",
+      "confidence": "low"
+    },
+    "processing_time": "15–60 days depending on building category; instant approval for small residential plots under the self-certification scheme",
+    "portal": "ap_cdma",
+    "office": [
+      "municipal",
+      "development_authority"
+    ],
+    "helpline": "1800 425 4440",
+    "keywords": [
+      "building permission",
+      "plan approval",
+      "dpms",
+      "town planning",
+      "bpms",
+      "setback",
+      "far",
+      "భవన అనుమతి"
+    ],
+    "common_issues": [
+      "Drawings must be uploaded by a registered licensed technical person — an owner cannot self-upload.",
+      "Deviation from the sanctioned plan leads to demolition notices or heavy penal charges."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "ration_card",
+    "name": "Rice Card / Ration Card (New and Modification)",
+    "name_te": "రైస్ కార్డు / రేషన్ కార్డు",
+    "category": "welfare",
+    "level": "state",
+    "description": "The AP Civil Supplies rice card entitles a household to subsidised food grains under the National Food Security Act and acts as the primary household identity document for most state welfare schemes.",
+    "eligibility": "Households meeting the AP government's income, land holding, vehicle ownership and electricity consumption criteria. Applications are processed through the Grama/Ward Sachivalayam.",
+    "documents": [
+      "Aadhaar cards of all family members",
+      "Address proof (electricity bill / rental agreement)",
+      "Income declaration",
+      "Bank passbook of the head of family",
+      "Existing ration card for modifications, surrender or splitting",
+      "Marriage certificate for adding a spouse"
+    ],
+    "online_steps": [
+      "Log in to the AP Seva / VSWS portal or the AP Civil Supplies (EPDS) portal.",
+      "Select the appropriate service — new rice card, member addition, member deletion, splitting or address change.",
+      "Enter Aadhaar details for every member and complete e-KYC.",
+      "Upload address proof and supporting documents.",
+      "Submit; the Volunteer and Welfare Assistant conduct a household verification.",
+      "Track the application number and download the card once approved."
+    ],
+    "offline_steps": [
+      "Approach your Grama/Ward Sachivalayam with all family Aadhaar cards.",
+      "The Digital Assistant files the application and completes biometric e-KYC.",
+      "A Village/Ward Volunteer visits the house for verification.",
+      "Collect the approved rice card from the Sachivalayam or the Fair Price Shop."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "New card and modifications: free"
+      ],
+      "notes": "No government fee. Private centres sometimes charge a handling fee.",
+      "confidence": "high"
+    },
+    "processing_time": "30–60 days; applications are often processed in periodic government sanction cycles rather than continuously",
+    "portal": "ap_epds",
+    "alternate_portals": [
+      "ap_seva_vsws"
+    ],
+    "office": [
+      "sachivalayam",
+      "meeseva",
+      "fair_price_shop"
+    ],
+    "helpline": "1967 / 1800 425 2977",
+    "keywords": [
+      "ration card",
+      "rice card",
+      "epds",
+      "nfsa",
+      "civil supplies",
+      "fair price shop",
+      "రైస్ కార్డు"
+    ],
+    "common_issues": [
+      "New cards are sanctioned in batches, so an approved application can still wait for the next issuance cycle.",
+      "Aadhaar seeding failures for elderly members with worn fingerprints block e-KYC — iris authentication is the workaround."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "disability_certificate_sadarem",
+    "name": "Disability Certificate (SADAREM)",
+    "name_te": "వికలాంగుల ధ్రువీకరణ పత్రం (సదరెం)",
+    "category": "welfare",
+    "level": "state",
+    "description": "The Software for Assessment of Disabled for Access, Rehabilitation and Empowerment issues the AP disability certificate and UDID, which unlocks disability pensions, reservations, travel concessions and scheme benefits.",
+    "eligibility": "Persons with any of the 21 disabilities specified under the Rights of Persons with Disabilities Act, 2016.",
+    "documents": [
+      "Aadhaar card",
+      "Ration card",
+      "Passport-size photographs",
+      "Existing medical records, scans or reports relating to the disability",
+      "Previous SADAREM certificate if applying for renewal or revision"
+    ],
+    "online_steps": [
+      "Register on the SADAREM portal or apply through the AP Seva / VSWS portal or MeeSeva.",
+      "Fill the applicant details and the nature of disability.",
+      "Book an assessment camp slot; camps are held at designated government hospitals and Area Hospitals.",
+      "Attend the medical board assessment with all reports.",
+      "Download the SADAREM certificate with the disability percentage once the board finalises it.",
+      "Use the SADAREM certificate to apply for the national UDID card on the UDID portal."
+    ],
+    "offline_steps": [
+      "Apply at the Grama/Ward Sachivalayam or MeeSeva centre.",
+      "Attend the SADAREM camp at the designated government hospital on the allotted date.",
+      "Undergo assessment by the medical board.",
+      "Collect the certificate from the hospital or the Sachivalayam."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Assessment and certificate: free"
+      ],
+      "notes": "MeeSeva may charge a small application service fee.",
+      "confidence": "medium"
+    },
+    "processing_time": "30–90 days depending on camp scheduling",
+    "portal": "sadarem",
+    "alternate_portals": [
+      "udid",
+      "meeseva_ap"
+    ],
+    "office": [
+      "government_hospital",
+      "sachivalayam",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "disability certificate",
+      "sadarem",
+      "udid",
+      "divyang",
+      "handicapped",
+      "pwd",
+      "సదరెం"
+    ],
+    "common_issues": [
+      "Assessment camps are held only periodically, so waiting lists build up — acknowledgements for waitlisted applicants are published on the MeeSeva portal.",
+      "The assessed percentage determines eligibility for the pension, so carrying complete medical records matters."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "trade_licence",
+    "name": "Trade Licence",
+    "name_te": "వ్యాపార లైసెన్స్",
+    "category": "business",
+    "level": "state",
+    "description": "Permission from the urban local body to carry on a trade or business at a specified premises within municipal limits, issued under the AP Municipalities Act and renewed annually.",
+    "eligibility": "Any person or entity operating a shop, hotel, workshop, clinic or other trade within a municipality or corporation.",
+    "documents": [
+      "Aadhaar and PAN of the proprietor or partners",
+      "Property tax receipt of the premises",
+      "Rental agreement or ownership proof of the premises",
+      "Site plan and photographs of the premises",
+      "NOC from the property owner if rented",
+      "Fire NOC and pollution consent where the trade requires it",
+      "GST registration certificate if applicable"
+    ],
+    "online_steps": [
+      "Open the AP CDMA / Puraseva portal and select your municipality or corporation.",
+      "Choose 'Trade Licence' → 'New Application'.",
+      "Enter business details, trade category and premises information.",
+      "Upload the property tax receipt, rental agreement and photographs.",
+      "Pay the licence fee online based on the trade category.",
+      "A Sanitary Inspector or Town Planning official inspects the premises.",
+      "Download the licence certificate once issued; renew every year before the due date."
+    ],
+    "offline_steps": [
+      "Apply at the Public Health or Revenue Section of the Municipal Corporation.",
+      "Submit the application with premises documents and pay the fee at the counter.",
+      "Cooperate with the premises inspection.",
+      "Collect the trade licence certificate."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Fee is slab-based by trade category and premises area",
+        "Typical small retail shop: roughly ₹500–₹3,000 per year",
+        "Food establishments, hotels and industrial trades attract higher slabs",
+        "Late renewal attracts penalty"
+      ],
+      "notes": "Slabs differ across GVMC, VMC, GMC, TMC and KMC — check the ULB schedule.",
+      "confidence": "low"
+    },
+    "processing_time": "7–30 days",
+    "portal": "ap_cdma",
+    "office": [
+      "municipal",
+      "meeseva"
+    ],
+    "helpline": "1800 425 4440",
+    "keywords": [
+      "trade licence",
+      "trade license",
+      "shop licence",
+      "puraseva",
+      "cdma",
+      "municipal licence",
+      "వ్యాపార లైసెన్స్"
+    ],
+    "common_issues": [
+      "Operating without a trade licence attracts sealing notices and penalties.",
+      "Renewal lapses are common because there is no automatic reminder."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "gst_registration",
+    "name": "GST Registration",
+    "name_te": "జీఎస్‌టీ నమోదు",
+    "category": "business",
+    "level": "central",
+    "description": "Registration under the Goods and Services Tax regime, giving a 15-digit GSTIN. Mandatory above the turnover threshold and for inter-state suppliers, e-commerce sellers and certain notified categories.",
+    "eligibility": "Turnover above ₹40 lakh for goods and ₹20 lakh for services in most states; compulsory registration regardless of turnover for inter-state supply, e-commerce operators, casual taxable persons and reverse-charge cases.",
+    "documents": [
+      "PAN of the business or proprietor",
+      "Aadhaar of the proprietor, partners or directors",
+      "Photograph of the proprietor, partners or directors",
+      "Proof of principal place of business (electricity bill, property tax receipt, rental agreement with NOC)",
+      "Bank account proof (cancelled cheque, passbook first page or bank statement)",
+      "Certificate of incorporation, partnership deed or LLP agreement as applicable",
+      "Digital signature certificate for companies and LLPs",
+      "Board resolution or authorisation letter for the authorised signatory"
+    ],
+    "online_steps": [
+      "Go to the GST portal and select Services → Registration → New Registration.",
+      "Complete Part A with PAN, mobile and email to receive a Temporary Reference Number (TRN).",
+      "Log in with the TRN and complete Part B: business details, promoters, authorised signatory, principal place of business, goods and services (HSN/SAC), bank account.",
+      "Upload the supporting documents.",
+      "Complete Aadhaar authentication for the authorised signatory — this avoids mandatory physical verification in most cases.",
+      "Submit with EVC or DSC and note the ARN.",
+      "Track the ARN; respond to any query in Form GST REG-03 within seven working days.",
+      "Download the GST REG-06 registration certificate with the GSTIN once approved."
+    ],
+    "offline_steps": [
+      "There is no offline route — registration is fully online.",
+      "Citizens can use a GST Suvidha Provider, chartered accountant or a MeeSeva/CSC operator to file on their behalf.",
+      "If Aadhaar authentication is skipped or fails, a physical verification of premises by the jurisdictional officer follows."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Government fee: nil"
+      ],
+      "notes": "Professionals typically charge ₹500–₹3,000 for filing assistance.",
+      "confidence": "high"
+    },
+    "processing_time": "7 working days with successful Aadhaar authentication; up to 30 days if physical verification is triggered",
+    "portal": "gst_portal",
+    "office": [
+      "gst_office",
+      "meeseva"
+    ],
+    "helpline": "1800 103 4786",
+    "keywords": [
+      "gst",
+      "gstin",
+      "registration",
+      "reg-06",
+      "trn",
+      "arn",
+      "జీఎస్‌టీ"
+    ],
+    "common_issues": [
+      "Rental agreements without an owner NOC are the most common rejection reason.",
+      "Mismatch between the address on the electricity bill and the application triggers physical verification."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "shops_establishment_registration",
+    "name": "Shops and Establishments Registration",
+    "name_te": "దుకాణాలు మరియు సంస్థల నమోదు",
+    "category": "business",
+    "level": "state",
+    "description": "Registration under the AP Shops and Establishments Act, administered by the Labour Department. Required for any commercial establishment employing staff, and commonly demanded by banks for a current account.",
+    "eligibility": "Every shop or commercial establishment in Andhra Pradesh, to be registered within 30 days of commencing business.",
+    "documents": [
+      "Aadhaar and PAN of the employer",
+      "Address proof of the establishment",
+      "Rental agreement or ownership document",
+      "Details of employees with wages",
+      "Photograph of the establishment with the name board",
+      "Partnership deed or incorporation certificate as applicable"
+    ],
+    "online_steps": [
+      "Register on the AP Labour Department portal (LDM / Shram Suvidha for AP).",
+      "Select 'Shops and Establishments Registration' and fill the establishment details.",
+      "Enter employer, manager and employee particulars.",
+      "Upload address proof and photographs.",
+      "Pay the registration fee online based on the number of employees.",
+      "Download the registration certificate, which must be displayed at the premises."
+    ],
+    "offline_steps": [
+      "Submit the application form at the office of the Assistant Commissioner of Labour for the district.",
+      "Attach establishment and employee details with the fee challan.",
+      "Collect the registration certificate after verification."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Fee is slab-based on the number of employees",
+        "No employees: lowest slab, roughly ₹100–₹500",
+        "Larger establishments: several thousand rupees",
+        "Renewal is periodic and follows the same slab"
+      ],
+      "notes": "Confirm current slabs on the AP Labour Department portal.",
+      "confidence": "low"
+    },
+    "processing_time": "3–15 working days",
+    "portal": "ap_labour",
+    "office": [
+      "labour_office",
+      "meeseva"
+    ],
+    "helpline": "0863-2340 xxx (AP Labour Dept — verify)",
+    "keywords": [
+      "shops and establishments",
+      "labour registration",
+      "gumasta",
+      "trade",
+      "current account proof"
+    ],
+    "common_issues": [
+      "Many businesses skip this and later find banks refusing to open a current account.",
+      "Employee wage registers must be maintained once registered."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "udyam_msme_registration",
+    "name": "Udyam (MSME) Registration",
+    "name_te": "ఉద్యమ్ నమోదు",
+    "category": "business",
+    "level": "central",
+    "description": "Free online registration of a micro, small or medium enterprise on the Udyam portal, generating a permanent Udyam Registration Number. Unlocks collateral-free credit, priority sector lending, subsidy schemes and protection under the delayed-payment provisions.",
+    "eligibility": "Any manufacturing or service enterprise within the MSME investment and turnover limits.",
+    "documents": [
+      "Aadhaar of the proprietor, managing partner or authorised signatory",
+      "PAN of the enterprise",
+      "GSTIN where applicable",
+      "Bank account details",
+      "Investment and turnover figures (auto-fetched from PAN and GST data)"
+    ],
+    "online_steps": [
+      "Open the Udyam Registration portal and choose 'For New Entrepreneurs who are not registered yet as MSME'.",
+      "Enter the Aadhaar number and name, and verify with OTP.",
+      "Enter the PAN — turnover and investment data are pulled automatically from income tax and GST systems.",
+      "Fill enterprise details: name, type of organisation, address, bank account, NIC activity codes, number of employees.",
+      "Submit and verify with OTP.",
+      "Download the Udyam Registration Certificate with the URN and QR code immediately."
+    ],
+    "offline_steps": [
+      "No offline route. Assistance is available free of charge at District Industries Centres, MSME-Development Institutes and Champions Control Rooms."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Government fee: nil"
+      ],
+      "notes": "The official portal is free. Numerous look-alike private sites charge for this — they are not official.",
+      "confidence": "high"
+    },
+    "processing_time": "Instant — certificate is generated on submission",
+    "portal": "udyam",
+    "office": [
+      "dic",
+      "meeseva"
+    ],
+    "helpline": "1800 111 4252 (Champions)",
+    "keywords": [
+      "udyam",
+      "msme",
+      "udyog aadhaar",
+      "small business",
+      "urn",
+      "ఉద్యమ్"
+    ],
+    "common_issues": [
+      "Paid look-alike websites are the biggest trap — always use udyamregistration.gov.in.",
+      "One enterprise can hold only one Udyam registration; all activities must be listed under it."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "fssai_licence",
+    "name": "FSSAI Food Licence / Registration",
+    "name_te": "ఎఫ్‌ఎస్‌ఎస్‌ఏఐ ఆహార లైసెన్స్",
+    "category": "business",
+    "level": "central",
+    "description": "Mandatory registration or licence for any food business — manufacturing, storage, transport, retail or catering — issued through the FoSCoS portal. The category depends on annual turnover.",
+    "eligibility": "Basic Registration up to ₹12 lakh turnover; State Licence for ₹12 lakh–₹20 crore; Central Licence above ₹20 crore or for importers/exporters and specified categories.",
+    "documents": [
+      "Aadhaar and PAN of the proprietor or partners",
+      "Passport-size photograph",
+      "Proof of premises (rental agreement or ownership document)",
+      "Layout plan of the processing unit for State and Central licences",
+      "List of food products handled",
+      "Water test report for manufacturing units",
+      "Food safety management plan for State and Central licences",
+      "NOC from the local body"
+    ],
+    "online_steps": [
+      "Register on the FoSCoS portal and check your eligible category using the licence category tool.",
+      "Select Basic Registration, State Licence or Central Licence.",
+      "Fill Form A (registration) or Form B (licence) with business and product details.",
+      "Upload the documents and pay the fee online.",
+      "Note the application reference number; a Food Safety Officer may inspect the premises.",
+      "Download the certificate with the 14-digit FSSAI number and display it at the premises."
+    ],
+    "offline_steps": [
+      "Submit Form A or Form B at the office of the Designated Officer for the district.",
+      "Attach the documents and pay the fee by demand draft.",
+      "Cooperate with the Food Safety Officer inspection.",
+      "Collect the licence certificate."
+    ],
+    "fees": {
+      "amount_inr": 100,
+      "breakdown": [
+        "Basic Registration: ₹100 per year",
+        "State Licence: ₹2,000–₹5,000 per year depending on the category",
+        "Central Licence: ₹7,500 per year",
+        "Licences can be taken for 1 to 5 years at a time"
+      ],
+      "notes": "Fees are set centrally by FSSAI.",
+      "confidence": "high"
+    },
+    "processing_time": "Basic Registration: 7–15 days. State/Central Licence: 30–60 days.",
+    "portal": "foscos",
+    "office": [
+      "fssai_designated_officer",
+      "meeseva"
+    ],
+    "helpline": "1800 112 100",
+    "keywords": [
+      "fssai",
+      "food licence",
+      "foscos",
+      "food safety",
+      "restaurant licence",
+      "ఆహార లైసెన్స్"
+    ],
+    "common_issues": [
+      "Choosing the wrong category for the turnover leads to rejection and re-application.",
+      "The FSSAI number must be printed on all food labels and displayed at the premises."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "fire_noc",
+    "name": "Fire Safety NOC",
+    "name_te": "అగ్నిమాపక ఎన్‌ఓసీ",
+    "category": "business",
+    "level": "state",
+    "description": "No Objection Certificate from the AP State Disaster Response and Fire Services Department, required for high-rise buildings, hospitals, schools, hotels, cinemas, industrial units and other notified occupancies.",
+    "eligibility": "Owners or occupiers of buildings and establishments falling within the notified categories under the AP Fire Service Act.",
+    "documents": [
+      "Approved building plan",
+      "Fire safety installation drawings",
+      "Details of firefighting equipment installed",
+      "Structural stability certificate",
+      "Ownership or lease document",
+      "Aadhaar of the applicant",
+      "Previous NOC for renewal"
+    ],
+    "online_steps": [
+      "Apply on the AP Fire Services online NOC portal, often integrated with the building permission (DPMS) workflow.",
+      "Select provisional NOC (before construction) or final NOC (after completion).",
+      "Upload the building and fire safety drawings.",
+      "Pay the scrutiny fee online.",
+      "A Fire Officer inspects the installed systems.",
+      "Download the NOC; renewals are typically annual for occupied buildings."
+    ],
+    "offline_steps": [
+      "Submit the application with drawings at the District Fire Officer's office.",
+      "Pay the fee and schedule the inspection.",
+      "Rectify any deficiencies noted by the Fire Officer.",
+      "Collect the NOC after re-inspection."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Fee is calculated on built-up area and occupancy type",
+        "Renewal fees are lower than the initial NOC"
+      ],
+      "notes": "Confirm the current schedule with the AP Fire Services department.",
+      "confidence": "low"
+    },
+    "processing_time": "15–45 days including inspection",
+    "portal": "ap_fire_services",
+    "office": [
+      "fire_station",
+      "municipal"
+    ],
+    "helpline": "101",
+    "keywords": [
+      "fire noc",
+      "fire safety",
+      "no objection certificate",
+      "high rise",
+      "అగ్నిమాపక"
+    ],
+    "common_issues": [
+      "Provisional NOC is needed before building permission for notified categories, so applying late stalls the whole project.",
+      "Annual renewal is often forgotten until an inspection drive."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "pollution_consent_appcb",
+    "name": "Pollution Control Consent (CFE / CFO)",
+    "name_te": "కాలుష్య నియంత్రణ అనుమతి",
+    "category": "business",
+    "level": "state",
+    "description": "Consent for Establishment and Consent for Operation issued by the Andhra Pradesh Pollution Control Board under the Water and Air Acts. Required for industries and many commercial establishments, classified into Red, Orange, Green and White categories.",
+    "eligibility": "Any industry or activity in the Red, Orange or Green category. White category units only need to intimate the Board.",
+    "documents": [
+      "Project report with manufacturing process and capacity",
+      "Land documents and site plan",
+      "Water balance and effluent treatment details",
+      "Air pollution control equipment details",
+      "Approved building plan",
+      "Aadhaar and PAN of the applicant",
+      "Environmental clearance where the project size requires it"
+    ],
+    "online_steps": [
+      "Register on the APPCB online consent management system.",
+      "Select CFE for a new unit or CFO for commencing operation.",
+      "Identify the category (Red / Orange / Green / White) and capital investment slab.",
+      "Upload the project report and technical documents.",
+      "Pay the consent fee online based on category and investment.",
+      "A Regional Officer inspects the site.",
+      "Download the consent order; renew CFO before expiry."
+    ],
+    "offline_steps": [
+      "Submit the application at the APPCB Regional Office for the district.",
+      "Pay the fee by demand draft.",
+      "Cooperate with the site inspection and comply with any conditions.",
+      "Collect the consent order."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Fee slabs are based on capital investment and pollution category",
+        "Red category units pay substantially more than Green"
+      ],
+      "notes": "Refer to the APPCB fee schedule for the exact slab.",
+      "confidence": "low"
+    },
+    "processing_time": "30–120 days depending on category",
+    "portal": "appcb",
+    "office": [
+      "appcb_regional_office"
+    ],
+    "helpline": "0866-2541 953 (APPCB — verify)",
+    "keywords": [
+      "pollution",
+      "appcb",
+      "cfe",
+      "cfo",
+      "consent to operate",
+      "red category",
+      "కాలుష్య"
+    ],
+    "common_issues": [
+      "Operating without a valid CFO leads to closure notices and electricity disconnection.",
+      "Category classification errors cause the application to be returned."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "electricity_connection",
+    "name": "New Electricity Connection",
+    "name_te": "కొత్త విద్యుత్ కనెక్షన్",
+    "category": "utilities",
+    "level": "state",
+    "description": "New service connection from the relevant AP distribution company. APEPDCL serves the northern districts including Visakhapatnam, Vizianagaram, Srikakulam, Kakinada and the Godavari districts; APSPDCL serves the southern districts including Vijayawada, Guntur, Tirupati, Nellore and Kurnool.",
+    "eligibility": "Owner or occupier of the premises. Load category determines the tariff — domestic, commercial, agricultural or industrial.",
+    "documents": [
+      "Aadhaar of the applicant",
+      "Ownership document or rental agreement with owner NOC",
+      "Property tax receipt or building permission copy",
+      "Wiring completion certificate from a licensed electrical contractor (Form B)",
+      "Site plan / location sketch",
+      "Passport-size photograph",
+      "For agricultural connections: land records (Adangal / 1-B)"
+    ],
+    "online_steps": [
+      "Open the APEPDCL or APSPDCL website depending on your district and select 'New Service Connection'.",
+      "Fill the application with premises details, required load in kW and category.",
+      "Upload ownership proof, wiring completion certificate and photograph.",
+      "Pay the application and registration charges online.",
+      "An Assistant Engineer inspects the premises and issues a demand notice for development charges and security deposit.",
+      "Pay the demand notice amount online.",
+      "The meter is installed and the connection is energised; track status with the application number."
+    ],
+    "offline_steps": [
+      "Submit the application at the Section Office or Customer Service Centre of APEPDCL/APSPDCL.",
+      "Attach the wiring completion certificate and ownership proof.",
+      "Pay the registration fee at the counter.",
+      "After inspection, pay the demand notice amount.",
+      "The lineman installs the meter and releases supply."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Application and registration charges: a few hundred rupees",
+        "Security deposit: based on connected load and category",
+        "Development charges: based on load and distance from the nearest distribution point",
+        "Typical single-phase domestic connection total: roughly ₹1,500–₹4,000"
+      ],
+      "notes": "Costs rise sharply if a new pole or transformer is needed. Get the demand notice in writing.",
+      "confidence": "low"
+    },
+    "processing_time": "7–30 days for a standard domestic connection where the network already exists",
+    "portal": "apepdcl",
+    "alternate_portals": [
+      "apspdcl"
+    ],
+    "office": [
+      "discom"
+    ],
+    "helpline": "1912",
+    "keywords": [
+      "electricity",
+      "new connection",
+      "apepdcl",
+      "apspdcl",
+      "power",
+      "meter",
+      "విద్యుత్"
+    ],
+    "common_issues": [
+      "Wiring completion certificate from an unlicensed electrician is rejected.",
+      "Rented premises need a written NOC from the owner."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "water_connection",
+    "name": "New Water Supply Connection",
+    "name_te": "కొత్త నీటి కనెక్షన్",
+    "category": "utilities",
+    "level": "state",
+    "description": "Piped water supply connection provided by the urban local body — GVMC in Visakhapatnam, VMC in Vijayawada, GMC in Guntur, TMC in Tirupati and KMC in Kakinada — or by the Gram Panchayat in rural areas.",
+    "eligibility": "Owner or occupier of a property within the water supply network area.",
+    "documents": [
+      "Property tax receipt with PTIN",
+      "Ownership document or rental agreement with owner NOC",
+      "Aadhaar of the applicant",
+      "Approved building plan",
+      "Site sketch showing the nearest water main",
+      "Previous water bill for additional connections"
+    ],
+    "online_steps": [
+      "Open the AP CDMA / Puraseva portal or the corporation's own portal and select 'Water Tap Connection'.",
+      "Enter the PTIN and property details.",
+      "Choose the connection type — domestic, commercial or industrial — and pipe size.",
+      "Upload ownership proof and the building plan.",
+      "Pay the application fee online.",
+      "An Assistant Engineer inspects and issues a demand notice for donation and deposit charges.",
+      "Pay the demand and the connection is laid; download the receipt and connection number."
+    ],
+    "offline_steps": [
+      "Apply at the Water Works section of the Municipal Corporation or at the ward office.",
+      "Submit property documents and pay the application fee.",
+      "After inspection, pay the donation and road-cutting charges.",
+      "The section staff lay the connection and fix the meter."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Application fee: a few hundred rupees",
+        "Water donation / capital contribution charge: varies significantly by ULB and pipe size",
+        "Road cutting and restoration charges where applicable",
+        "Meter cost"
+      ],
+      "notes": "GVMC, VMC and other corporations each publish their own schedule — figures differ widely.",
+      "confidence": "low"
+    },
+    "processing_time": "15–45 days",
+    "portal": "ap_cdma",
+    "office": [
+      "municipal",
+      "gram_panchayat"
+    ],
+    "helpline": "1800 425 4440",
+    "keywords": [
+      "water connection",
+      "tap connection",
+      "gvmc",
+      "vmc",
+      "water supply",
+      "నీటి కనెక్షన్"
+    ],
+    "common_issues": [
+      "Property tax arrears block a new water connection.",
+      "Road-cutting permission adds significantly to both cost and timeline."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "lpg_connection",
+    "name": "New LPG Gas Connection",
+    "name_te": "కొత్త ఎల్‌పీజీ కనెక్షన్",
+    "category": "utilities",
+    "level": "central",
+    "description": "Domestic cooking gas connection from Indian Oil, HP Gas or Bharat Gas. Households below the poverty line can get a free connection under the Pradhan Mantri Ujjwala Yojana.",
+    "eligibility": "Any household without an existing LPG connection in the same name. Ujjwala is for adult women from eligible poor households.",
+    "documents": [
+      "Aadhaar card",
+      "Address proof (ration card / electricity bill / rental agreement / Aadhaar)",
+      "Bank account details for subsidy transfer",
+      "Passport-size photograph",
+      "For Ujjwala: ration card, SECC/BPL identification and self-declaration"
+    ],
+    "online_steps": [
+      "Visit the website of Indian Oil, HP Gas or Bharat Gas, or use the common mylpg.in portal.",
+      "Select 'New Connection' and choose the nearest distributor.",
+      "Fill personal and address details and upload Aadhaar and address proof.",
+      "Complete the KYC form and e-sign or submit for distributor verification.",
+      "Pay the security deposit online or at the distributor.",
+      "Collect the cylinder, regulator and subscription voucher from the distributor.",
+      "For Ujjwala, apply on the PMUY portal and select the connection type."
+    ],
+    "offline_steps": [
+      "Visit the nearest authorised LPG distributor with Aadhaar and address proof.",
+      "Fill the KYC form and submit the documents.",
+      "Pay the security deposit and collect the receipt.",
+      "Take delivery of the cylinder, regulator and Domestic Gas Consumer Card."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Refundable security deposit for a 14.2 kg cylinder: approximately ₹2,200",
+        "Regulator deposit: approximately ₹250",
+        "Installation, inspection and DGCC booklet charges: a few hundred rupees",
+        "Ujjwala beneficiaries: deposit waived; stove and first refill support as per the scheme"
+      ],
+      "notes": "Deposits are revised by oil marketing companies from time to time.",
+      "confidence": "medium"
+    },
+    "processing_time": "3–15 days",
+    "portal": "mylpg",
+    "alternate_portals": [
+      "pmuy"
+    ],
+    "office": [
+      "lpg_distributor"
+    ],
+    "helpline": "1906 (LPG emergency) / 1800 233 3555",
+    "keywords": [
+      "lpg",
+      "gas connection",
+      "ujjwala",
+      "cylinder",
+      "mylpg",
+      "indane",
+      "hp gas",
+      "bharat gas",
+      "గ్యాస్"
+    ],
+    "common_issues": [
+      "Only one subsidised connection is allowed per household under one address.",
+      "Aadhaar must be seeded with the LPG ID for subsidy transfer."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "jan_dhan_account",
+    "name": "Jan Dhan Bank Account (PMJDY)",
+    "name_te": "జన్ ధన్ ఖాతా",
+    "category": "finance",
+    "level": "central",
+    "description": "Zero-balance basic savings bank deposit account under the Pradhan Mantri Jan Dhan Yojana, with a RuPay debit card, accident insurance cover and an overdraft facility after satisfactory operation.",
+    "eligibility": "Any Indian resident aged 10 or above without an existing bank account. Minors operate jointly with a guardian.",
+    "documents": [
+      "Aadhaar card (sufficient on its own for full KYC)",
+      "If no Aadhaar: any officially valid document such as Voter ID, PAN, passport, driving licence or NREGA card",
+      "If no OVD at all: a small account can be opened with a self-attested photograph and signature, valid for 12 months",
+      "Two passport-size photographs"
+    ],
+    "online_steps": [
+      "Download the account opening form from the PMJDY portal or the bank's website.",
+      "Many banks allow full video-KYC account opening through their app using Aadhaar and PAN.",
+      "Fill personal details and nominee information.",
+      "Complete Aadhaar e-KYC with OTP or video verification.",
+      "The account number and RuPay card details are issued digitally; the physical card arrives by post."
+    ],
+    "offline_steps": [
+      "Visit any bank branch, Business Correspondent (Bank Mitra) or the India Post Payments Bank counter.",
+      "Fill the PMJDY account opening form with nominee details.",
+      "Submit Aadhaar and complete biometric authentication.",
+      "Collect the passbook and RuPay debit card."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Account opening: free",
+        "Minimum balance: nil",
+        "RuPay debit card: free"
+      ],
+      "notes": "Accident insurance cover is bundled with the RuPay card subject to usage conditions.",
+      "confidence": "high"
+    },
+    "processing_time": "Same day to 3 working days",
+    "portal": "pmjdy",
+    "office": [
+      "bank_branch",
+      "post_office",
+      "bank_mitra"
+    ],
+    "helpline": "1800 11 0001",
+    "keywords": [
+      "jan dhan",
+      "pmjdy",
+      "zero balance",
+      "bsbda",
+      "rupay",
+      "bank account",
+      "జన్ ధన్"
+    ],
+    "common_issues": [
+      "The RuPay accident cover requires the card to have been used within the specified period before the claim.",
+      "Overdraft is available only after six months of satisfactory account operation."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "ayushman_card",
+    "name": "Ayushman Bharat Card (PM-JAY)",
+    "name_te": "ఆయుష్మాన్ భారత్ కార్డు",
+    "category": "health",
+    "level": "central",
+    "description": "Health cover of ₹5 lakh per family per year for secondary and tertiary hospitalisation under Ayushman Bharat PM-JAY, usable at empanelled public and private hospitals. Senior citizens aged 70 and above are covered under the Vay Vandana extension regardless of income.",
+    "eligibility": "Families identified through the SECC deprivation criteria or the state's own list; all citizens aged 70+ under the Vay Vandana expansion.",
+    "documents": [
+      "Aadhaar card",
+      "Ration card",
+      "Mobile number linked to Aadhaar",
+      "Family details as recorded in the beneficiary database"
+    ],
+    "online_steps": [
+      "Open the PM-JAY beneficiary portal or the Ayushman app and log in with your mobile number and OTP.",
+      "Search for your name using Aadhaar, ration card, family ID or mobile number in your district.",
+      "If listed, complete e-KYC using Aadhaar OTP or face authentication.",
+      "Upload a photograph if prompted.",
+      "The card is approved and can be downloaded immediately or after verification.",
+      "Present the card with Aadhaar at the Ayushman Mitra desk in any empanelled hospital."
+    ],
+    "offline_steps": [
+      "Visit a Common Service Centre, Grama/Ward Sachivalayam or the Ayushman Mitra desk at an empanelled hospital.",
+      "Provide Aadhaar and ration card for the beneficiary search.",
+      "Complete biometric e-KYC.",
+      "Collect the printed card."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Card and treatment: free for eligible beneficiaries"
+      ],
+      "notes": "CSCs may charge a small printing fee. Treatment at empanelled hospitals is cashless.",
+      "confidence": "high"
+    },
+    "processing_time": "Same day if the name is already in the beneficiary list",
+    "portal": "pmjay",
+    "office": [
+      "csc",
+      "sachivalayam",
+      "empanelled_hospital"
+    ],
+    "helpline": "14555",
+    "keywords": [
+      "ayushman",
+      "pmjay",
+      "health card",
+      "5 lakh",
+      "vay vandana",
+      "cashless",
+      "ఆయుష్మాన్"
+    ],
+    "common_issues": [
+      "Names missing from the beneficiary database cannot be added on demand — the list is drawn from SECC and state data.",
+      "In Andhra Pradesh the state health scheme and PM-JAY are converged, so entitlements may be delivered through the state scheme."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "ap_state_health_scheme",
+    "name": "AP State Health Scheme Card (Aarogyasri / NTR Vaidya Seva)",
+    "name_te": "ఆరోగ్యశ్రీ / ఎన్‌టీఆర్ వైద్య సేవ",
+    "category": "health",
+    "level": "state",
+    "description": "Andhra Pradesh's flagship cashless health scheme covering a large list of medical and surgical procedures at empanelled network hospitals. The scheme has been renamed across successive governments — most recently branded NTR Vaidya Seva, previously YSR Aarogyasri and originally Rajiv Aarogyasri — so citizens and staff use several names for the same entitlement.",
+    "eligibility": "Households holding a valid AP rice card / white ration card and meeting the income criteria notified by the state.",
+    "documents": [
+      "Rice card / white ration card",
+      "Aadhaar card of the patient",
+      "Health card if already issued",
+      "Referral or diagnosis from a government hospital or a health camp, where required"
+    ],
+    "online_steps": [
+      "Check eligibility and empanelled hospital lists on the AP state health scheme portal.",
+      "Apply for or download the health card by entering the rice card number and Aadhaar.",
+      "For treatment, approach the Aarogyamitra / Vaidya Mitra help desk at an empanelled hospital.",
+      "The help desk raises a pre-authorisation request in the scheme portal.",
+      "Once approved, treatment is cashless; track the case number through the portal."
+    ],
+    "offline_steps": [
+      "Visit the Grama/Ward Sachivalayam or a village health clinic to get the health card issued or linked.",
+      "For treatment, go directly to the Aarogyamitra desk at any empanelled network hospital with the rice card and Aadhaar.",
+      "The Aarogyamitra handles the pre-authorisation and admission paperwork.",
+      "Post-discharge, follow-up medication and transport support may also be provided under the scheme."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Card and covered treatment: free at empanelled hospitals"
+      ],
+      "notes": "Only listed procedures at empanelled hospitals are covered; check the current procedure list before admission.",
+      "confidence": "medium"
+    },
+    "processing_time": "Card issue same day to 15 days; pre-authorisation for treatment usually within 24 hours",
+    "portal": "ap_health_scheme",
+    "office": [
+      "sachivalayam",
+      "empanelled_hospital",
+      "phc"
+    ],
+    "helpline": "104",
+    "keywords": [
+      "aarogyasri",
+      "ntr vaidya seva",
+      "health card",
+      "cashless",
+      "network hospital",
+      "aarogyamitra",
+      "ఆరోగ్యశ్రీ"
+    ],
+    "common_issues": [
+      "The scheme name and portal URL have changed with governments — search for the current official domain rather than relying on an old bookmark.",
+      "Only procedures on the approved list are covered; anything outside it is billed normally."
+    ],
+    "last_verified": "2026-07-22",
+    "verify_flag": true
+  },
+  {
+    "id": "social_security_pension",
+    "name": "Social Security Pension (Old Age, Widow, Disability, Weaver and Others)",
+    "name_te": "సామాజిక భద్రతా పింఛను",
+    "category": "welfare",
+    "level": "state",
+    "description": "Monthly social security pension delivered by the AP Department of Rural Development through the Grama/Ward Sachivalayam and Volunteer network, covering old age, widows, persons with disabilities, single women, weavers, toddy tappers, transgender persons, dialysis patients and other notified categories. The programme has been branded YSR Pension Kanuka and NTR Bharosa under different governments.",
+    "eligibility": "Category-specific age and income criteria; households must generally hold a rice card and meet land, income and vehicle-ownership limits.",
+    "documents": [
+      "Aadhaar card",
+      "Rice card / ration card",
+      "Bank account passbook (Aadhaar-seeded)",
+      "SADAREM certificate for disability pension",
+      "Death certificate of the husband for widow pension",
+      "Age proof for old age pension",
+      "Category-specific proof such as weaver identity or dialysis records"
+    ],
+    "online_steps": [
+      "Apply through the AP Seva / VSWS portal by selecting the pension category.",
+      "Enter Aadhaar and household details and complete e-KYC.",
+      "Upload the category-specific supporting document.",
+      "Submit; the Welfare Assistant and Volunteer verify the household.",
+      "Track the application number on the portal; approved pensions are disbursed at the doorstep by the Volunteer or credited to the bank account."
+    ],
+    "offline_steps": [
+      "Approach the Grama/Ward Sachivalayam with Aadhaar, rice card and the category document.",
+      "The Welfare Assistant files the application and completes biometric authentication.",
+      "The Village/Ward Volunteer conducts household verification.",
+      "Once sanctioned, the pension is delivered monthly at the doorstep, typically on the first of the month."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Application: free"
+      ],
+      "notes": "Pension amounts differ by category and are revised by the state from time to time.",
+      "confidence": "medium"
+    },
+    "processing_time": "30–90 days; sanctions are released in periodic batches",
+    "portal": "ap_seva_vsws",
+    "office": [
+      "sachivalayam",
+      "mpdo_office"
+    ],
+    "helpline": "1902",
+    "keywords": [
+      "pension",
+      "old age pension",
+      "widow pension",
+      "disability pension",
+      "ntr bharosa",
+      "pension kanuka",
+      "పింఛను"
+    ],
+    "common_issues": [
+      "Pensions are cancelled during periodic eligibility re-verification if the household exceeds land, income or vehicle criteria.",
+      "Aadhaar-seeded bank accounts are essential; unseeded accounts cause payment failures."
+    ],
+    "last_verified": "2026-07-22",
+    "verify_flag": true
+  },
+  {
+    "id": "farmer_id_agristack",
+    "name": "Farmer ID (AgriStack Farmer Registry)",
+    "name_te": "రైతు గుర్తింపు సంఖ్య",
+    "category": "agriculture",
+    "level": "central",
+    "description": "A unique digital Farmer ID created under the AgriStack Farmer Registry by linking Aadhaar with land records. It is becoming the gateway identifier for central and state agriculture benefits, including PM-KISAN instalments, crop insurance and input subsidies.",
+    "eligibility": "Farmers holding land recorded in the Andhra Pradesh land records system.",
+    "documents": [
+      "Aadhaar card with a linked active mobile number",
+      "Land records — Adangal / 1-B showing khata and survey numbers",
+      "Bank account passbook",
+      "Mobile number for OTP"
+    ],
+    "online_steps": [
+      "Open the AgriStack Farmer Registry portal for Andhra Pradesh and register with your mobile number.",
+      "Complete Aadhaar e-KYC with OTP or face authentication.",
+      "The system fetches your land parcels from the state land record database; verify and confirm each parcel.",
+      "Add or correct social category, bank account and contact details.",
+      "Submit for approval by the village-level agriculture functionary.",
+      "Download the Farmer ID once generated; use it for PM-KISAN and other scheme linkages."
+    ],
+    "offline_steps": [
+      "Attend a Farmer Registry camp at the Rythu Bharosa Kendra (RBK) or Grama Sachivalayam.",
+      "Provide Aadhaar and land details to the Village Agriculture Assistant.",
+      "Complete biometric authentication and confirm the land parcel list.",
+      "Collect the acknowledgement and check the ID status later."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Registration: free"
+      ],
+      "notes": "No government fee. Registration camps are conducted free of charge at RBKs.",
+      "confidence": "medium"
+    },
+    "processing_time": "Same day to 15 days after verification",
+    "portal": "agristack_farmer_registry",
+    "alternate_portals": [
+      "pm_kisan"
+    ],
+    "office": [
+      "rbk",
+      "sachivalayam",
+      "mandal_agriculture_office"
+    ],
+    "helpline": "155261 (PM-KISAN)",
+    "keywords": [
+      "farmer id",
+      "agristack",
+      "farmer registry",
+      "pm kisan",
+      "rbk",
+      "rythu",
+      "రైతు"
+    ],
+    "common_issues": [
+      "Land parcels do not appear if the Adangal record is digitally unsigned in Webland — get it signed by the Tahsildar first.",
+      "Tenant farmers without recorded land rights face difficulties; a Crop Cultivator Rights Card may be needed."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "kisan_credit_card",
+    "name": "Kisan Credit Card (KCC)",
+    "name_te": "కిసాన్ క్రెడిట్ కార్డు",
+    "category": "agriculture",
+    "level": "central",
+    "description": "Short-term crop loan facility at concessional interest through a revolving credit card, available to farmers, tenant farmers, sharecroppers and those in animal husbandry and fisheries.",
+    "eligibility": "Owner cultivators, tenant farmers, oral lessees, sharecroppers, self-help group members and allied-activity farmers.",
+    "documents": [
+      "Aadhaar card",
+      "Land records — Adangal / 1-B or Crop Cultivator Rights Card for tenants",
+      "Bank account details",
+      "Passport-size photographs",
+      "PAN card for higher loan amounts",
+      "Crop plan and acreage details"
+    ],
+    "online_steps": [
+      "Apply through the PM-KISAN portal's KCC link or directly on your bank's website.",
+      "Fill the KCC application with land, crop and bank details.",
+      "Upload land records and Aadhaar.",
+      "Submit; the branch verifies the land record with the revenue department.",
+      "Sign the loan documents at the branch and receive the KCC RuPay card."
+    ],
+    "offline_steps": [
+      "Approach your bank branch or the Rythu Bharosa Kendra with land records and Aadhaar.",
+      "Fill the KCC application form provided by the branch.",
+      "The branch verifies land records and assesses the scale of finance for your crop.",
+      "Execute the loan documents and collect the KCC card and passbook."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Processing fee is waived for loans up to ₹3 lakh under the interest subvention scheme",
+        "Interest subvention and prompt repayment incentive reduce the effective rate substantially",
+        "Documentation and inspection charges may apply above ₹3 lakh"
+      ],
+      "notes": "Interest subvention rates are notified annually by the Government of India.",
+      "confidence": "medium"
+    },
+    "processing_time": "14 days as per RBI guidance for complete applications",
+    "portal": "pm_kisan",
+    "office": [
+      "bank_branch",
+      "rbk"
+    ],
+    "helpline": "155261",
+    "keywords": [
+      "kcc",
+      "kisan credit card",
+      "crop loan",
+      "farm credit",
+      "interest subvention",
+      "కిసాన్"
+    ],
+    "common_issues": [
+      "Tenant farmers are frequently refused despite being eligible — a Crop Cultivator Rights Card strengthens the case.",
+      "Existing loan defaults in the same household block fresh KCC sanction."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "crop_insurance_pmfby",
+    "name": "Crop Insurance (PMFBY)",
+    "name_te": "పంటల బీమా",
+    "category": "agriculture",
+    "level": "central",
+    "description": "Pradhan Mantri Fasal Bima Yojana provides insurance against crop loss from natural calamities, pests and disease. In Andhra Pradesh enrolment is closely linked to e-Crop booking done at the Rythu Bharosa Kendra.",
+    "eligibility": "All farmers growing notified crops in notified areas, including sharecroppers and tenant farmers.",
+    "documents": [
+      "Aadhaar card",
+      "Land records — Adangal / 1-B",
+      "e-Crop booking record for the season",
+      "Bank account passbook",
+      "Sowing certificate or self-declaration",
+      "Tenancy agreement for tenant farmers"
+    ],
+    "online_steps": [
+      "Ensure your crop is correctly recorded in the AP e-Crop booking system at the RBK — claims are settled against this record.",
+      "Enrol on the PMFBY national portal or through your bank if you have a crop loan.",
+      "Select the season, crop, and area sown.",
+      "Pay the farmer's share of the premium online.",
+      "Note the policy number and download the certificate.",
+      "For a loss event, intimate within 72 hours through the Crop Insurance app, the toll-free number or your bank."
+    ],
+    "offline_steps": [
+      "Visit the Rythu Bharosa Kendra or your bank branch before the cut-off date for the season.",
+      "Verify the e-Crop entry matches the crop actually sown.",
+      "Submit the enrolment form and pay the premium share.",
+      "Collect the acknowledgement.",
+      "Report crop loss to the RBK, agriculture officer or insurer within 72 hours of the event."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Farmer's premium share: 2% of sum insured for kharif food and oilseed crops",
+        "1.5% for rabi food and oilseed crops",
+        "5% for commercial and horticultural crops",
+        "The balance is subsidised by the central and state governments"
+      ],
+      "notes": "Andhra Pradesh has at times borne the farmer share entirely for enrolled farmers — check the current season's notification.",
+      "confidence": "medium"
+    },
+    "processing_time": "Enrolment before the seasonal cut-off; claim settlement typically within 2–3 months of yield data finalisation",
+    "portal": "pmfby",
+    "alternate_portals": [
+      "ap_ecrop"
+    ],
+    "office": [
+      "rbk",
+      "bank_branch",
+      "mandal_agriculture_office"
+    ],
+    "helpline": "14447",
+    "keywords": [
+      "crop insurance",
+      "pmfby",
+      "fasal bima",
+      "e-crop",
+      "rbk",
+      "claim",
+      "పంట బీమా"
+    ],
+    "common_issues": [
+      "A wrong crop entry in e-Crop booking is the leading cause of claim rejection — verify it at the RBK before the cut-off.",
+      "Losses must be intimated within 72 hours for localised calamity claims."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "eshram_card",
+    "name": "e-Shram Card (Unorganised Worker Registration)",
+    "name_te": "ఈ-శ్రమ్ కార్డు",
+    "category": "employment",
+    "level": "central",
+    "description": "National database registration for unorganised sector workers, generating a 12-digit Universal Account Number. Provides accident insurance cover and acts as the gateway to several central welfare schemes.",
+    "eligibility": "Unorganised workers aged 16 to 59 who are not members of EPFO or ESIC and are not income tax payers.",
+    "documents": [
+      "Aadhaar card with a linked active mobile number",
+      "Bank account details (account number and IFSC)",
+      "Occupation and skill details",
+      "Nominee details"
+    ],
+    "online_steps": [
+      "Open the e-Shram portal and select 'Register on e-Shram'.",
+      "Enter the Aadhaar-linked mobile number and verify with OTP.",
+      "Complete Aadhaar e-KYC using OTP, fingerprint or iris.",
+      "Fill personal, address, education, occupation, skill and bank details.",
+      "Add nominee details.",
+      "Submit and download the e-Shram card with the UAN immediately."
+    ],
+    "offline_steps": [
+      "Visit a Common Service Centre, MeeSeva centre or the State Seva Kendra.",
+      "Provide Aadhaar and complete biometric authentication.",
+      "Give occupation, skill and bank details to the operator.",
+      "Collect the printed e-Shram card."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Registration: free at CSCs and on the self-registration portal"
+      ],
+      "notes": "CSCs are reimbursed by the government and should not charge the worker.",
+      "confidence": "high"
+    },
+    "processing_time": "Instant — the card is generated on submission",
+    "portal": "eshram",
+    "office": [
+      "csc",
+      "meeseva",
+      "sachivalayam"
+    ],
+    "helpline": "14434",
+    "keywords": [
+      "eshram",
+      "e-shram",
+      "uan",
+      "unorganised worker",
+      "labour card",
+      "ఈ-శ్రమ్"
+    ],
+    "common_issues": [
+      "Aadhaar must be linked to an active mobile number; otherwise you must use a CSC for biometric registration.",
+      "EPFO or ESIC members are not eligible and their registration will be rejected."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "epf_uan_activation",
+    "name": "EPF UAN Activation and Withdrawal",
+    "name_te": "ఈపీఎఫ్ యూఏఎన్",
+    "category": "employment",
+    "level": "central",
+    "description": "Activation of the Universal Account Number for Employees' Provident Fund, KYC seeding, transfer of accounts between employers and online claim submission for withdrawal or advances.",
+    "eligibility": "Employees of establishments covered under the EPF Act.",
+    "documents": [
+      "UAN allotted by the employer",
+      "Aadhaar card linked to the mobile number",
+      "PAN card",
+      "Bank account with IFSC, in the member's own name",
+      "Cancelled cheque or passbook copy",
+      "Form 15G/15H where applicable for tax exemption"
+    ],
+    "online_steps": [
+      "Go to the EPFO Member e-Sewa portal and click 'Activate UAN'.",
+      "Enter the UAN, Aadhaar, name and date of birth and verify with OTP.",
+      "Set a password and log in.",
+      "Under KYC, seed Aadhaar, PAN and bank details and get them approved by the employer.",
+      "Use 'One Member One EPF Account' to transfer past accounts to the current employer.",
+      "For withdrawal or advance, file the online claim (Form 31 for advance, Form 19 for final settlement, Form 10C for pension withdrawal).",
+      "Track the claim status on the portal or the UMANG app."
+    ],
+    "offline_steps": [
+      "Submit the composite claim form at the regional EPFO office with employer attestation where required.",
+      "Attach the cancelled cheque and identity documents.",
+      "Track using the claim acknowledgement."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "All EPFO member services: free"
+      ],
+      "notes": "No fee. Beware of agents charging for withdrawal claims.",
+      "confidence": "high"
+    },
+    "processing_time": "UAN activation instant; online claims settled typically in 7–20 days",
+    "portal": "epfo",
+    "office": [
+      "epfo_office"
+    ],
+    "helpline": "14470",
+    "keywords": [
+      "epf",
+      "uan",
+      "provident fund",
+      "pf withdrawal",
+      "epfo",
+      "form 19",
+      "form 31"
+    ],
+    "common_issues": [
+      "Claims are rejected when the name, date of birth or father's name differs between EPFO records and Aadhaar.",
+      "Bank account must be in the member's sole name and Aadhaar-seeded."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "bocw_labour_registration",
+    "name": "Building and Construction Worker Registration (BOCW)",
+    "name_te": "భవన నిర్మాణ కార్మికుల నమోదు",
+    "category": "employment",
+    "level": "state",
+    "description": "Registration with the AP Building and Other Construction Workers Welfare Board, giving access to accident and death relief, maternity benefit, education assistance for children, marriage assistance and pension.",
+    "eligibility": "Construction workers aged 18 to 60 who have worked at least 90 days in the preceding twelve months.",
+    "documents": [
+      "Aadhaar card",
+      "Employment certificate from the employer, contractor or a registered trade union confirming 90 days of work",
+      "Bank account passbook",
+      "Passport-size photographs",
+      "Age proof",
+      "Family details and nominee declaration"
+    ],
+    "online_steps": [
+      "Register on the AP Labour Department portal and select the BOCW Welfare Board registration service.",
+      "Fill personal, work and nominee details.",
+      "Upload the 90-day employment certificate and Aadhaar.",
+      "Pay the registration and annual contribution.",
+      "Track the application; download the worker identity card once approved.",
+      "Apply for individual benefits (education, marriage, maternity, accident) through the same portal after registration."
+    ],
+    "offline_steps": [
+      "Apply at the office of the Assistant Labour Officer or through a registered trade union.",
+      "Submit the employment certificate and documents.",
+      "Pay the registration fee and contribution.",
+      "Collect the worker identity card and pass book."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Nominal registration fee plus a small annual contribution, typically well under ₹100 per year"
+      ],
+      "notes": "Renewal of contribution is essential to keep benefits active.",
+      "confidence": "low"
+    },
+    "processing_time": "15–45 days",
+    "portal": "ap_labour",
+    "office": [
+      "labour_office",
+      "meeseva",
+      "sachivalayam"
+    ],
+    "helpline": "155214",
+    "keywords": [
+      "bocw",
+      "construction worker",
+      "labour card",
+      "welfare board",
+      "kaarmika",
+      "కార్మిక"
+    ],
+    "common_issues": [
+      "Benefits lapse if the annual contribution is not paid.",
+      "Getting the 90-day employment certificate is the main practical obstacle for daily wage workers."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "scholarship_jnanabhumi",
+    "name": "Post-Matric Scholarship / Fee Reimbursement (Jnanabhumi)",
+    "name_te": "జ్ఞానభూమి ఉపకార వేతనం",
+    "category": "education",
+    "level": "state",
+    "description": "Andhra Pradesh's integrated scholarship and tuition fee reimbursement platform covering post-matric students from SC, ST, BC, EBC, Kapu, minority and disabled categories, administered through the Jnanabhumi portal.",
+    "eligibility": "Students admitted to recognised institutions in AP, meeting category, income, attendance and course criteria. Family income limits and land holding limits apply.",
+    "documents": [
+      "Aadhaar card of the student and parents",
+      "Income certificate (MeeSeva)",
+      "Caste certificate (MeeSeva)",
+      "Rice card / ration card",
+      "Bank account passbook of the student, Aadhaar-seeded",
+      "Admission proof and fee receipt",
+      "Previous year marks memo",
+      "Bonafide certificate from the institution"
+    ],
+    "online_steps": [
+      "The institution registers the student's admission on the Jnanabhumi portal.",
+      "Log in with the Aadhaar number and application ID and complete e-KYC.",
+      "Verify the auto-fetched income and caste certificate details.",
+      "Enter bank account and course details.",
+      "Submit; the institution and the district welfare officer verify the application.",
+      "Attendance is tracked biometrically and affects disbursement.",
+      "Track the sanction and payment status on the portal."
+    ],
+    "offline_steps": [
+      "Submit the documents to your college scholarship section, which files the application on your behalf.",
+      "Obtain the income and caste certificates from a MeeSeva centre first.",
+      "Follow up with the college and the district welfare office for verification."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Application: free",
+        "Income and caste certificates from MeeSeva: approximately ₹35–₹45 each"
+      ],
+      "notes": "The scholarship itself is a benefit, not a paid service.",
+      "confidence": "medium"
+    },
+    "processing_time": "Sanction and disbursement typically follow the academic year cycle and can take several months",
+    "portal": "jnanabhumi",
+    "office": [
+      "college",
+      "district_welfare_office",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "scholarship",
+      "jnanabhumi",
+      "fee reimbursement",
+      "post matric",
+      "vidya deevena",
+      "vasathi deevena",
+      "జ్ఞానభూమి"
+    ],
+    "common_issues": [
+      "Income certificate older than the current academic year is rejected.",
+      "Low biometric attendance is a common reason for withheld disbursement.",
+      "Bank account must be in the student's own name and Aadhaar-seeded."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "rti_application",
+    "name": "Right to Information (RTI) Application",
+    "name_te": "సమాచార హక్కు దరఖాస్తు",
+    "category": "legal",
+    "level": "central",
+    "description": "Application under the Right to Information Act, 2005 seeking information from a public authority. Central government bodies accept applications on the RTI Online portal; Andhra Pradesh state departments are approached through the concerned Public Information Officer, with appeals to the AP Information Commission.",
+    "eligibility": "Any citizen of India. No reason for seeking the information needs to be given.",
+    "documents": [
+      "Identity proof (only required to claim the BPL fee exemption)",
+      "BPL ration card if claiming exemption from the fee",
+      "A clearly worded set of questions"
+    ],
+    "online_steps": [
+      "For central public authorities, use the RTI Online portal, select the ministry or department and submit the request.",
+      "Pay the ₹10 fee online and note the registration number.",
+      "For AP state departments, check whether the department accepts online RTI; otherwise send a written application.",
+      "Track the status with the registration number.",
+      "If no reply arrives within 30 days, file a First Appeal to the First Appellate Authority, then a Second Appeal to the Information Commission."
+    ],
+    "offline_steps": [
+      "Write a plain application addressed to the Public Information Officer of the concerned office.",
+      "State the specific information sought, with your name and postal address.",
+      "Attach an Indian Postal Order, demand draft or court fee stamp for ₹10, or a BPL card copy for exemption.",
+      "Submit in person against acknowledgement or send by registered post.",
+      "Wait 30 days for a reply (48 hours where life or liberty is involved)."
+    ],
+    "fees": {
+      "amount_inr": 10,
+      "breakdown": [
+        "Application fee: ₹10",
+        "Photocopy charges: ₹2 per A4 page",
+        "Inspection of records: free for the first hour, then a small hourly charge",
+        "BPL cardholders: fully exempt"
+      ],
+      "notes": "Fees are statutory and cannot be varied by the office.",
+      "confidence": "high"
+    },
+    "processing_time": "30 days for a reply; 48 hours where life or liberty is concerned; 35 days if routed through an Assistant PIO",
+    "portal": "rti_online",
+    "alternate_portals": [
+      "ap_information_commission"
+    ],
+    "office": [
+      "pio_office",
+      "collectorate",
+      "meeseva"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "rti",
+      "right to information",
+      "pio",
+      "first appeal",
+      "information commission",
+      "సమాచార హక్కు"
+    ],
+    "common_issues": [
+      "Applications are rejected for being vague — ask for specific documents, file notings or figures rather than opinions.",
+      "The RTI Online portal covers central bodies; many state departments still need a physical application."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "police_clearance_certificate",
+    "name": "Police Clearance Certificate (PCC)",
+    "name_te": "పోలీస్ క్లియరెన్స్ సర్టిఫికెట్",
+    "category": "legal",
+    "level": "central",
+    "description": "Certificate confirming the absence of adverse criminal records, issued through Passport Seva for residency, employment or long-term visa purposes abroad. AP Police also issue local police verification certificates for domestic purposes.",
+    "eligibility": "Indian passport holders applying for emigration, employment or long-term visas. Not issued for tourist visas.",
+    "documents": [
+      "Original passport with self-attested copies of the first two and last two pages",
+      "Aadhaar card",
+      "Proof of present address if different from the passport address",
+      "Valid visa or employment offer letter where applicable",
+      "ECR/ECNR page copy"
+    ],
+    "online_steps": [
+      "Log in to the Passport Seva portal and select 'Apply for Police Clearance Certificate'.",
+      "Fill the application with your passport and current address details.",
+      "Pay the fee and schedule an appointment at the PSK or POPSK.",
+      "Attend with originals for verification.",
+      "Police verification is conducted by the local station unless already cleared recently.",
+      "Collect or receive the PCC by post; track status on the portal."
+    ],
+    "offline_steps": [
+      "For domestic police verification, apply on the AP Police citizen services portal or at the local police station.",
+      "Submit identity and address proof.",
+      "The Station House Officer verifies records and issues the certificate.",
+      "For overseas purposes, the Passport Seva route is the only valid one."
+    ],
+    "fees": {
+      "amount_inr": 500,
+      "breakdown": [
+        "PCC through Passport Seva: ₹500",
+        "Local police verification certificate: nominal or free"
+      ],
+      "notes": "MEA-set fee, uniform across India.",
+      "confidence": "high"
+    },
+    "processing_time": "7–30 days depending on how quickly police verification is completed",
+    "portal": "passport_seva",
+    "alternate_portals": [
+      "ap_police"
+    ],
+    "office": [
+      "psk",
+      "police_station"
+    ],
+    "helpline": "1800 258 1800",
+    "keywords": [
+      "pcc",
+      "police clearance",
+      "police verification",
+      "emigration",
+      "visa",
+      "పోలీస్ క్లియరెన్స్"
+    ],
+    "common_issues": [
+      "PCC is issued for the address on record — a recent address change triggers fresh verification and delays.",
+      "It is not issued for tourist visa applications."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "police_complaint_efir",
+    "name": "Police Complaint / e-FIR",
+    "name_te": "పోలీస్ ఫిర్యాదు / ఈ-ఎఫ్ఐఆర్",
+    "category": "legal",
+    "level": "state",
+    "description": "Filing a complaint with Andhra Pradesh Police, including online e-FIR for property theft and vehicle theft, lost article reports, and general petitions through the AP Police citizen services platform.",
+    "eligibility": "Any person aggrieved by or with knowledge of an offence.",
+    "documents": [
+      "Aadhaar or other identity proof of the complainant",
+      "Details of the incident: date, time, place, description",
+      "Vehicle RC and insurance for vehicle theft",
+      "Purchase invoice or IMEI for stolen property",
+      "Supporting evidence such as photographs or messages"
+    ],
+    "online_steps": [
+      "Open the AP Police citizen services portal or the AP Police Seva app.",
+      "Register with your mobile number.",
+      "Select the service — e-FIR for theft, lost article report, complaint petition or cyber crime.",
+      "Fill the incident details precisely and upload any evidence.",
+      "Submit and note the acknowledgement or FIR number.",
+      "For cyber financial fraud, also report on the National Cyber Crime Reporting Portal or call 1930 within the golden hour.",
+      "Download the FIR copy or lost article certificate from the portal."
+    ],
+    "offline_steps": [
+      "Visit the police station having jurisdiction over the place of the incident.",
+      "Give a written complaint; the SHO must register an FIR for a cognisable offence.",
+      "Collect a free copy of the FIR — this is your legal right.",
+      "If the station refuses, escalate in writing to the Superintendent of Police or file a complaint before the Magistrate under Section 156(3) CrPC / the corresponding BNSS provision.",
+      "Some MeeSeva centres also file lost-article complaints on your behalf."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Filing a complaint or FIR: free",
+        "MeeSeva assistance for lost article reports: approximately ₹35"
+      ],
+      "notes": "Police cannot charge for registering an FIR.",
+      "confidence": "high"
+    },
+    "processing_time": "e-FIR acknowledgement is immediate; investigation timelines vary",
+    "portal": "ap_police",
+    "alternate_portals": [
+      "cybercrime_portal"
+    ],
+    "office": [
+      "police_station",
+      "meeseva"
+    ],
+    "helpline": "100 / 112 (emergency), 1930 (cyber financial fraud), 181 (women)",
+    "keywords": [
+      "fir",
+      "e-fir",
+      "police complaint",
+      "lost article",
+      "theft",
+      "cyber crime",
+      "ఫిర్యాదు"
+    ],
+    "common_issues": [
+      "e-FIR is available only for specified offences such as unknown-accused theft; other offences need a station visit.",
+      "For online financial fraud, reporting within the first hour materially improves the chance of freezing the funds."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "grievance_redressal",
+    "name": "Public Grievance Redressal (PGRS / Spandana)",
+    "name_te": "ప్రజా ఫిర్యాదుల పరిష్కారం",
+    "category": "legal",
+    "level": "state",
+    "description": "Andhra Pradesh's public grievance system, historically run as Spandana with Monday grievance days at Collectorates and Sachivalayams, alongside the central CPGRAMS portal for grievances against central government bodies.",
+    "eligibility": "Any citizen with a grievance against a government department or official.",
+    "documents": [
+      "Aadhaar card",
+      "Written statement of the grievance",
+      "Copies of any earlier applications, acknowledgements or rejection orders",
+      "Supporting evidence"
+    ],
+    "online_steps": [
+      "Register the grievance on the AP grievance portal or through the AP Seva / VSWS portal.",
+      "Select the concerned department and grievance category.",
+      "Describe the issue and attach supporting documents.",
+      "Note the grievance registration number and track it online.",
+      "If unresolved, escalate to the next level or approach the Collector during the weekly grievance day.",
+      "For central departments, file on CPGRAMS instead."
+    ],
+    "offline_steps": [
+      "Attend the weekly grievance day at the District Collectorate, Revenue Divisional Office or Sachivalayam.",
+      "Submit the written grievance and collect the acknowledgement with the reference number.",
+      "Follow up with the concerned department using the reference number.",
+      "Escalate to the Collector or the department head if the deadline passes."
+    ],
+    "fees": {
+      "amount_inr": 0,
+      "breakdown": [
+        "Filing a grievance: free"
+      ],
+      "notes": "No fee at any stage.",
+      "confidence": "medium"
+    },
+    "processing_time": "Departmental SLAs vary; most grievance systems target 15–30 days",
+    "portal": "ap_grievance",
+    "alternate_portals": [
+      "cpgrams"
+    ],
+    "office": [
+      "collectorate",
+      "sachivalayam",
+      "rdo_office"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "grievance",
+      "spandana",
+      "pgrs",
+      "cpgrams",
+      "complaint",
+      "collector",
+      "ఫిర్యాదు"
+    ],
+    "common_issues": [
+      "Grievances marked 'disposed' without an actual resolution should be re-opened or escalated, not re-filed as new.",
+      "Attach the earlier acknowledgement number so the history is visible to the reviewing officer."
+    ],
+    "last_verified": "2026-07-22"
+  },
+  {
+    "id": "no_objection_certificate_general",
+    "name": "No Objection Certificate (NOC) — General",
+    "name_te": "నిరభ్యంతర పత్రం",
+    "category": "certificates",
+    "level": "state",
+    "description": "An umbrella term for clearances issued by different authorities: vehicle NOC from the RTA for inter-district or inter-state transfer, fire NOC, pollution NOC, layout NOC, and property-owner NOC for tenants. The issuing authority depends entirely on the purpose.",
+    "eligibility": "Depends on the type — vehicle owner, property owner, business operator or applicant seeking a departmental clearance.",
+    "documents": [
+      "Vehicle NOC: RC, insurance, PUC, Form 28, clearance of pending challans and hypothecation NOC from the financier",
+      "Property owner NOC: ownership document, identity proof, purpose statement",
+      "Departmental NOC: application form and the documents specific to that department"
+    ],
+    "online_steps": [
+      "For a vehicle NOC, log in to the Parivahan Vahan portal, select 'NOC to other state/RTO' and file Form 28.",
+      "Clear all pending challans and tax dues first.",
+      "Pay the fee online and track the application.",
+      "Download the NOC once the RTA approves it.",
+      "For fire, pollution or building NOCs, use the respective department portal listed against those services."
+    ],
+    "offline_steps": [
+      "Submit Form 28 in triplicate at the RTA office with the RC, insurance and tax receipts.",
+      "Obtain a hypothecation clearance letter from the financier if the vehicle is under loan.",
+      "Collect the NOC after verification, usually within a few weeks.",
+      "For a property-owner NOC, get a simple signed letter from the owner with an identity proof copy — no government process is involved."
+    ],
+    "fees": {
+      "amount_inr": null,
+      "breakdown": [
+        "Vehicle NOC: roughly ₹100–₹500 plus any pending tax",
+        "Departmental NOCs: as per that department's schedule"
+      ],
+      "notes": "The fee is entirely dependent on which NOC is being sought.",
+      "confidence": "low"
+    },
+    "processing_time": "Vehicle NOC: 15–30 days. Others vary by department.",
+    "portal": "parivahan_vahan",
+    "alternate_portals": [
+      "ap_fire_services",
+      "appcb",
+      "ap_cdma"
+    ],
+    "office": [
+      "rto",
+      "municipal",
+      "fire_station"
+    ],
+    "helpline": "1100",
+    "keywords": [
+      "noc",
+      "no objection certificate",
+      "form 28",
+      "vehicle transfer",
+      "clearance",
+      "నిరభ్యంతర"
+    ],
+    "common_issues": [
+      "A vehicle NOC lapses if not used within six months, requiring a fresh application.",
+      "Pending challans anywhere in the country block the NOC."
+    ],
+    "last_verified": "2026-07-22"
+  }
+]
