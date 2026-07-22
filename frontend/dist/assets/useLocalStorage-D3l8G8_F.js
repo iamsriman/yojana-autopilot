@@ -1,0 +1,1 @@
+import{r as s}from"./index-BRT2DfPZ.js";function p(r,o){const[a,c]=s.useState(()=>{try{const t=window.localStorage.getItem(r);return t?JSON.parse(t):o}catch{return o}}),n=s.useCallback(t=>{c(u=>{const e=typeof t=="function"?t(u):t;return window.localStorage.setItem(r,JSON.stringify(e)),e})},[r]);return[a,n]}export{p as u};
